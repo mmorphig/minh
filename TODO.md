@@ -1,6 +1,5 @@
 Testing (I haven't even tried to open this in-game, just testing that modrinth could open the .mrpack)
 Adding breeding U-238 fuel rods to autogen
-Adding pure gold to autogen
 Properly switch from kubejs-generated coils and items to MI-generated ones that are already added
 Move other kubejs MI materials to be MI-generated (ex: alumina)
 Adding more raw materials & raw material processing
