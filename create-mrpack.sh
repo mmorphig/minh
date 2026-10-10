@@ -23,7 +23,7 @@ mv scripts/minh-resources.zip build/minh/overrides/kubejs/assets
 
 cd build/minh/overrides/mods
 
-wget -i ../../../../external.txt
+wget -i ../../../../external-mods.txt
 
 cd ../../
 
