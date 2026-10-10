@@ -1,0 +1,34 @@
+{
+  "configVersion": 3,
+  "blurContainers": true,
+  "blurBooks": true,
+  "blurSigns": true,
+  "blurCommandBlocks": true,
+  "blurDeathScreen": false,
+  "blurTitleScreen": false,
+  "darkenTitleScreen": false,
+  "reduceInGameBlur": false,
+  "showScreenID": false,
+  "forceEnabledScreens": [
+    "dev.emi.emi.screen.RecipeScreen",
+    "mezz.jei.gui.recipes.RecipesGui",
+    "me.shedaniel.rei.impl.client.gui.screen.DefaultDisplayViewingScreen"
+  ],
+  "forceDisabledScreens": [
+    "net.irisshaders.iris.gui.screen.ShaderPackScreen",
+    "com.gugugaga233.dysoncubeprojectaddon.overhaul.client.gui.DysonHubScreen",
+    "com.gugugaga233.dysoncubeprojectaddon.overhaul.client.gui.DysonGuideScreen",
+    "com.gugugaga233.dysoncubeprojectaddon.overhaul.client.gui.DCPSettingsScreen"
+  ],
+  "useGradient": true,
+  "gradientStart": "#ff00ff",
+  "gradientStartAlpha": 5,
+  "gradientEnd": "#8800ff",
+  "gradientEndAlpha": 2,
+  "gradientRotation": 0,
+  "rainbowMode": false,
+  "fadeTimeMillis": 300,
+  "fadeOutTimeMillis": 108,
+  "blurAnimationCurve": "FLAT",
+  "backgroundAnimationCurve": "FLAT"
+}

@@ -1,0 +1,16 @@
+{
+  "structures": [
+    {
+      "structure": "minh:starter_island",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:concentric_rings",
+    "distance": 1,
+    "spread": 1,
+    "count": 1,
+    "salt": 12345,
+    "preferred_biomes": []
+  }
+}

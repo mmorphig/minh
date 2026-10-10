@@ -1,0 +1,42 @@
+{
+  "entity": "ars_nouveau:wilden_boss",
+  "name": {
+    "translate": "entity.ars_nouveau.wilden_boss",
+    "color": "#DAA520"
+  },
+  "display": {
+    "scale": 0.5
+  },
+  "sim_cost": 2560,
+  "input": {
+    "item": "hostilenetworks:prediction_matrix"
+  },
+  "base_drop": {
+    "id": "hostilenetworks:overworld_prediction"
+  },
+	"trivia": "custom.trivia.wilden_chimera",
+  "fabricator_drops": [
+		{
+      "id": "ars_nouveau:wilden_tribute",
+      "count": 1
+    },
+		{
+      "id": "ars_nouveau:wilden_spike",
+      "count": 16
+    },
+		{
+      "id": "ars_nouveau:wilden_horn",
+      "count": 16
+    },
+		{
+      "id": "ars_nouveau:wilden_wing",
+      "count": 16
+    }
+  ],
+  "data_per_kill": {
+    "faulty": 3,
+    "basic": 12,
+    "advanced": 30,
+    "superior": 45
+  }
+}

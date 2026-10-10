@@ -1,0 +1,34 @@
+{
+  "description": {
+    "translate": "enchantment.lostenchants.bulwark"
+  },
+  "supported_items": "#minecraft:enchantable/armor",
+  "weight": 1,
+  "max_level": 2,
+  "min_cost": {
+    "base": 20,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 65,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 8,
+  "slots": [
+    "armor"
+  ],
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "attribute": "minecraft:generic.knockback_resistance",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.15,
+          "per_level_above_first": 0.15
+        },
+        "operation": "add_value",
+        "id": "lostenchants:enchantment.bulwark"
+      }
+    ]
+  }
+}

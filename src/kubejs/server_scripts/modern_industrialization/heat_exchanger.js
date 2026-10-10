@@ -1,0 +1,51 @@
+ServerEvents.recipes(event => {
+  event.remove({ id: "modern_industrialization:materials/heat_exchanger/lava" })
+
+  event.recipes.modern_industrialization.heat_exchanger(4, 300)
+    .fluidIn("10000x mekanism:sodium") 
+    .fluidIn("16000x modern_industrialization:steam")
+    .fluidOut("10000x mekanism:superheated_sodium")
+    .fluidOut("1000x minecraft:water")
+
+  event.recipes.modern_industrialization.heat_exchanger(4, 300)
+    .fluidIn("10000x mekanism:sodium")
+    .fluidIn("2000x modern_industrialization:high_pressure_steam")
+    .fluidOut("10000x mekanism:superheated_sodium")
+    .fluidOut("1000x minecraft:water")
+
+  event.recipes.modern_industrialization.heat_exchanger(4, 300)
+    .fluidIn("10000x mekanism:sodium")
+    .fluidIn("16000x modern_industrialization:heavy_water_steam")
+    .fluidOut("10000x mekanism:superheated_sodium")
+    .fluidOut("1000x modern_industrialization:heavy_water")
+      
+  event.recipes.modern_industrialization.heat_exchanger(4, 300)
+    .fluidIn("10000x mekanism:sodium")
+    .fluidIn("2000x modern_industrialization:high_pressure_heavy_water_steam")
+    .fluidOut("10000x mekanism:superheated_sodium")
+    .fluidOut("1000x modern_industrialization:heavy_water")
+
+  event.recipes.modern_industrialization.heat_exchanger(4, 300)
+    .fluidOut("10000x mekanism:sodium") 
+    .fluidOut("16000x modern_industrialization:steam")
+    .fluidIn("10000x mekanism:superheated_sodium")
+    .fluidIn("1000x minecraft:water")
+
+  event.recipes.modern_industrialization.heat_exchanger(4, 300)
+    .fluidOut("10000x mekanism:sodium")
+    .fluidOut("2000x modern_industrialization:high_pressure_steam")
+    .fluidIn("10000x mekanism:superheated_sodium")
+    .fluidIn("1000x minecraft:water")
+
+  event.recipes.modern_industrialization.heat_exchanger(4, 300)
+    .fluidOut("10000x mekanism:sodium")
+    .fluidOut("16000x modern_industrialization:heavy_water_steam")
+    .fluidIn("10000x mekanism:superheated_sodium")
+    .fluidIn("1000x modern_industrialization:heavy_water")
+      
+  event.recipes.modern_industrialization.heat_exchanger(4, 300)
+    .fluidOut("10000x mekanism:sodium")
+    .fluidOut("2000x modern_industrialization:high_pressure_heavy_water_steam")
+    .fluidIn("10000x mekanism:superheated_sodium")
+    .fluidIn("1000x modern_industrialization:heavy_water")
+})

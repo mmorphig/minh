@@ -1,0 +1,24 @@
+{
+  "values": {
+    "modern_industrialization:cupronickel_coil": {
+      "max_eu": 32,
+      "speed_multiplier": 1.0,
+      "parallel_count": 8
+    },
+    "modern_industrialization:kanthal_coil": {
+      "max_eu": 128,
+      "speed_multiplier": 1.5,
+      "parallel_count": 16
+    },
+    "kubejs:nichrome_coil": {
+      "max_eu": 256,
+      "speed_multiplier": 2.5,
+      "parallel_count": 32
+    },
+    "kubejs:tpv_alloy_coil": {
+      "max_eu": 512,
+      "speed_multiplier": 5.5,
+      "parallel_count": 64
+    }
+  }
+}

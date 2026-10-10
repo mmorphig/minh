@@ -1,0 +1,22 @@
+{
+    "type": "create:mixing",
+    "ingredients": [
+        {
+            "type": "fluid_tag",
+            "amount": 144,
+            "fluid_tag": "c:molten_copper"
+        },
+        {
+            "type": "fluid_tag",
+            "amount": 144,
+            "fluid_tag": "c:molten_zinc"
+        }
+    ],
+    "results": [
+        {
+            "amount": 576,
+            "id": "createmetalwork:molten_brass"
+        }
+    ],
+    "heat_requirement": "superheated"
+}

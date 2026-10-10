@@ -1,0 +1,26 @@
+{
+    "neoforge:conditions": [
+        {
+            "type": "neoforge:mod_loaded",
+            "modid": "create_ironworks"
+        }
+    ],
+    "type": "create:mixing",
+    "ingredients": [
+        {
+            "type": "fluid_tag",
+            "amount": 144,
+            "fluid_tag": "c:molten_iron"
+        },
+        {
+            "tag": "minecraft:coal"
+        }
+    ],
+    "results": [
+        {
+            "amount": 144,
+            "id": "createmetalwork:molten_steel"
+        }
+    ],
+    "heat_requirement": "heated"
+}

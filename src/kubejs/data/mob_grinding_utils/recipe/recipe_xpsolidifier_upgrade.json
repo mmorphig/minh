@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:blaze_powder"
+    },
+    "R": {
+      "tag": "c:dusts/redstone"
+    },
+    "S": {
+      "item": "minecraft:sugar"
+    },
+    "X": {
+      "tag": "c:experience"
+    }
+  },
+  "pattern": [
+    "SRS",
+    "BXB",
+    "SRS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mob_grinding_utils:xp_solidifier_upgrade"
+  }
+}

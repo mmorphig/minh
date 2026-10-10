@@ -1,0 +1,34 @@
+{
+  "description": {
+    "translate": "enchantment.lostenchants.fleetfoot"
+  },
+  "supported_items": "#minecraft:enchantable/foot_armor",
+  "weight": 1,
+  "max_level": 2,
+  "min_cost": {
+    "base": 20,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 65,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 8,
+  "slots": [
+    "feet"
+  ],
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "attribute": "minecraft:generic.movement_speed",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.03,
+          "per_level_above_first": 0.03
+        },
+        "operation": "add_multiplied_base",
+        "id": "lostenchants:enchantment.fleetfoot"
+      }
+    ]
+  }
+}

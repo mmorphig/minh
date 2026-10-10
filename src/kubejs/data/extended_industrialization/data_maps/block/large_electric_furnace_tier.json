@@ -1,0 +1,12 @@
+{
+  "values": {
+    "kubejs:nichrome_coil": {
+      "batch_size": 48,
+      "eu_cost_multiplier": 0.75
+    },
+    "kubejs:tpv_alloy_coil": {
+      "batch_size": 64,
+      "eu_cost_multiplier": 0.75
+    }
+  }
+}

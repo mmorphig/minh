@@ -1,0 +1,82 @@
+{
+  "description": {
+    "translate": "enchantment.lostenchants.detonate"
+  },
+  "supported_items": "#minecraft:enchantable/weapon",
+  "weight": 1,
+  "max_level": 3,
+  "min_cost": {
+    "base": 20,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 65,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 8,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "affected": "victim",
+        "enchanted": "attacker",
+        "effect": {
+          "type": "minecraft:all_of",
+          "effects": [
+            {
+              "type": "minecraft:explode",
+              "block_interaction": "trigger",
+              "radius": 2.0,
+              "knockback_multiplier": 2.0,
+              "small_particle": {
+                "type": "minecraft:explosion"
+              },
+              "large_particle": {
+                "type": "minecraft:explosion_emitter"
+              },
+              "sound": "minecraft:entity.generic.explode"
+            },
+            {
+              "type": "minecraft:damage_entity",
+              "damage_type": "minecraft:explosion",
+              "min_damage": 4.0,
+              "max_damage": 8.0
+            },
+            {
+              "type": "minecraft:ignite",
+              "duration": {
+                "type": "minecraft:linear",
+                "base": 3.0,
+                "per_level_above_first": 1.0
+              }
+            }
+          ]
+        },
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:damage_source_properties",
+              "predicate": {
+                "is_direct": true
+              }
+            },
+            {
+              "condition": "minecraft:random_chance",
+              "chance": {
+                "type": "minecraft:enchantment_level",
+                "amount": {
+                  "type": "minecraft:linear",
+                  "base": 0.2,
+                  "per_level_above_first": 0.1
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

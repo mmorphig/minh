@@ -1,0 +1,33 @@
+#MAX parallel processing count for Bronze Parallel Control Hatch
+# Default: 2
+# Range: > 1
+bronzeParallelCount = 2
+#MAX parallel processing count for Steel Parallel Control Hatch
+# Default: 8
+# Range: > 1
+steelParallelCount = 8
+#MAX parallel processing count for Basic Parallel Control Hatch
+# Default: 32
+# Range: > 1
+basicParallelCount = 32
+#MAX parallel processing count for Advanced Parallel Control Hatch
+# Default: 64
+# Range: > 1
+advancedParallelCount = 64
+#MAX parallel processing count for Turbo Parallel Control Hatch
+# Default: 128
+# Range: > 1
+turboParallelCount = 128
+#MAX parallel processing count for Highly Advanced Parallel Control Hatch
+# Default: 256
+# Range: > 1
+highlyAdvancedParallelCount = 256
+#MAX parallel processing count for Quantum Parallel Control Hatch
+# Default: 1024
+# Range: > 1
+QuantumParallelCount = 1024
+#Additional energy multiplier applied for each extra parallel craft.
+#Total factor = 1 + (parallelCount - 1) * parallelExtraEnergyMultiplier
+# Default: 1.0
+# Range: 0.0 ~ 3.4028234663852886E38
+parallelExtraEnergyMultiplier = 1.0

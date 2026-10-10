@@ -1,0 +1,7 @@
+build/*
+minh-data/
+minh-resources/
+materialsets/
+.vscode/
+*.tmp
+*.cache

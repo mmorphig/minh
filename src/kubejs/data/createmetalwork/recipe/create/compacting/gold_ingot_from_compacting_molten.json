@@ -1,0 +1,17 @@
+{
+    "type": "create:compacting",
+    "ingredients": [
+        {
+            "type": "fluid_tag",
+            "amount": 144,
+            "fluid_tag": "c:molten_gold"
+        }
+    ],
+    "results": [
+        {
+            "item": {
+                "id": "minecraft:gold_ingot"
+            }
+        }
+    ]
+}

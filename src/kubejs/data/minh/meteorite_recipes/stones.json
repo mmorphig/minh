@@ -1,0 +1,16 @@
+{
+  "input": "modern_industrialization:copper_drill",
+  "source": 80,
+  "default": 0,
+  "catalysts": "ars_nouveau:source_gem",
+  "meteorites": [
+    "minecraft:stone",
+    "minecraft:andesite",
+    "minecraft:dirt",
+    "minecraft:tuff",
+    "minecraft:granite",
+    "minecraft:diorite",
+    "minecraft:cobbled_deepslate"
+  ],
+  "weights": [25, 25, 20, 5, 5, 5, 15]
+}

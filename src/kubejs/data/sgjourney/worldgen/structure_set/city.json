@@ -1,0 +1,21 @@
+{
+	"structures":
+	[
+		{
+			"structure": "sgjourney:city/abydos_city",
+			"weight": 1
+		}
+	],
+	"placement":
+	{
+		"salt": 23448872,
+		"spacing": 48,
+		"separation": 32,
+		"type": "minecraft:random_spread",
+		"exclusion_zone":
+		{
+			"chunk_count": 4,
+			"other_set": "sgjourney:stargate_temple"
+		}
+	}
+}

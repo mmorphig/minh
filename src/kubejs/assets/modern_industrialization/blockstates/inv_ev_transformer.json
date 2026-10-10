@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "modern_industrialization:block/inv_ev_transformer"
+    }
+  }
+}

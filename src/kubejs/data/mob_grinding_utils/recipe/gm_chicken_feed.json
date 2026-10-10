@@ -1,0 +1,19 @@
+{
+  "type": "mob_grinding_utils:chicken_feed",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:seeds"
+    },
+    {
+      "item": "mob_grinding_utils:mob_swab_used"
+    },
+    {
+      "tag": "c:experience"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "mob_grinding_utils:gm_chicken_feed"
+  }
+}

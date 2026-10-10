@@ -1,0 +1,75 @@
+{
+  "description": {
+    "translate": "enchantment.lostenchants.explosive_shot"
+  },
+  "supported_items": "#c:tools/ranged_weapon",
+  "weight": 1,
+  "max_level": 3,
+  "min_cost": {
+    "base": 20,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 65,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 8,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "affected": "victim",
+        "enchanted": "attacker",
+        "effect": {
+          "type": "minecraft:all_of",
+          "effects": [
+            {
+              "type": "minecraft:explode",
+              "block_interaction": "trigger",
+              "radius": 2.5,
+              "knockback_multiplier": 1.5,
+              "small_particle": {
+                "type": "minecraft:explosion"
+              },
+              "large_particle": {
+                "type": "minecraft:explosion_emitter"
+              },
+              "sound": "minecraft:entity.generic.explode"
+            },
+            {
+              "type": "minecraft:damage_entity",
+              "damage_type": "minecraft:explosion",
+              "min_damage": 3.0,
+              "max_damage": 6.0
+            }
+          ]
+        },
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "direct_attacker",
+              "predicate": {
+                "minecraft:entity_type": "#minecraft:arrows"
+              }
+            },
+            {
+              "condition": "minecraft:random_chance",
+              "chance": {
+                "type": "minecraft:enchantment_level",
+                "amount": {
+                  "type": "minecraft:linear",
+                  "base": 0.25,
+                  "per_level_above_first": 0.12
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

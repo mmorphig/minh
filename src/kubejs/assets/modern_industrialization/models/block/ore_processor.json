@@ -1,0 +1,10 @@
+{
+  "casing": "titanium",
+  "default_overlays": {
+    "front": "extended_industrialization:block/machines/large_macerator/overlay_front",
+    "front_active": "extended_industrialization:block/machines/large_macerator/overlay_front_active",
+    "item_auto": "modern_industrialization:block/overlays/item_auto",
+    "output": "modern_industrialization:block/overlays/output"
+  },
+  "loader": "modern_industrialization:machine"
+}

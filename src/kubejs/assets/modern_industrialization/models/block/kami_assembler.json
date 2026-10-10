@@ -1,0 +1,12 @@
+{
+  "loader": "modern_industrialization:machine",
+  "casing": "lv",
+  "default_overlays": {
+    "output": "modern_industrialization:block/overlays/output",
+    "item_auto": "modern_industrialization:block/overlays/item_auto",
+    "front": "modern_industrialization:block/machines/kami_assembler/overlay_front",
+    "front_active": "modern_industrialization:block/machines/kami_assembler/overlay_front",
+    "top": "modern_industrialization:block/machines/assembler/overlay_top",
+    "top_active": "modern_industrialization:block/machines/assembler/overlay_top_active"
+  }
+}
