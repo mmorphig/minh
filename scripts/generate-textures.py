@@ -1,4 +1,4 @@
-
+import numpy as np
 import json
 from pathlib import Path
 
@@ -7,9 +7,9 @@ from PIL import Image, ImageOps, ImageEnhance
 MATERIALS_FILE = Path("materials.json")
 SOURCE_DIR = Path("materialsets")
 OUTPUT_DIR = Path("minh-resources/assets/modern_industrialization/textures")
+GRADIENT_MAPS_DIR = Path(OUTPUT_DIR / "gradient_maps")
 
-SHADOW_FACTOR = 0.30
-HIGHLIGHT_FACTOR = 1.30
+BRIGHTNESS = 0.90
 
 ITEM_TEXTURES = {
     "plate": "plate",
@@ -79,19 +79,82 @@ def scaled_color(hex_color, factor):
     )
 
 
-def recolor(image, hex_color):
-    rgba = image.convert("RGBA")
-    alpha = rgba.getchannel("A")
-    grayscale = rgba.convert("L")
+def make_gradient_map(hex_color, output_path):
+    hex_color = hex_color.lstrip("#")
+    target = tuple(int(hex_color[i:i + 2], 16) for i in (0, 2, 4))
 
-    tinted = ImageOps.colorize(
-        grayscale,
-        black=scaled_color(hex_color, SHADOW_FACTOR),
-        white=scaled_color(hex_color, HIGHLIGHT_FACTOR),
-    ).convert("RGBA")
+    pixels = []
 
-    tinted.putalpha(alpha)
-    return tinted
+    for i in range(256):
+        if i <= 128:
+            factor = i / 128
+            rgb = tuple(int(channel * factor) for channel in target)
+        else:
+            factor = (i - 128) / 127
+            rgb = tuple(
+                int(channel + (255 - channel) * factor)
+                for channel in target
+            )
+
+        pixels.append((*tuple(int(c * BRIGHTNESS) for c in rgb), 255))
+
+    image = Image.new("RGBA", (256, 1))
+    image.putdata(pixels)
+
+    output_path = Path(output_path)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    image.save(output_path)
+
+
+def generate_gradient_maps(materials):
+    for material, config in materials.items():
+        color = config.get("color")
+        if not color:
+            continue
+
+        make_gradient_map(
+            color,
+            GRADIENT_MAPS_DIR / f"{material}.png",
+        )
+
+
+def recolor(image, hex_color, gradient_map=None):
+    image = image.convert("RGBA")
+    alpha = image.getchannel("A")
+
+    mean_rgb = tuple(
+        int(hex_color.lstrip("#")[i:i + 2], 16)
+        for i in (0, 2, 4)
+    )
+
+    if gradient_map is not None:
+        with Image.open(gradient_map) as source:
+            ramp_image = source.convert("RGBA")
+            if ramp_image.size != (256, 1):
+                raise ValueError(
+                    f"MI gradient map must be 256x1, got {ramp_image.size}"
+                )
+            ramp = [
+                ramp_image.getpixel((i, 0))[:3]
+                for i in range(256)
+            ]
+    else:
+        ramp = [
+            tuple(channel * i // 255 for channel in mean_rgb)
+            for i in range(256)
+        ]
+
+    pixels = []
+    for r, g, b, _a in image.getdata():
+        luminance = (0.2126 * r + 0.7152 * g + 0.0722 * b) / 255
+
+        index = int(luminance * 255)
+        pixels.append((*ramp[index], 255))
+
+    result = Image.new("RGBA", image.size)
+    result.putdata(pixels)
+    result.putalpha(alpha)
+    return result
 
 
 def save_texture(image, folder, filename):
@@ -102,7 +165,7 @@ def save_texture(image, folder, filename):
     return True
 
 
-def make_item_texture(material, color, form, source_name=None):
+def make_item_texture(material, color, form, source_name=None, shiny=False):
     source_name = source_name or form
     source_path = SOURCE_DIR / "common" / f"{source_name}.png"
     image = load_texture(source_path)
@@ -111,7 +174,22 @@ def make_item_texture(material, color, form, source_name=None):
         print(f"MISSING {source_path}")
         return False
 
-    image = recolor(image, color)
+    image = recolor(image, color, Path(GRADIENT_MAPS_DIR / f"{material}.png"))
+
+    if shiny:
+        overlay_path = SOURCE_DIR / "shiny" / f"{form}_overlay.png"
+        overlay = load_texture(overlay_path)
+
+        if overlay is None:
+            print(f"[MISSING] {overlay_path}")
+        else:
+            if overlay.size != image.size:
+                overlay = overlay.resize(
+                    image.size, Image.Resampling.NEAREST
+                )
+
+            image.alpha_composite(overlay)
+
     return save_texture(image, "item", f"{material}_{form}")
 
 
@@ -124,7 +202,7 @@ def make_layered_texture(material, color, base_name, output_name, overlay_name=N
         print(f"MISSING {base_path}")
         return False
 
-    base = recolor(base, color)
+    base = recolor(base, color, Path(GRADIENT_MAPS_DIR / f"{material}.png"))
 
     if overlay_name is not None:
         overlay_path = common / f"{overlay_name}.png"
@@ -228,7 +306,7 @@ def make_coil_blocks(material, color):
             continue
 
         if save_texture(
-            recolor(image, color),
+            recolor(image, color, Path(GRADIENT_MAPS_DIR / f"{material}.png")),
             "block",
             f"{material}_coil_{part}",
         ):
@@ -284,7 +362,7 @@ def make_material_block(material, color, form, source_name, custom_name=False):
     output_name = form if custom_name else f"{material}_{form}"
 
     return save_texture(
-        recolor(image, color),
+        recolor(image, color, Path(GRADIENT_MAPS_DIR / f"{material}.png")),
         "block",
         output_name,
     )
@@ -337,7 +415,7 @@ def make_ore_blocks(material, material_set, color):
         print(f"MISSING {ore_path}")
         return generated
 
-    tinted_overlay = recolor(ore_overlay, color)
+    tinted_overlay = recolor(ore_overlay, color, Path(GRADIENT_MAPS_DIR / f"{material}.png"))
 
     for prefix, base_name in (
         ("", "stone"),
@@ -384,10 +462,12 @@ def generate_material(material, config):
     print(f"\n{material} ({color}, {material_set})")
 
     for form, source_name in ITEM_TEXTURES.items():
-        if not enabled(config, form):
+        value = config.get(form, False)
+
+        if value is False or value is None:
             continue
 
-        if make_item_texture(material, color, form, source_name):
+        if make_item_texture(material, color, form, source_name, shiny=(value == "shiny")):
             generated += 1
 
     if enabled(config, "hot_ingot"):
@@ -397,7 +477,7 @@ def generate_material(material, config):
         if image is None:
             print(f"MISSING {source_path}")
         else:
-            image = recolor(image, color)
+            image = recolor(image, color, Path(GRADIENT_MAPS_DIR / f"{material}.png"))
 
             alpha = image.getchannel("A")
             image = ImageEnhance.Brightness(image).enhance(1.6)
@@ -436,7 +516,6 @@ def generate_material(material, config):
                 material, selected_material_set, form
             ):
                 generated += 1
-
         elif form in ("casing", "casing_special"):
             if isinstance(value, str):
                 output_name = texture_filename(value)
@@ -496,6 +575,8 @@ def main():
         materials = json.load(file)
 
     total_generated = 0
+
+    generate_gradient_maps(materials)
 
     for material, config in materials.items():
         if not isinstance(config, dict):

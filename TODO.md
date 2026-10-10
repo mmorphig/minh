@@ -21,3 +21,4 @@ Add default settings file that unbinds a lot of keys because of the overlapping 
 Maybe add more parts for materials?
 Make own texture for molds (I've been using GTCEu's but not putting those here)
 Put the MIT License notice in relevant files
+Create a proper name for the project

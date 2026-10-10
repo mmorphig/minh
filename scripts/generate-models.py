@@ -20,9 +20,8 @@ def write_json(path, data):
 
 def enabled(value):
     return value is True or (
-        isinstance(value, (int, float))
+        isinstance(value, (int, float, str))
         and not isinstance(value, bool)
-        and value > 0
     )
 
 
