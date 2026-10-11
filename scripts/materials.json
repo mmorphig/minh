@@ -545,7 +545,7 @@
         "rotor": false,
         "blade": false,
         "battery": false,
-        "ingot_block": true,
+        "ingot_block": false,
         "dust_block": false,
         "casing": false,
         "casing_special": false,
@@ -571,7 +571,7 @@
         "wire": false,
         "cable": false,
         "fine_wire": false,
-        "ore_block": false,
+        "ore_block": true,
         "raw_ore": true,
         "crushed_dust": true
     }

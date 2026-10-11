@@ -368,6 +368,9 @@ def make_material_block(material, color, form, source_name, custom_name=False):
     )
 
 def make_material_set_block(material, material_set, form):
+    if material_set == "gem":
+        material_set = "emerald"
+
     source_path = SOURCE_DIR / "blocks" / f"{material_set}.png"
     image = load_texture(source_path)
 
@@ -380,6 +383,9 @@ def make_material_set_block(material, material_set, form):
 
 def make_raw_textures(material, material_set):
     generated = 0
+
+    if material_set == "iridium":
+        material_set = "iron"
 
     raw_item_path = SOURCE_DIR / "raw" / f"{material_set}.png"
     raw_item = load_texture(raw_item_path)
@@ -408,6 +414,12 @@ def make_raw_textures(material, material_set):
 
 def make_ore_blocks(material, material_set, color):
     generated = 0
+
+    if material_set == "iridium":
+        material_set = "iron"
+    elif material_set == "gem":
+        material_set = "emerald"
+    
     ore_path = SOURCE_DIR / "ores" / f"{material_set}.png"
     ore_overlay = load_texture(ore_path)
 
@@ -467,6 +479,13 @@ def generate_material(material, config):
         if value is False or value is None:
             continue
 
+        if form == "ingot" and material_set == "gem":
+            source_name = "gem"
+            form = "gem"
+        elif form == "ingot" and material_set == "crystal":
+            source_name = "crystal"
+            form = "crystal"
+
         if make_item_texture(material, color, form, source_name, shiny=(value == "shiny")):
             generated += 1
 
@@ -513,7 +532,7 @@ def generate_material(material, config):
                 selected_material_set = material_set
 
             if make_material_set_block(
-                material, selected_material_set, form
+                material, selected_material_set, "block"
             ):
                 generated += 1
         elif form in ("casing", "casing_special"):
