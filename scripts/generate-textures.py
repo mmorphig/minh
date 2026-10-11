@@ -370,6 +370,8 @@ def make_material_block(material, color, form, source_name, custom_name=False):
 def make_material_set_block(material, material_set, form):
     if material_set == "gem":
         material_set = "emerald"
+    if material_set == "crystal":
+        material_set = "crystal_block"
 
     source_path = SOURCE_DIR / "blocks" / f"{material_set}.png"
     image = load_texture(source_path)
