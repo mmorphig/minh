@@ -52,7 +52,7 @@ MIMachineEvents.registerMachines(event => {
 
 //#endregion
 
-//#region particle accelerator
+//#region Particle Accelerator
 
 let PARTICLE_ACCELERATOR
 

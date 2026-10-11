@@ -48,9 +48,8 @@ def texture_filename(name):
 def enabled(config, key):
     value = config.get(key, False)
     return value is True or (
-        isinstance(value, (int, float))
+        isinstance(value, (int, float, str))
         and not isinstance(value, bool)
-        and value > 0
     )
 
 
@@ -79,7 +78,11 @@ def scaled_color(hex_color, factor):
     )
 
 
-def make_gradient_map(hex_color, output_path):
+def make_gradient_map(hex_color, output_path, is_dark):
+    dark = 1
+    if is_dark:
+        dark = 0.25
+
     hex_color = hex_color.lstrip("#")
     target = tuple(int(hex_color[i:i + 2], 16) for i in (0, 2, 4))
 
@@ -96,7 +99,7 @@ def make_gradient_map(hex_color, output_path):
                 for channel in target
             )
 
-        pixels.append((*tuple(int(c * BRIGHTNESS) for c in rgb), 255))
+        pixels.append((*tuple(int(c * BRIGHTNESS * dark) for c in rgb), 255))
 
     image = Image.new("RGBA", (256, 1))
     image.putdata(pixels)
@@ -111,10 +114,13 @@ def generate_gradient_maps(materials):
         color = config.get("color")
         if not color:
             continue
+        
+        dark = config.get("dark")
 
         make_gradient_map(
             color,
             GRADIENT_MAPS_DIR / f"{material}.png",
+            dark
         )
 
 
@@ -367,7 +373,7 @@ def make_material_block(material, color, form, source_name, custom_name=False):
         output_name,
     )
 
-def make_material_set_block(material, material_set, form):
+def make_material_set_block(material, color, material_set, form):
     if material_set == "gem":
         material_set = "emerald"
     if material_set == "crystal":
@@ -380,7 +386,11 @@ def make_material_set_block(material, material_set, form):
         print(f"MISSING {source_path}")
         return False
 
-    return save_texture(image, "block", f"{material}_{form}")
+    return save_texture(
+        recolor(image, color, Path(GRADIENT_MAPS_DIR / f"{material}.png")),
+        "block",
+        f"{material}_{form}",
+    )
 
 
 def make_raw_textures(material, material_set):
@@ -534,7 +544,7 @@ def generate_material(material, config):
                 selected_material_set = material_set
 
             if make_material_set_block(
-                material, selected_material_set, "block"
+                material, color, selected_material_set, "block"
             ):
                 generated += 1
         elif form in ("casing", "casing_special"):

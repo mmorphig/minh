@@ -1,23 +1,46 @@
-Testing (I haven't even tried to open this in-game, just testing that modrinth could open the .mrpack)
-Adding breeding U-238 fuel rods to autogen
-Properly switch from kubejs-generated coils and items to MI-generated ones that are already added
-Move other kubejs MI materials to be MI-generated (ex: alumina)
-Adding more raw materials & raw material processing
-Filling in all the quest book entries for the tiers
-Properly figuring out progression through the tiers
-Creating textures and recipes for EV+ machine casings and hulls
-Creating EV+ betteries
-Adding more special multiblocks
-Adding multiblock upgrades of singleblock machines (might need more Java modding)
-Processing arrays should eventually be disabled with enough alternative multiblocks, not the machine chainer though
-Adding more tiered cables & removing mekanism cables, IE/SA wires
-Fixing that fluid slot issue with the particle accelerator
-Probably some recipe autogen is missing, fill those in wherever needed
-Clear out unneeded files in the kubejs data directory
-Add checks to make sure sh files don't go into directories they shouldn't go into (happend before, needs proper fix)
-Probably remove electrodynamics (and deps)
-Add default settings file that unbinds a lot of keys because of the overlapping ones
-Maybe add more parts for materials?
-Make own texture for molds (I've been using GTCEu's but not putting those here)
-Put the MIT License notice in relevant files
-Create a proper name for the project
+# Pack stuff:
+
+Testing (I haven't even tried to open this in-game, just testing that modrinth could open the .mrpack).<br>
+Put the MIT License notice in relevant files.<br>
+Create a proper name for the project.<br>
+
+# KubeJS:
+
+Properly switch from kubejs-generated coils and items to MI-generated ones that are already added.<br>
+Adding more raw materials & raw material processing.<br>
+Clear out unneeded files in the kubejs data directory.<br>
+
+# Progression
+
+Filling in all the quest book entries for the tiers.<br>
+Properly figuring out progression through the tiers.<br>
+Creating EV+ betteries.<br>
+Adding more tiered cables & removing mekanism cables, IE/SA wires.<br>
+
+# Materials:
+
+Manual tantalum carbide recipe, EBF Ta with carbon powder at 1024 EU/t.<br>
+Chaos ingot production.<br>
+Adding breeding U-238 fuel rods to autogen.<br>
+Probably some recipe autogen is missing, fill those in wherever needed.<br>
+Move kubejs MI materials to be MI-generated (ex: alumina).<br>
+Maybe add more custom parts for materials?<br>
+
+# Assets
+Make own texture for molds (I've been using GTCEu's but not putting those here).<br>
+Creating textures and recipes for EV+ machine casings and hulls.<br>
+
+# Machines
+Adding more special multiblocks.<br>
+Adding multiblock upgrades of singleblock machines (might need more Java modding).<br>
+Processing arrays should eventually be disabled with enough alternative multiblocks, not the machine chainer though.<br>
+
+# Bugs
+Fixing that fluid slot issue with the particle accelerator.<br>
+Add checks to make sure sh files don't go into directories they shouldn't go into (happened before, needs proper fix).<br>
+
+# Mods
+Probably remove electrodynamics (and deps).<br>
+
+# General Minecraft Stuff
+Add default settings file that unbinds a lot of keys because of the overlapping ones.<br>

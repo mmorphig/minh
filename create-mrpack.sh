@@ -27,8 +27,8 @@ wget -i ../../../../external-mods.txt
 
 cd ../../
 
-#zip to mrpack
+#zip to mrpack 0 compression because it's not THAT big
 
-zip -r ../minh.mrpack .
+zip -0 -r ../minh.mrpack .
 
 cd ../..
