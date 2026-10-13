@@ -119,13 +119,13 @@ def js_value(value):
 
 
 def generate_material(name, config):
-    display_name = config.get("display_name", title_case(name))
+    display_name = title_case(name)
     color = config.get("color", "#FFFFFF")
     hardness = config.get("hardness", DEFAULT_HARDNESS)
     material_set = config.get("material_set", DEFAULT_MATERIAL_SET)
 
     lines = [
-        f"  event.createMaterial({js_string(display_name)}, {js_string(name)}, {js_string(color)},",
+        f"  event.createMaterial({js_string(display_name)}, {js_string(name)}, {color.replace("#", "0x")},",
         "    builder => { builder",
         f"      .hardness({hardness})",
         f"      .materialSet({js_string(material_set)})",
