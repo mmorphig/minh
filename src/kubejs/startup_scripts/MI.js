@@ -18,6 +18,7 @@ MIRegistrationEvents.registerCableTiers(event => {
 })
 
 // public void createMaterial(String englishName, String materialName, int color, Consumer<MaterialBuilderJSWrapper> builder) {
+/*
 MIMaterialEvents.addMaterials(event => {
   event.createMaterial("Nichrome", "nichrome", 0xFFCCFF, 
     builder => { builder
@@ -133,13 +134,17 @@ MIMaterialEvents.addMaterials(event => {
   createFullMaterial("Osmium", "osmium",  0x263D4D, "hard")
   createFullMaterial("Arsenic", "arsenic",  0x527B86, "soft")
 })
+*/
 
 // Voltage capacity of the coils is only 2^x while tiers are 4^x
 // Which means that every tier allows more and more total machines and overclocks
 // Some tiers have 2 coils though, to even it out
 MIMachineEvents.addEbfTiers(event => {
-  event.add("kubejs:nichrome_coil", 256, "Nichrome")
-  event.add("kubejs:tpv_alloy_coil", 512, "TPV Alloy")
+  event.add("modern_industrialization:nichrome_coil", 256, "Nichrome")
+  event.add("modern_industrialization:tpv_alloy_coil", 512, "TPV Alloy")
+  event.add("modern_industrialization:hss_g_coil", 1024, "HSS-G")
+  event.add("modern_industrialization:tantalum_carbide_coil", 2048, "Tantalum Carbide")
+  event.add("modern_industrialization:chaos_coil", 4096, "Chaos")
 })
 
 MIRegistrationEvents.registerFluidNeutronInteractions(event => {

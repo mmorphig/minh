@@ -1,10 +1,10 @@
 {
   "values": {
-    "kubejs:nichrome_coil": {
+    "modern_industrialization:nichrome_coil": {
       "batch_size": 48,
       "eu_cost_multiplier": 0.75
     },
-    "kubejs:tpv_alloy_coil": {
+    "modern_industrialization:tpv_alloy_coil": {
       "batch_size": 64,
       "eu_cost_multiplier": 0.75
     }

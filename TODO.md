@@ -20,6 +20,7 @@ Adding more tiered cables & removing mekanism cables, IE/SA wires.<br>
 # Materials:
 
 Manual tantalum carbide recipe, EBF Ta with carbon powder at 1024 EU/t.<br>
+HSS-G ingot production. Mixing steel with chromium, molybdenum, tungsten and vanadium.<br>
 Chaos ingot production.<br>
 Adding breeding U-238 fuel rods to autogen.<br>
 Probably some recipe autogen is missing, fill those in wherever needed.<br>

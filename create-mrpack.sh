@@ -10,11 +10,19 @@ mkdir -p build/minh/overrides/mods
 
 cp -r src/* build/minh/overrides/
 
-#create packs
+#generate & copy in generated kubejs scripts
 
 cd scripts
+python3 ./generate-material-startup-js.py
+
+#create packs
+
 sh create-full-packs.sh
 cd ..
+
+#move generated files into place
+
+mv build/materials-generated.js build/minh/overrides/kubejs/startup_scripts
 
 mv scripts/minh-data.zip build/minh/overrides/kubejs/data
 mv scripts/minh-resources.zip build/minh/overrides/kubejs/assets
