@@ -9,6 +9,7 @@ Create a proper name for the project.<br>
 Properly switch from kubejs-generated coils and items to MI-generated ones that are already added.<br>
 Adding more raw materials & raw material processing.<br>
 Clear out unneeded files in the kubejs data directory.<br>
+Fix battery creation.<br>
 
 # Progression
 
@@ -30,6 +31,7 @@ Maybe add more custom parts for materials?<br>
 # Assets
 Make own texture for molds (I've been using GTCEu's but not putting those here).<br>
 Creating textures and recipes for EV+ machine casings and hulls.<br>
+Make pure gold dust more yellow, I've given up tuning it for now.<br>
 
 # Machines
 Adding more special multiblocks.<br>

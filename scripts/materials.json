@@ -519,7 +519,7 @@
     },
     "pure_gold": {
         "material_set": "gold",
-        "color": "eda72a",
+        "color": "#EDA72A",
         "dark": false,
         "rotor": false,
         "blade": false,

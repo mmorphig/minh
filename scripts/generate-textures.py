@@ -393,7 +393,7 @@ def make_material_set_block(material, color, material_set, form):
     )
 
 
-def make_raw_textures(material, material_set):
+def make_raw_textures(material, material_set, color):
     generated = 0
 
     if material_set == "iridium":
@@ -405,7 +405,7 @@ def make_raw_textures(material, material_set):
     if raw_item is None:
         print(f"MISSING {raw_item_path}")
     else:
-        if save_texture(raw_item, "item", f"raw_{material}"):
+        if save_texture(recolor(raw_item, color, Path(GRADIENT_MAPS_DIR / f"{material}.png")), "item", f"raw_{material}"):
             generated += 1
 
     raw_block_path = (
@@ -417,7 +417,7 @@ def make_raw_textures(material, material_set):
         print(f"MISSING {raw_block_path}")
     else:
         if save_texture(
-            raw_block, "block", f"raw_{material}_block"
+            recolor(raw_block, color, Path(GRADIENT_MAPS_DIR / f"{material}.png")), "block", f"raw_{material}_block"
         ):
             generated += 1
 
@@ -580,7 +580,7 @@ def generate_material(material, config):
         generated += make_tank_texture(material, color)
 
     if enabled(config, "raw_ore"):
-        generated += make_raw_textures(material, material_set)
+        generated += make_raw_textures(material, material_set, color)
 
     if enabled(config, "ore_block"):
         generated += make_ore_blocks(

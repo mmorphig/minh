@@ -9,9 +9,6 @@ DEFAULT_MATERIAL_SET = "metallic"
 PARTS = [
     "rotor",
     "blade",
-    "battery",
-    "ingot_block",
-    "dust_block",
     "barrel",
     "tank",
     "fuel_rods",
@@ -32,8 +29,6 @@ PARTS = [
     "coil",
     "wire",
     "fine_wire",
-    "ore_block",
-    "raw_ore",
     "crushed_dust",
 ]
 
@@ -61,7 +56,8 @@ SPECIAL_PROPERTIES = {
 
 METHODS = {
     "material_set": "materialSet",
-    "casing_special": "casing",
+    "casing": "machineCasing",
+    "casing_special": "specialCasing",
     "pipe_casing": "pipeCasing",
     "fuel_rods": "fuelRod",
     "ingot_block": "ingotBlock",
@@ -72,9 +68,6 @@ METHODS = {
 BOOLEAN_PARTS = {
     "rotor",
     "blade",
-    "battery",
-    "ingot_block",
-    "dust_block",
     "barrel",
     "tank",
     "fuel_rods",
@@ -83,6 +76,7 @@ BOOLEAN_PARTS = {
     "rod",
     "plate",
     "ingot",
+    "hot_ingot"
     "dust",
     "tiny_dust",
     "nugget",
@@ -127,8 +121,8 @@ def generate_material(name, config):
     lines = [
         f"  event.createMaterial({js_string(display_name)}, {js_string(name)}, {color.replace("#", "0x")},",
         "    builder => { builder",
-        f"      .hardness({hardness})",
-        f"      .materialSet({js_string(material_set)})",
+        f"      .hardness({js_string(hardness)})",
+        f"      .materialSet({js_string("metallic")})",
     ]
 
     parts = []
@@ -139,7 +133,10 @@ def generate_material(name, config):
         if value is False or value is None:
             continue
 
-        if part in BOOLEAN_PARTS and value is True:
+        if part == "battery":
+            continue
+
+        if part in BOOLEAN_PARTS and value is not False:
             parts.append(js_string(part))
         elif part not in BOOLEAN_PARTS and value is not False:
             parts.append(js_string(part))
@@ -153,6 +150,8 @@ def generate_material(name, config):
 
     if config.get("ore_block", False) or config.get("raw_ore", False):
         ore_set = config.get("ore_set", material_set)
+        if ore_set == "iridium":
+                ore_set = "iron"
         generate = config.get("ore_generate", False)
         biome_tag = config.get(
             "biome_tag", "minecraft:is_overworld"
@@ -180,9 +179,11 @@ def generate_material(name, config):
         ])
 
     if config.get("raw_ore", False):
-        lines.append(
-            f"      .rawMetal({js_string(config.get('raw_metal', material_set))})"
-        )
+        material = config.get('raw_metal', material_set)
+        if not (material == "crystal" or material == "gem"):
+            lines.append(
+                f"      .rawMetal({js_string(material)})"
+            )
 
     cable = config.get("cable", False)
     if cable:
@@ -196,7 +197,7 @@ def generate_material(name, config):
             if isinstance(casing_special, str)
             else title_case(name) + " Machine Casing"
         )
-        lines.append(f"        .casing({js_string(casing_name)})")
+        lines.append(f"      .specialCasing{title_case(casing_name), casing_name}")
 
     lines.extend([
         "    }",
