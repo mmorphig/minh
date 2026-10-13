@@ -212,7 +212,7 @@ def main():
 
     output = [
         "// Auto-generated",
-        "ServerEvents.registry('modern_industrialization:materials', event => {",
+        "MIMaterialEvents.addMaterials(event => {",
     ]
 
     for name, config in materials.items():
