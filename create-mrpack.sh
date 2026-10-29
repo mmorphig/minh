@@ -8,7 +8,19 @@ mkdir -p build/minh/overrides/mods
 
 #copy in manual overrides
 
-cp -r src/* build/minh/overrides/
+cp -r src/overrides/* build/minh/overrides/
+
+#generate optional datapacks
+
+cd src/datapacks
+
+cd seablock
+
+7z a ../../../build/minh/datapacks/seablock.zip *
+
+cd ../
+
+cd ../../
 
 #generate & copy in generated kubejs scripts
 

@@ -3,6 +3,8 @@
 Testing (I haven't even tried to open this in-game, just testing that modrinth could open the .mrpack).<br>
 Put the MIT License notice in relevant files.<br>
 Create a proper name for the project.<br>
+Change seablock island generation to only give needed items, remove once there are no needed items.<br>
+Add skyblock optional datapack.<br>
 
 # KubeJS:
 
@@ -44,6 +46,9 @@ Add checks to make sure sh files don't go into directories they shouldn't go int
 
 # Mods
 Probably remove electrodynamics (and deps).<br>
+Could remove Ars Nouveau, or have it be optional to automate.<br>
+Remove Ars Meteorites, Neo Vitae's meteors might work better.<br>
+Add some worldgen mods: Biomes O' Plenty, Tectonic, Terralith.<br>
 
 # General Minecraft Stuff
 Add default settings file that unbinds a lot of keys because of the overlapping ones.<br>

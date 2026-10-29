@@ -5,9 +5,9 @@ from pathlib import Path
 INPUT_FILE = Path("./materials.json")
 OUTPUT_DIR = Path("./minh-data/data")
 
-NAMESPACE = "minh"
+NAMESPACE = "modern_industrialization"
 LANG_FILE = Path(
-    f"{OUTPUT_DIR}/../../{NAMESPACE}-resources/assets/{NAMESPACE}/lang/en_us.json"
+    f"{OUTPUT_DIR}/../../minh-resources/assets/minh/lang/en_us.json"
 )
 
 
