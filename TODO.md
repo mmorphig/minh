@@ -22,6 +22,7 @@ Filling in all the quest book entries for the tiers.<br>
 Properly figuring out progression through the tiers.<br>
 Creating EV+ betteries.<br>
 Adding more tiered cables & removing mekanism cables, IE/SA wires.<br>
+Add way to exit the Minestuck Medium.<br>
 
 # Materials:
 
@@ -34,24 +35,32 @@ Move kubejs MI materials to be MI-generated (ex: alumina).<br>
 Maybe add more custom parts for materials?<br>
 
 # Assets
+
 Make own texture for molds (I've been using GTCEu's but not putting those here).<br>
 Creating textures and recipes for EV+ machine casings and hulls.<br>
 Make pure gold dust more yellow, I've given up tuning it for now.<br>
+Add some custom panoramas to the menu, or static pictures, just something.<br>
 
 # Machines
+
 Adding more special multiblocks.<br>
 Adding multiblock upgrades of singleblock machines (might need more Java modding).<br>
 Processing arrays should eventually be disabled with enough alternative multiblocks, not the machine chainer though.<br>
 
 # Bugs
+
 Fixing that fluid slot issue with the particle accelerator.<br>
 Add checks to make sure sh files don't go into directories they shouldn't go into (happened before, needs proper fix).<br>
 
 # Mods
+
 Probably remove electrodynamics (and deps).<br>
 Could remove Ars Nouveau, or have it be optional to automate.<br>
 Remove Ars Meteorites, Neo Vitae's meteors might work better.<br>
 Add some worldgen mods: Biomes O' Plenty, Tectonic, Terralith.<br>
+Add something that removes the experimental settings warning.<br>
+Disable giving the player the forestry documentation book.<br>
 
 # General Minecraft Stuff
+
 Add default settings file that unbinds a lot of keys because of the overlapping ones.<br>
