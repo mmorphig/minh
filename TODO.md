@@ -5,6 +5,8 @@ Put the MIT License notice in relevant files.<br>
 Create a proper name for the project.<br>
 Change seablock island generation to only give needed items, remove once there are no needed items.<br>
 Add skyblock optional datapack.<br>
+Add caching for non-modrinth mods.<br>
+Remove all .disabled entries in modrinth index.<br>
 
 # KubeJS:
 
