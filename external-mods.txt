@@ -1,6 +1,6 @@
 https://mediafilez.forgecdn.net/files/6804/869/mob_grinding_utils-1.1.10%2Bmc1.21.1.jar
 https://mediafilez.forgecdn.net/files/8884/508/dysoncubeproject-addon-1.1.15.jar
-https://mediafilez.forgecdn.net/files/8884/569/FluxNetworks-Ultimate-Addon-1.21.1-1.0.16.jar
+https://mediafilez.forgecdn.net/files/8939/278/FluxNetworks-Ultimate-Addon-1.21.1-1.0.18.jar
 https://mediafilez.forgecdn.net/files/6089/446/FluxNetworks-1.21.1-8.0.0.jar
 https://mediafilez.forgecdn.net/files/8930/754/dysoncubeproject-addon-1.1.18.jar
 https://mediafilez.forgecdn.net/files/8082/907/dysoncubeproject-1.0.5.jar

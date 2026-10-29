@@ -4624,6 +4624,51 @@
         "https://cdn.modrinth.com/data/fNd6d6cd/versions/m0HcaGYd/gtmogs-1.21.1-1.0.6.jar"
       ],
       "fileSize": 3706799
+    },
+    {
+      "path": "mods/defaultoptions-neoforge-1.21.1-21.1.8.jar",
+      "hashes": {
+        "sha512": "29f66777068d92b1e149630d569441e5176ac40ec5cb4ee6c63c565aa7d475587a5097f59c433d69a39fd238b64902e2ba742b30c26419de901c86a3300b848e",
+        "sha1": "d682687ec41236092c5206a21e2ed34bdb7f6b79"
+      },
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      },
+      "downloads": [
+        "https://cdn.modrinth.com/data/WEg59z5b/versions/1zt17WsC/defaultoptions-neoforge-1.21.1-21.1.8.jar"
+      ],
+      "fileSize": 105507
+    },
+    {
+      "path": "mods/farmers-cutting-biomes-o-plenty-2.0.0.jar",
+      "hashes": {
+        "sha1": "39e402ef4c5f9336973c1a0017049e19ca4e97ef",
+        "sha512": "4d7858662524b9e7369c9266e1a5c2c0f6847d86aafe40db016cbd2cee729b9eaf2e3e482942e96992d1a57a173d5c7449774dc30f38a1531c364cad179d6e93"
+      },
+      "env": {
+        "server": "required",
+        "client": "required"
+      },
+      "downloads": [
+        "https://cdn.modrinth.com/data/QWfaJXEc/versions/iCt2qwi3/farmers-cutting-biomes-o-plenty-2.0.0.jar"
+      ],
+      "fileSize": 53279
+    },
+    {
+      "path": "mods/tectonic-3.0.28-neoforge-21.1.jar",
+      "hashes": {
+        "sha512": "e07b9cb54f078b7bf74c925c5cebd6643f0b4c210b8f94474e68659b69468ece7d61432f70eafe7abaa1dfa798e4638aad297987c121dc127588c2623b7f7a81",
+        "sha1": "db15156eec4320c2997c4dd4948119472de01224"
+      },
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [
+        "https://cdn.modrinth.com/data/lWDHr9jE/versions/n4iyW7aB/tectonic-3.0.28-neoforge-21.1.jar"
+      ],
+      "fileSize": 451757
     }
   ],
   "dependencies": {
