@@ -4579,6 +4579,51 @@
         "https://cdn.modrinth.com/data/SOw6jD6x/versions/1rbqTjbS/AdvancedPeripherals-1.21.1-0.8.1a.jar"
       ],
       "fileSize": 1553302
+    },
+    {
+      "path": "mods/ldlib2-neoforge-1.21.1-2.2.44-all.jar",
+      "hashes": {
+        "sha1": "39d4b7c1fba4ed56d5680b7acd0e559690c4e763",
+        "sha512": "232e7e5ffcadbcd660894c055d7f53443c7b9105658229875b936a8c5eb8587f3ed9ef51b2897084709d4cd2873172ee4e34101e1e8c88aade1d837c63c67883"
+      },
+      "env": {
+        "server": "required",
+        "client": "required"
+      },
+      "downloads": [
+        "https://cdn.modrinth.com/data/B1CBVXHX/versions/s7Uru4V0/ldlib2-neoforge-1.21.1-2.2.44-all.jar"
+      ],
+      "fileSize": 7702551
+    },
+    {
+      "path": "mods/configuration-neoforge-1.21.1-3.1.1.jar",
+      "hashes": {
+        "sha512": "46306da16d19fc187e077a37b57ec1fdf2821b63bbdff8d652fcb33c391d2afd79d9f7be72178adb9476170353d7450ab9ee048c7d880e8abbc3481df2eca025",
+        "sha1": "2c968fd3add0f699f3493c073c22bfd31dbd606e"
+      },
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [
+        "https://cdn.modrinth.com/data/3WjjSM5O/versions/6Mztfq1u/configuration-neoforge-1.21.1-3.1.1.jar"
+      ],
+      "fileSize": 423189
+    },
+    {
+      "path": "mods/gtmogs-1.21.1-1.0.6.jar",
+      "hashes": {
+        "sha1": "8b8dbd6fff2048de6771a756ce58b7039101e8b0",
+        "sha512": "5887e8022c07c259995fe11129249f3e2c8ad14194be1bd424a3af2794f7f8530123eada74d4b9b49781c7be7a9344ca047f8fba09c1db95d2ffea982efb3796"
+      },
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [
+        "https://cdn.modrinth.com/data/fNd6d6cd/versions/m0HcaGYd/gtmogs-1.21.1-1.0.6.jar"
+      ],
+      "fileSize": 3706799
     }
   ],
   "dependencies": {

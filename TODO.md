@@ -14,6 +14,7 @@ Properly switch from kubejs-generated coils and items to MI-generated ones that 
 Adding more raw materials & raw material processing.<br>
 Clear out unneeded files in the kubejs data directory.<br>
 Fix battery creation.<br>
+Add GT:M ore generation veins.<br>
 
 # Progression
 
