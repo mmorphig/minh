@@ -1,0 +1,79 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "stuck_somewhere_nontitular"
+	group: ""
+	icon: {
+		id: "minestuck:computer"
+	}
+	id: "36BA20433DCC9FB2"
+	images: [ ]
+	order_index: 20
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"63FA25F3F4D45980"
+				"0A216E7EA7D8CF87"
+				"7F84B4A229E29B09"
+			]
+			id: "06E936A12197764D"
+			tasks: [{
+				id: "7370B15E56E7746E"
+				item: { count: 1, id: "minestuck:computer" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			id: "63FA25F3F4D45980"
+			tasks: [{
+				id: "2DBCBF9248B5CF65"
+				item: { count: 1, id: "minestuck:computer_parts" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["06E936A12197764D"]
+			id: "50B54EFEF387B99E"
+			tasks: [
+				{
+					id: "07A08F39E7596859"
+					item: { count: 1, id: "minestuck:client_disk" }
+					type: "item"
+				}
+				{
+					id: "72A985AB3F8F2629"
+					item: { count: 1, id: "minestuck:server_disk" }
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			id: "7F84B4A229E29B09"
+			tasks: [{
+				id: "047527484AA61B63"
+				item: { count: 1, id: "minestuck:raw_cruxite" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["50B54EFEF387B99E"]
+			id: "504E19051CB25708"
+			tasks: [{
+				id: "1AE09F19D16B6567"
+				item: { count: 1, id: "minestuck:captcha_card" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.0d
+		}
+	]
+}

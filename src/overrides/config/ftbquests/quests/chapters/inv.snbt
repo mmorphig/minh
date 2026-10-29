@@ -1,0 +1,111 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "inv"
+	group: ""
+	icon: {
+		id: "mekanism_extras:ingot_naquadah"
+	}
+	id: "4F936D5EB1FC2CCA"
+	images: [ ]
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			id: "15B2A0DCA7BCF7E0"
+			tasks: [{
+				id: "5AD89E3269E7568E"
+				item: { count: 1, id: "mekanism_extras:ingot_naquadah" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["281530ECDCF8B47D"]
+			id: "76F94A8EAC4FE7F4"
+			tasks: [{
+				id: "023E7C16CD411C90"
+				item: { count: 1, id: "mekanism:alloy_atomic" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["76F94A8EAC4FE7F4"]
+			id: "5525734FEA16A4F3"
+			tasks: [{
+				id: "6E09DF76378EA23A"
+				item: { count: 1, id: "mekanism:teleportation_core" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5525734FEA16A4F3"]
+			id: "3618B6A1AF303E4D"
+			tasks: [{
+				id: "144F632D9773DABF"
+				item: { count: 1, id: "mekanism:teleporter" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3618B6A1AF303E4D"]
+			id: "038734AE54339DB0"
+			tasks: [{
+				id: "0BDF1FE49B6E37BD"
+				item: { count: 1, id: "mekanism:portable_teleporter" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5525734FEA16A4F3"]
+			id: "12DBCD3EFA5DAA72"
+			tasks: [{
+				id: "27DD58B88CA05191"
+				item: { count: 1, id: "mekmm:wireless_charging_station" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["76F94A8EAC4FE7F4"]
+			id: "66A96C16E15AC646"
+			tasks: [{
+				id: "0196BCC61DB663C3"
+				item: { count: 1, id: "mekanismelements:radiation_irradiator" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			id: "0B17350E6FAF0D82"
+			tasks: [{
+				id: "6215915C98ACA525"
+				item: { count: 1, id: "kubejs:ludicrous_machine_hull" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -4.0d
+		}
+		{
+			id: "281530ECDCF8B47D"
+			tasks: [{
+				id: "2E6CE08F6CF837F7"
+				item: { count: 1, id: "sgjourney:pure_naquadah" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.5d
+		}
+	]
+}

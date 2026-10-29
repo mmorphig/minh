@@ -1,0 +1,102 @@
+{
+  "type": "minecraft:block",
+  "functions": [
+    {
+      "function": "minecraft:explosion_decay"
+    },
+    {
+      "enchantment": "minecraft:fortune",
+      "formula": "minecraft:uniform_bonus_count",
+      "function": "minecraft:apply_bonus",
+      "parameters": {
+        "bonusMultiplier": 2
+      }
+    }
+  ],
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:amaranthitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:artichokeitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:barleyitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:bellpepperitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:chilipepperitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:cornitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:cucumberitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:elderberryitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:flaxitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:lettuceitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:mustardseedsitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:onionitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:parsnipitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:peanutitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:strawberryitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:wintersquashitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:alfalfaitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:canolaitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:sunchokeitem"
+        }
+      ],
+      "name": "windygarden0",
+      "rolls": 3.0
+    }
+  ],
+  "random_sequence": "pamhc2crops:blocks/windygarden"
+}

@@ -1,0 +1,317 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "military"
+	group: ""
+	icon: {
+		components: {
+			"ftbquests:missing_item": "pointblank:deserteagle"
+		}
+		id: "ftbquests:missing_item"
+	}
+	id: "2B998786527F63A7"
+	images: [ ]
+	order_index: 18
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["25BEDDB80CC313E9"]
+			id: "330C3A0B28A3746D"
+			tasks: [{
+				id: "39F32299FC99A704"
+				item: { components: { "ftbquests:missing_item": "pointblank:guninternals" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			id: "5682C0BE92B389B8"
+			tasks: [{
+				id: "3D12682EA68BBA2C"
+				item: { components: { "ftbquests:missing_item": "pointblank:motor" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5682C0BE92B389B8"
+				"74874EEE07BAC3E4"
+				"330C3A0B28A3746D"
+			]
+			id: "6A931DD1E38731D3"
+			tasks: [{
+				id: "2DDF89648ACC71A7"
+				item: { components: { "ftbquests:missing_item": "pointblank:m134minigun" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6D718F5D83B78075"]
+			id: "6D72BB9CBFC8F2B5"
+			tasks: [
+				{
+					id: "43B03833CED1B2D4"
+					item: { count: 1, id: "avaritia:infinity_helmet" }
+					type: "item"
+				}
+				{
+					id: "3CED10F983CA3490"
+					item: { count: 1, id: "avaritia:infinity_chestplate" }
+					type: "item"
+				}
+				{
+					id: "61163AD7C23A28D0"
+					item: { count: 1, id: "avaritia:infinity_pants" }
+					type: "item"
+				}
+				{
+					id: "31195B66E6E8605E"
+					item: { count: 1, id: "avaritia:infinity_boots" }
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"21C0A509A0B4B607"
+				"6D718F5D83B78075"
+			]
+			id: "2FF58E37566EFDD8"
+			tasks: [
+				{
+					id: "3155D7827F2847BC"
+					item: { count: 1, id: "extended_industrialization:nano_quantum_helmet" }
+					type: "item"
+				}
+				{
+					id: "794DCCAB04994C48"
+					item: { count: 1, id: "extended_industrialization:nano_quantum_chestplate" }
+					type: "item"
+				}
+				{
+					id: "02A21DD543EB3CBB"
+					item: { count: 1, id: "extended_industrialization:nano_quantum_leggings" }
+					type: "item"
+				}
+				{
+					id: "36B11FBB3C682929"
+					item: { count: 1, id: "extended_industrialization:nano_quantum_boots" }
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["149290073D10A964"]
+			id: "077C8C6D50232A69"
+			tasks: [
+				{
+					id: "59B67F0010DD6217"
+					item: { count: 1, id: "extended_industrialization:nano_helmet" }
+					type: "item"
+				}
+				{
+					id: "309BFBBA9EFF78BB"
+					item: { count: 1, id: "extended_industrialization:nano_chestplate" }
+					type: "item"
+				}
+				{
+					id: "0942717E663B690D"
+					item: { count: 1, id: "extended_industrialization:nano_leggings" }
+					type: "item"
+				}
+				{
+					id: "569205F2571F3854"
+					item: { count: 1, id: "extended_industrialization:nano_boots" }
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5FC1DE7E15F9638A"]
+			id: "2B4E3388C3C7695B"
+			tasks: [{
+				id: "2F5D3F93D80634CA"
+				item: { count: 1, id: "modern_industrialization:gravichestplate" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"077C8C6D50232A69"
+				"2B4E3388C3C7695B"
+			]
+			id: "21C0A509A0B4B607"
+			tasks: [{
+				id: "407A2B1775C26FBA"
+				item: { count: 1, id: "extended_industrialization:nano_gravichestplate" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["149290073D10A964"]
+			id: "6D718F5D83B78075"
+			tasks: [
+				{
+					id: "4D33152F4540ABF3"
+					item: { count: 1, id: "modern_industrialization:quantum_helmet" }
+					type: "item"
+				}
+				{
+					id: "52683F34FE9E74C8"
+					item: { count: 1, id: "modern_industrialization:quantum_chestplate" }
+					type: "item"
+				}
+				{
+					id: "2BFF2A27D09D7240"
+					item: { count: 1, id: "modern_industrialization:quantum_leggings" }
+					type: "item"
+				}
+				{
+					id: "00BFF8377400DC13"
+					item: { count: 1, id: "modern_industrialization:quantum_boots" }
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2637DA73FD8E4EF7"]
+			id: "5699B4D7A8E20E1D"
+			tasks: [{
+				id: "4502E55047F02AA6"
+				item: { components: { "ftbquests:missing_item": "pointblank:processor" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5699B4D7A8E20E1D"]
+			id: "74874EEE07BAC3E4"
+			tasks: [{
+				id: "378BF06757C285B3"
+				item: { components: { "ftbquests:missing_item": "pointblank:printer" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"74874EEE07BAC3E4"
+				"330C3A0B28A3746D"
+			]
+			id: "7083325D26324921"
+			tasks: [{
+				id: "7A31DE966C4F0315"
+				item: { components: { "ftbquests:missing_item": "pointblank:deserteagle" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"45695BF662132BA3"
+				"76D913732A4BEF27"
+			]
+			id: "149290073D10A964"
+			tasks: [
+				{
+					id: "61C4ED9E3F5A801E"
+					item: { count: 1, id: "minecraft:netherite_helmet" }
+					type: "item"
+				}
+				{
+					id: "7AB176E341783D18"
+					item: { count: 1, id: "minecraft:netherite_chestplate" }
+					type: "item"
+				}
+				{
+					id: "08212E009126252F"
+					item: { count: 1, id: "minecraft:netherite_leggings" }
+					type: "item"
+				}
+				{
+					id: "36CDBA6B36F0C0E2"
+					item: { count: 1, id: "minecraft:netherite_boots" }
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["34E61004EED4746E"]
+			id: "76D913732A4BEF27"
+			tasks: [
+				{
+					id: "68008B27C549D032"
+					item: { count: 1, id: "minecraft:diamond_helmet" }
+					type: "item"
+				}
+				{
+					id: "20217B4F86F1FE24"
+					item: { count: 1, id: "minecraft:diamond_chestplate" }
+					type: "item"
+				}
+				{
+					id: "06088F5E761793C9"
+					item: { count: 1, id: "minecraft:diamond_leggings" }
+					type: "item"
+				}
+				{
+					id: "1240FF07334649A0"
+					item: { count: 1, id: "minecraft:diamond_boots" }
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"74874EEE07BAC3E4"
+				"330C3A0B28A3746D"
+			]
+			id: "109E3775EF66CB85"
+			tasks: [{
+				id: "022379CCE005F04E"
+				item: { components: { "ftbquests:missing_item": "pointblank:aa12" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"74874EEE07BAC3E4"
+				"330C3A0B28A3746D"
+			]
+			id: "3C53A9EECC82B3A7"
+			tasks: [{
+				id: "692C5DDA046B8EFF"
+				item: { components: { "ftbquests:missing_item": "pointblank:ulg99cannon" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+	]
+}

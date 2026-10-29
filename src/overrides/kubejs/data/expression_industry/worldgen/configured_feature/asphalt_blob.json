@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:netherrack_replace_blobs",
+  "config": {
+    "target": {
+      "Name": "minecraft:netherrack"
+    },
+    "state": {
+      "Name": "expression_industry:asphalt"
+    },
+    "radius": {
+      "type": "uniform",
+      "min_inclusive": 3,
+      "max_inclusive": 7
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "type": "minecraft:block",
+  "functions": [
+    {
+      "function": "minecraft:explosion_decay"
+    },
+    {
+      "enchantment": "minecraft:fortune",
+      "formula": "minecraft:uniform_bonus_count",
+      "function": "minecraft:apply_bonus",
+      "parameters": {
+        "bonusMultiplier": 2
+      }
+    }
+  ],
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:arrowrootitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:cantaloupeitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:coffeebeanitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:eggplantitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:grapeitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:kenafitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:kiwiitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:pineappleitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:sesameseedsitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:soybeanitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:taroitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:gingeritem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:sorghumitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:aloeitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:calabashitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:bokchoyitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:guaranaitem"
+        }
+      ],
+      "name": "tropicalgarden0",
+      "rolls": 3.0
+    }
+  ],
+  "random_sequence": "pamhc2crops:blocks/tropicalgarden"
+}

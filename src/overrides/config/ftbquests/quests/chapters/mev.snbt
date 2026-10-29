@@ -1,0 +1,175 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "mev"
+	group: ""
+	icon: {
+		id: "mekanism:pellet_polonium"
+	}
+	id: "41C83A8356234216"
+	images: [ ]
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["66FE8C91C6B81979"]
+			id: "138B01923958E2E5"
+			tasks: [{
+				id: "3B3FE056419ACB37"
+				item: { count: 1, id: "modern_industrialization:nuclear_alloy_plate" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2FC6BF20900A18B1"]
+			id: "66FE8C91C6B81979"
+			tasks: [{
+				id: "4BD04D946ECA9072"
+				item: { count: 1, id: "modern_industrialization:beryllium_plate" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["24DAF8BF0343BCED"]
+			id: "67A46AD4AC1A7A1A"
+			tasks: [{
+				id: "3993ED19401F3F74"
+				item: { count: 1, id: "mekanism:pellet_plutonium" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"6D131C12B66D749B"
+				"13A5ABEE748C99D7"
+			]
+			id: "3BA313699F45FD16"
+			tasks: [{
+				id: "7A030FE03F728573"
+				item: { count: 1, id: "mekanism:pellet_polonium" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"138B01923958E2E5"
+				"0C683E7274C374AB"
+			]
+			id: "6D131C12B66D749B"
+			tasks: [{
+				id: "311840C86A66429A"
+				item: { count: 1, id: "modern_industrialization:nuclear_reactor" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			id: "13A5ABEE748C99D7"
+			tasks: [{
+				id: "36DB6FAD6EBFB0BD"
+				item: { count: 1, id: "mekanism:solar_neutron_activator" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7383F7D023B0CF23"]
+			id: "2FC6BF20900A18B1"
+			tasks: [{
+				id: "7B72DD53C7B2E093"
+				item: { count: 1, id: "mekanism:chemical_crystallizer" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			id: "7383F7D023B0CF23"
+			tasks: [{
+				id: "7F2705AEB4C3FC61"
+				item: { count: 1, id: "mekanism:fluorite_gem" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: -1.5d
+		}
+		{
+			id: "0C683E7274C374AB"
+			tasks: [{
+				id: "153FA42FAD409953"
+				item: { count: 1, id: "modern_industrialization:uranium_235_dust" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6D131C12B66D749B"]
+			id: "24DAF8BF0343BCED"
+			tasks: [{
+				id: "48DBE5599D65182B"
+				item: { count: 1, id: "modern_industrialization:plutonium_dust" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["24DAF8BF0343BCED"]
+			id: "1F776449FD030A5B"
+			tasks: [{
+				id: "7086DC3E231ED5F4"
+				item: { count: 1, id: "yet_another_industrialization:demon_core" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["24DAF8BF0343BCED"]
+			id: "5AE50C3EC73A7292"
+			tasks: [{
+				id: "4A64FC2016DB69E3"
+				item: { count: 1, id: "yet_another_industrialization:nuclear_rod_irradiator" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6D131C12B66D749B"]
+			id: "281CBB123CAE22B8"
+			tasks: [{
+				id: "11D7CF3DE3A4C099"
+				item: { components: { "ftbquests:missing_item": "modern_industrialization:breeder_uranium_238_fuel_rod_depleted" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"67A46AD4AC1A7A1A"
+				"3BA313699F45FD16"
+			]
+			id: "676C1302BA8BCE50"
+			tasks: [{
+				id: "2E7BC80E2445D1A4"
+				item: { count: 1, id: "kubejs:insane_machine_hull" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -0.5d
+		}
+	]
+}

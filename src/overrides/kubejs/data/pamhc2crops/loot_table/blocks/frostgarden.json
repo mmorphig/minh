@@ -1,0 +1,90 @@
+{
+  "type": "minecraft:block",
+  "functions": [
+    {
+      "function": "minecraft:explosion_decay"
+    },
+    {
+      "enchantment": "minecraft:fortune",
+      "formula": "minecraft:uniform_bonus_count",
+      "function": "minecraft:apply_bonus",
+      "parameters": {
+        "bonusMultiplier": 2
+      }
+    }
+  ],
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:broccoliitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:cabbageitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:caulifloweritem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:celeryitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:cottonitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:huckleberryitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:juniperberryitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:kohlrabiitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:oatsitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:peasitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:quinoaitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:raspberryitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:rutabagaitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:ryeitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:spinachitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:cloudberryitem"
+        }
+      ],
+      "name": "frostgarden0",
+      "rolls": 3.0
+    }
+  ],
+  "random_sequence": "pamhc2crops:blocks/frostgarden"
+}

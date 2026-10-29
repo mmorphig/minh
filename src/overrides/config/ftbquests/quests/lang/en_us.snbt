@@ -1,0 +1,148 @@
+{
+	chapter.12BE7E5A945FC18B.title: "Dimensional Doors"
+	chapter.1371603DD626DA75.title: "Ars Nouveau"
+	chapter.15010C7A4904FE27.title: "Vitae"
+	chapter.167BC511C6D6BFFE.title: "Draconic Evolution"
+	chapter.1DA2DB8349589509.title: "UtV"
+	chapter.20A60DC70D233C72.title: "Steam Age"
+	chapter.2743378B451AB55D.title: "UXV"
+	chapter.2B998786527F63A7.title: "Fighting"
+	chapter.36BA20433DCC9FB2.title: "Stuck?"
+	chapter.38347FA01689B5BB.title: "UIV"
+	chapter.38679662CC227901.title: "UEV"
+	chapter.41C83A8356234216.title: "InV"
+	chapter.474AEAEA2EB6858A.title: "MV"
+	chapter.4F936D5EB1FC2CCA.title: "LuV"
+	chapter.528D89BF7E46C065.title: "EV"
+	chapter.57EAD7688D7A09DD.title: "Food"
+	chapter.5812D6EB92A828ED.title: "Create"
+	chapter.5971B760D37C21A0.title: "AE2"
+	chapter.5A3D0F24E45FF1FC.title: "LV"
+	chapter.5B3FB60999CE8BE0.title: "MeV"
+	chapter.5B51D175FE0DC2C3.title: "UHV"
+	chapter.6C055294CE14506A.title: "UMV"
+	chapter.7EE61487E41719F1.title: "HV"
+	quest.022C91923C98130A.title: "Assembler Matrix"
+	quest.040A6D16C8074719.quest_desc: ["Potion rings force this to be here, so you can't get resistance 5 that easily."]
+	quest.05083BB6193B5A2E.title: "Moving Source"
+	quest.06FDC72958A18323.quest_desc: ["At least this isn't slower, but it doesn't allow accelerator cards."]
+	quest.077C8C6D50232A69.title: "Nano Armor"
+	quest.07D3FD3D5EF092EE.quest_desc: ["Allows your kitchen to use AE2 storage, uses a wireless point to connect. It does not give your AE2 system access to your kitchen storage or crafting. Also does not craft needed items through the AE2 system."]
+	quest.09D4B1ACF305B0E4.title: "Spatial Management"
+	quest.0A2A16582FF9F633.title: "SPS"
+	quest.0B40F868E981227C.title: "Tianshu MWM T1"
+	quest.0E8850B3B197AA7B.quest_desc: ["You'll still need a wireless extended encoding and tianshu terminal for extended and closed-loop encoding, but you can combine them with this into a universal terminal."]
+	quest.12AC3EBFA423E43F.quest_desc: ["Time to make a beacon!"]
+	quest.12F5399D8C9E4EBF.title: "Get Titanium Some Other Way"
+	quest.149290073D10A964.title: "Netherite Armor"
+	quest.161360E8573FE6C4.quest_desc: ["This tier is mostly getting titanium, you'll get the HV circuit part-way since it's used for the rocket."]
+	quest.161360E8573FE6C4.title: "Welcome to MV"
+	quest.1A6F49DF57227F26.title: "Extended Matrix"
+	quest.1B90031226E350D5.title: "Bronze Hatches"
+	quest.1D2A6012669F1A4C.quest_desc: ["Probably the first (and only for a while) food item you'll get if you're playing a seablock map."]
+	quest.1D50FD5D8EACBA5C.quest_desc: ["You only need 3 patterns right?"]
+	quest.1ED854E578C43062.quest_desc: [
+		"You can stop using growth accelerators on crystals with this."
+		""
+		"With a collapse matrix you can get 4x more output per cycle."
+	]
+	quest.202A2C60DD35B637.quest_desc: [
+		"You can find some dimensional gateways all over the world, they lead to dungeons where you can tier-skip a few things. Be careful though, if you don't know what you're doing or slip up somehow, you can be sent to limbo."
+		""
+		"If you get stuck in a dungeon because every door out is gone, you'll have to drop into limbo or place your own oak dimensional door. All tiers that could be skipped are probably already done by the time you can make your own doors though."
+	]
+	quest.202A2C60DD35B637.title: "Dimensional Doors"
+	quest.2134C606BE4A8E28.quest_desc: ["You'll need to make aqua regia to purify gold, which is also used in the netherite chain."]
+	quest.2431E0E74BB1F141.title: "Naquadah Reactor"
+	quest.281CBB123CAE22B8.quest_desc: ["It doesn't generate neutrons, but is an easy source of plutonium for mox fuel rods and further processing."]
+	quest.29C7886524F3139F.title: "Basic Kitchen"
+	quest.2D5D026723F394D1.quest_desc: ["Since you know how a mixer works, with it you can create more dirt by creating coarse dirt and mixing with water. Or you can just use mulch with cobblestone."]
+	quest.2EE52E2AEEB5BB30.quest_desc: ["Don't even need the twilight forest!"]
+	quest.2FF58E37566EFDD8.title: "Quantum Nano Armor"
+	quest.3026611C3D134C51.quest_desc: ["You'll have to first fight through at least one wilden summon to get enough for the Chimera. Once you do fight the Chimera: it seems to have some trouble surviving a lot of high-velocity lead."]
+	quest.303191FCCCC0B55D.quest_desc: ["Allows for infinite oil drilling without breaking the drill, but uses more power and so is slower per FE when overclocking."]
+	quest.31353F499F38601F.quest_desc: ["Play with channel limits off? This won't be very useful for you."]
+	quest.335CEFB59DBEAEE4.quest_desc: ["Cheapest wither immune block."]
+	quest.35E12F3739F8116D.quest_desc: ["Store as much as a half chest!"]
+	quest.3885F61D83ACA458.quest_desc: ["Making a full moon-capable rocket takes a lot of resources, probably the largest relative production for any tier."]
+	quest.3885F61D83ACA458.title: "Rocket"
+	quest.3F86C88010445B7E.quest_desc: [
+		"Hope you like the anthraquinone process! This is the first step to make anthraquinone. Don't worry too much though, all aluminum, platinum, chlorine and eventually anthraquinone is recycled."
+		""
+		"You could just ignore this for now since it's really just to make a better rocket fuel, but you'll need it to make processing units later."
+	]
+	quest.3F86C88010445B7E.title: "Aluminum Catalysts"
+	quest.439E2DB92FF38060.quest_desc: [
+		"JEI doesn't show all the possible items, the items and odds are:"
+		"raw iron, 20%"
+		"raw copper, 20%"
+		"lignite coal dust, 15%"
+		"raw lead, 10%"
+		"raw tin, 10%"
+		"raw nickel, 10%"
+	]
+	quest.439E2DB92FF38060.title: "Ores"
+	quest.484682552F5A1526.title: "Amazing Digital Circuits"
+	quest.4E3E38D9F54F0E87.quest_desc: ["Most of this tier is in AE2, but also goes though getting processing units and a new EBFand MI hull tier."]
+	quest.504E19051CB25708.quest_desc: [
+		"Here are some useful captchalogue codes you might want if you need some special items:"
+		""
+		"UbsaeRV8"
+		"vFhg6WLV"
+	]
+	quest.530D7AB04686CFFB.quest_desc: ["You should have these items to start with, to create basic power and water generation."]
+	quest.530D7AB04686CFFB.title: "Water"
+	quest.54C6B74617ABD19F.quest_desc: ["You've had access to this for a while, but now it's actually useful for progression."]
+	quest.55CE26ACD410D0A5.quest_desc: ["Fortresses still generate in the nether in a seablock world, but not in a nothing one, good luck getting nether stars then."]
+	quest.57340C411BFFAC46.quest_desc: ["If you want a very easy way to get lightning: get a trident, enchant it with channeling, wait for or summon a thunderstorm (you can summon one with an ars ritual) and throw it at a lightning rod (or mob if you feel like it)."]
+	quest.59D0D23C2CC1DFB3.title: "Essences"
+	quest.5B4A6A75D044C8A5.quest_desc: ["Unlocks actual ae2lt."]
+	quest.5CCA3AC04ED8E94B.title: "AE2 Processors"
+	quest.5E3A369B7A811994.title: "Wilden Essences"
+	quest.5E5D087784D68E0E.quest_desc: [
+		"Requires placement within a firmament starship in The End, which means all raw firmament automation is there."
+		""
+		"Hopefully you didn't obliterate all firmament starships and forget where they were because they don't have any obvious use."
+		""
+		"As the guide explains, you can collect firmament dust with annihilation planes at height limit in The End. Unfortunately, doing this does not allow you to see Aria, Canon or even Sonnet."
+	]
+	quest.5FC1DE7E15F9638A.quest_desc: ["Even though it's a coil, it is NOT a new EBF tier."]
+	quest.610BE29121311F3C.quest_desc: ["This is your map for the solar system, it is not linked to your UUID or anything, so keep it safe."]
+	quest.610E067E172C3CCE.quest_desc: ["Only 59k of the 1k component!"]
+	quest.64BBB24303E69960.title: "Infinite Cells"
+	quest.6674493D9FC45FAB.quest_desc: ["You can reduce fuel costs with these, but it might not be worth it just to get to the moon."]
+	quest.6777D9E0C173A08B.quest_desc: ["With NAND flash, you can use AE2 storage cells, though you probably just started with AE2 anyway."]
+	quest.6777D9E0C173A08B.title: "Using AE2"
+	quest.67B85FE783BBBA93.title: "It's EBF Time"
+	quest.6A6E199CB793BF44.quest_desc: ["Start collecting some now, you'll be able to use them in the next tier."]
+	quest.6B1D502F5F2B15A5.quest_desc: ["Infinite range across dimensions and DOES charge the terminal."]
+	quest.6CA0EA4E349A4FAE.quest_desc: [
+		"If you know Draconic Evolution, this might be crazy to you, but everything in this mod is locked behind killing a Chaos Guardian."
+		""
+		"If you want to figure it out yourself or already know how to kill it, skip this next part."
+		""
+		"Since protection does not matter, get as much max health and regeneration as possible, maybe at least one totem just to be safe."
+		""
+		"You'll pretty much need a ranged weapon as getting near it with a melee one will cause you to take a whole lot of damage. Still bring a melee weapon to fight the withers it spawns though. To do enough damage, don't bring guns, bring heavily a heavily enchanted bow or crossbow. "
+		""
+		"When it does a laser attack, teleport away or hide behind blast-proof blocks."
+	]
+	quest.6D718F5D83B78075.title: "Quantum Armor"
+	quest.6D72BB9CBFC8F2B5.title: "Infinity Armor"
+	quest.6EA74C5384AC2E97.quest_desc: ["Works similar to a much smaller and energy efficient machine chainer. It can't act as decent multiblock storage, but ae2 is soon anyway."]
+	quest.6FF9B155B96C5889.quest_desc: ["Better than nothing?"]
+	quest.7038D174D96F8FB2.title: "Battery Alloy Plates"
+	quest.76D913732A4BEF27.title: "Diamond Armor"
+	quest.7C6A41ADCA29BCDC.quest_desc: ["Still uses netherite here :)"]
+	quest.7E90F913A48E51E2.quest_desc: ["You won't need much of this for now, but just know that you can make andesite from quartz and cobblestone. Once you get one and lava, you can duplicate it in a mixer."]
+	quest.7ED7429E1DE65550.quest_desc: [
+		"Want a single block crafting CPU with 256 bytes of storage and a single co-processor? No? Well here you go!"
+		""
+		"AE2LT can also recognises it as an extended crafting CPU cluster, so maybe it has use there?"
+	]
+	quest.7EF4CB5D6AA02B4E.quest_desc: ["Infinite range across dimensions, but does not charge the wireless terminal."]
+	quest.7F4112050018F565.quest_desc: ["To make some \"\"extra backups for your friends\"\"."]
+	quest.7F4112050018F565.title: "Music Piracy"
+	task.4F338C059D92CA0E.title: "HV"
+	task.5F03686DA7B45D1F.title: "Beginning"
+}

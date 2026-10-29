@@ -1,0 +1,172 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "uhv"
+	group: ""
+	icon: {
+		id: "ae2lt:overload_alloy"
+	}
+	id: "5B51D175FE0DC2C3"
+	images: [ ]
+	order_index: 9
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["61D2AB3359333BB9"]
+			id: "7553F915C2C3A473"
+			tasks: [{
+				id: "04B23674E67DCEF5"
+				item: { count: 1, id: "dimdoors:rift_remover" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			id: "659A87AF6024E207"
+			tasks: [{
+				id: "12A9811975F4F532"
+				item: { count: 1, id: "extendedcrafting:luminessence" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["659A87AF6024E207"]
+			id: "25EB8D721130A20B"
+			tasks: [{
+				id: "5297DD189FD903B3"
+				item: { count: 1, id: "extendedcrafting:basic_catalyst" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6BF8E211582C6F00"]
+			id: "5B4A6A75D044C8A5"
+			tasks: [{
+				id: "77D5DEF82BB72633"
+				item: { count: 1, id: "ae2lt:overload_alloy_blank" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["25EB8D721130A20B"]
+			id: "67CFE3BC26EA1EF8"
+			tasks: [{
+				id: "4EFBD5C933841AA9"
+				item: { count: 1, id: "extendedcrafting:basic_table" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"67CFE3BC26EA1EF8"
+				"37102D522039F18F"
+			]
+			id: "6F8642DD9478AC30"
+			tasks: [{
+				id: "361F055F9E4CF288"
+				item: { count: 1, id: "extendedmolecularassembler:basic_me_crafting_provider" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"6F8642DD9478AC30"
+				"61D2AB3359333BB9"
+			]
+			id: "2DE4EEB6A5D5831B"
+			tasks: [{
+				id: "537418F7737CB452"
+				item: { count: 1, id: "extendedmolecularassembler:advanced_me_crafting_provider" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["67CFE3BC26EA1EF8"]
+			id: "61D2AB3359333BB9"
+			tasks: [{
+				id: "6758F8F1BFB44006"
+				item: { count: 1, id: "extendedcrafting:advanced_table" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["61D2AB3359333BB9"]
+			id: "6BF8E211582C6F00"
+			tasks: [{
+				id: "7FF40F00C33818EE"
+				item: { count: 1, id: "extendedcrafting:elite_table" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"6BF8E211582C6F00"
+				"2DE4EEB6A5D5831B"
+			]
+			id: "237EF74D96D3484A"
+			tasks: [{
+				id: "64ED5AD4C0211D7E"
+				item: { count: 1, id: "extendedmolecularassembler:elite_me_crafting_provider" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["6BF8E211582C6F00"]
+			id: "4671A1068D25B90F"
+			tasks: [{
+				id: "25B06069C5936897"
+				item: { count: 1, id: "extendedcrafting:crystaltine_ingot" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["61D2AB3359333BB9"]
+			id: "01EF5070C7254BA5"
+			tasks: [
+				{
+					id: "7D757E834024D2BB"
+					item: { count: 1, id: "extendedcrafting:crafting_core" }
+					type: "item"
+				}
+				{
+					id: "5BA8EB6B7C0A0134"
+					item: { count: 1, id: "extendedcrafting:pedestal" }
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			id: "28A9CF56DF85A22A"
+			tasks: [{
+				id: "3A889E0AA2DAE93F"
+				item: { count: 1, id: "kubejs:highly_ultimate_machine_hull" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -4.5d
+		}
+	]
+}

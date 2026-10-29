@@ -1,0 +1,122 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "uiv"
+	group: ""
+	icon: {
+		id: "avaritia:neutron_collector"
+	}
+	id: "38347FA01689B5BB"
+	images: [ ]
+	order_index: 11
+	quest_links: [ ]
+	quests: [
+		{
+			id: "74DF4B499922F408"
+			tasks: [{
+				id: "10885F846F314B13"
+				item: { count: 1, id: "kubejs:promethium" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3403240439933740"]
+			id: "73E086C62CC8E2FE"
+			tasks: [{
+				id: "0721E80FB2067F9B"
+				item: { count: 1, id: "avaritia:neutron_ingot" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["30572742A3FFBB40"]
+			id: "3403240439933740"
+			tasks: [{
+				id: "1EFFA6FCE543ABA3"
+				item: { count: 1, id: "avaritia:neutron_collector" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["73E086C62CC8E2FE"]
+			id: "5E5D087784D68E0E"
+			tasks: [{
+				id: "2AAAC13AD325675A"
+				item: { count: 1, id: "ae2lt:firmament_conversion_core" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5E5D087784D68E0E"]
+			id: "1770EE725FBF0848"
+			tasks: [{
+				id: "289A55EA8FDB0856"
+				item: { count: 1, id: "ae2lt:firmament_essence" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1770EE725FBF0848"]
+			id: "09E8E9716FD57D6A"
+			tasks: [{
+				id: "105417DCA75AFFB7"
+				item: { count: 1, id: "ae2lt:firmament_superconducting_wire" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			id: "30572742A3FFBB40"
+			tasks: [{
+				id: "4D46887F084A8667"
+				item: { count: 1, id: "extendedcrafting:ultimate_table" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["30572742A3FFBB40"]
+			id: "2D76D7C566A595B3"
+			tasks: [{
+				id: "033EF5076C5509B5"
+				item: { count: 1, id: "extendedmolecularassembler:ultimate_me_crafting_provider" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["73E086C62CC8E2FE"]
+			id: "0F830F52F0A146B9"
+			tasks: [{
+				id: "57EEDC5AEDE4B82D"
+				item: { count: 1, id: "extendedcrafting:compressor" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			id: "565EF94520506B34"
+			tasks: [{
+				id: "617DD3526CACE7E5"
+				item: { count: 1, id: "kubejs:insanely_ultimate_machine_hull" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+	]
+}

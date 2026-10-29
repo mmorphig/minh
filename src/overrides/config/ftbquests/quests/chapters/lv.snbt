@@ -1,0 +1,830 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "lv"
+	group: ""
+	icon: {
+		id: "modern_industrialization:analog_circuit"
+	}
+	id: "5A3D0F24E45FF1FC"
+	images: [ ]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"6B2A1A468E5F9D14"
+				"6B43A5A406A9967B"
+				"5BE03EE21B9D9C5E"
+			]
+			id: "2813C068B4E90E80"
+			size: 2.0d
+			tasks: [{
+				count: 4L
+				id: "728DD103157E3033"
+				item: { count: 1, id: "modern_industrialization:basic_machine_hull" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2813C068B4E90E80"]
+			id: "14EDA695BC3EB148"
+			tasks: [{
+				id: "6B45C5ED645735C0"
+				item: { count: 1, id: "modern_industrialization:polarizer" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"14EDA695BC3EB148"
+				"55884EAE17985BED"
+			]
+			id: "58EB32CBDD52258C"
+			tasks: [{
+				id: "74AA71B3CFB6C161"
+				item: { count: 1, id: "modern_industrialization:cupronickel_wire_magnetic" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2813C068B4E90E80"]
+			id: "1EE3CBD35A3867D4"
+			tasks: [{
+				id: "47CC05DE695898D2"
+				item: { count: 1, id: "modern_industrialization:electric_mixer" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1EE3CBD35A3867D4"]
+			id: "55884EAE17985BED"
+			tasks: [{
+				id: "64FC291CB6F6F4FB"
+				item: { count: 1, id: "modern_industrialization:cupronickel_dust" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1EE3CBD35A3867D4"]
+			id: "021FEF58BCD6BA4C"
+			tasks: [{
+				id: "6C788D1E277F4C46"
+				item: { count: 1, id: "modern_industrialization:electrum_dust" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["021FEF58BCD6BA4C"]
+			icon: {
+				id: "modern_industrialization:electrum_wire"
+			}
+			id: "362ACFE9B24C342E"
+			tasks: [{
+				id: "65F6AF09C0DFFEC6"
+				item: { count: 1, id: "modern_industrialization:electrum_wire" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["58EB32CBDD52258C"]
+			id: "6E2786729EF71982"
+			tasks: [{
+				id: "11D26DF325354015"
+				item: { count: 1, id: "extended_industrialization:electric_alloy_smelter" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["68A6A5ACB30FFD0D"]
+			id: "7D2C5A6D49909FF9"
+			tasks: [{
+				id: "51A25442BA573F18"
+				item: { count: 1, id: "modern_industrialization:silicon_dust" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"6E2786729EF71982"
+				"69821F1BFE0FCB38"
+			]
+			id: "68A6A5ACB30FFD0D"
+			tasks: [{
+				id: "080078B727CE8FB5"
+				item: { count: 1, id: "ae2:silicon" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["2813C068B4E90E80"]
+			id: "3852F2A75AE25C02"
+			tasks: [{
+				id: "286D1B29A375D3EA"
+				item: { count: 1, id: "modern_industrialization:lv_steam_turbine" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"7D2C5A6D49909FF9"
+				"362ACFE9B24C342E"
+			]
+			id: "4F33D89E34CB1A23"
+			tasks: [{
+				id: "36F5D9AC78E658FA"
+				item: { count: 1, id: "modern_industrialization:silicon_battery" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1EE3CBD35A3867D4"]
+			id: "13A802BF844CD555"
+			tasks: [{
+				id: "3340BF058C754C5A"
+				item: { count: 1, id: "modern_industrialization:invar_dust" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["13A802BF844CD555"]
+			id: "4E7640683EEA6AFA"
+			tasks: [{
+				id: "1E3FA508CBF6674A"
+				item: { count: 1, id: "modern_industrialization:invar_plate" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"4E7640683EEA6AFA"
+				"7A7254A9D7C49C44"
+			]
+			id: "67B85FE783BBBA93"
+			size: 1.5d
+			tasks: [{
+				id: "667C613C0E22EEA1"
+				item: { count: 1, id: "modern_industrialization:electric_blast_furnace" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.25d
+		}
+		{
+			dependencies: ["55884EAE17985BED"]
+			id: "09AC75E442BC10EC"
+			tasks: [{
+				id: "00804B5CE47D1913"
+				item: { count: 1, id: "modern_industrialization:cupronickel_cable" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["09AC75E442BC10EC"]
+			id: "7A7254A9D7C49C44"
+			tasks: [{
+				id: "0BCB25A719888F3F"
+				item: { count: 1, id: "modern_industrialization:cupronickel_coil" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2813C068B4E90E80"]
+			hide_dependency_lines: true
+			id: "096E55A759A68DEF"
+			tasks: [{
+				count: 10L
+				id: "55192D75723C774F"
+				item: { count: 1, id: "minecraft:redstone" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["096E55A759A68DEF"]
+			icon: {
+				id: "modern_industrialization:quartz_dust"
+			}
+			id: "69821F1BFE0FCB38"
+			tasks: [{
+				id: "68974CF67525A69E"
+				item: { count: 1, id: "modern_industrialization:quartz_dust" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["096E55A759A68DEF"]
+			id: "3A76D1B6124BE8EF"
+			tasks: [{
+				count: 6L
+				id: "69D820E1CEB9B631"
+				item: { count: 1, id: "modern_industrialization:ruby_dust" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["3A76D1B6124BE8EF"]
+			id: "2EE52E2AEEB5BB30"
+			tasks: [{
+				id: "37C3AEBC46368786"
+				item: { count: 1, id: "modern_industrialization:aluminum_dust" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -8.5d
+		}
+		{
+			dependencies: [
+				"36FBAEE122D8C770"
+				"4F33D89E34CB1A23"
+				"2637DA73FD8E4EF7"
+			]
+			id: "2FDE0BC4918A7F91"
+			size: 2.0d
+			tasks: [{
+				id: "660C6C6ED084A561"
+				item: { count: 1, id: "modern_industrialization:advanced_machine_hull" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"67B85FE783BBBA93"
+				"2EE52E2AEEB5BB30"
+			]
+			id: "6E569D7E6AF44F2E"
+			tasks: [{
+				id: "3E1509819BE6A78D"
+				item: { count: 1, id: "modern_industrialization:aluminum_ingot" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["6E569D7E6AF44F2E"]
+			id: "36FBAEE122D8C770"
+			tasks: [{
+				id: "58F0C07BD4DECF15"
+				item: { count: 1, id: "modern_industrialization:advanced_machine_casing" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"362ACFE9B24C342E"
+				"68A6A5ACB30FFD0D"
+			]
+			id: "137760405301DED3"
+			tasks: [
+				{
+					id: "028E087C62D8C62E"
+					item: { count: 1, id: "modern_industrialization:transistor" }
+					type: "item"
+				}
+				{
+					id: "5498D93B52C1905A"
+					item: { count: 1, id: "modern_industrialization:diode" }
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["6E569D7E6AF44F2E"]
+			id: "0A6F24300BAEC666"
+			tasks: [{
+				id: "65D9DFC05B0ADE98"
+				item: { count: 1, id: "modern_industrialization:electronic_circuit_board" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"0A6F24300BAEC666"
+				"137760405301DED3"
+				"7D6DA0BF73ADA8C3"
+			]
+			id: "2637DA73FD8E4EF7"
+			tasks: [{
+				id: "25BA2DD011E75083"
+				item: { count: 1, id: "modern_industrialization:electronic_circuit" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["2813C068B4E90E80"]
+			id: "64E49546658C1FE4"
+			tasks: [{
+				id: "302883A5B00F3E4F"
+				item: { count: 1, id: "modern_industrialization:assembler" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"2FDE0BC4918A7F91"
+				"5C3286F69EC242B6"
+			]
+			id: "7D836CA082FD5294"
+			tasks: [{
+				id: "154D05CC90E47257"
+				item: { count: 1, id: "modern_industrialization:electric_quarry" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2637DA73FD8E4EF7"]
+			id: "5C3286F69EC242B6"
+			tasks: [{
+				id: "7B083E47CBC6A8AB"
+				item: { count: 1, id: "modern_industrialization:large_motor" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["5C3286F69EC242B6"]
+			id: "39F9CE05CD0CF2EA"
+			tasks: [{
+				id: "36FD0FF75963B299"
+				item: { count: 1, id: "modern_industrialization:large_pump" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["39F9CE05CD0CF2EA"]
+			id: "2812FEF57823BBF8"
+			tasks: [{
+				id: "6FB7DB9FC3D0995F"
+				item: { count: 1, id: "modern_industrialization:advanced_upgrade" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["0A6F24300BAEC666"]
+			id: "6F61E32CF4EB2C4A"
+			tasks: [{
+				id: "0994A63F31864483"
+				item: { count: 1, id: "modern_industrialization:overdrive_module" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"39F9CE05CD0CF2EA"
+				"5C3286F69EC242B6"
+			]
+			id: "5377DFB7A31EA957"
+			tasks: [{
+				id: "568B5B4BB6B06EF6"
+				item: { count: 1, id: "modern_industrialization:centrifuge" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["1EE3CBD35A3867D4"]
+			hide_dependent_lines: true
+			id: "7D6DA0BF73ADA8C3"
+			tasks: [{
+				id: "7A46D421D574FB97"
+				item: { count: 1, id: "modern_industrialization:soldering_alloy_dust" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"2FDE0BC4918A7F91"
+				"39F9CE05CD0CF2EA"
+			]
+			id: "069E3C4EB8AE16C4"
+			tasks: [{
+				id: "16A9DE85F0974C98"
+				item: { count: 1, id: "modern_industrialization:oil_drilling_rig" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["7A7254A9D7C49C44"]
+			icon: {
+				id: "moreburners:electric_burner"
+			}
+			id: "21F8EB0D6CBAE3EC"
+			tasks: [
+				{
+					id: "7A56BCF9C1B91D05"
+					item: { count: 1, id: "createdieselgenerators:bulk_fermenter" }
+					type: "item"
+				}
+				{
+					id: "44CD89AFC2C7DDA4"
+					item: { count: 1, id: "moreburners:electric_burner" }
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["21F8EB0D6CBAE3EC"]
+			dependency_requirement: "one_completed"
+			id: "32D8FB54DD436251"
+			tasks: [{
+				id: "6B54BED2A81FA441"
+				item: { count: 1, id: "modern_industrialization:sulfur_dust" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7D836CA082FD5294"]
+			id: "32EC2495321239C4"
+			tasks: [{
+				id: "2C76365A1ACB4327"
+				item: { count: 1, id: "modern_industrialization:manganese_dust" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2FDE0BC4918A7F91"]
+			id: "78193F5DD665E963"
+			tasks: [{
+				id: "165466886EE3C0CB"
+				item: { count: 1, id: "industrialization_overdrive:pyrolyse_oven" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["21F8EB0D6CBAE3EC"]
+			id: "767B3A8E47A86210"
+			tasks: [{
+				id: "26F0A6C328BC2E5B"
+				item: { count: 1, id: "modern_industrialization:chromium_tiny_dust" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7D836CA082FD5294"]
+			dependency_requirement: "one_completed"
+			id: "4003CEB9CFE6B1B0"
+			tasks: [{
+				id: "339CB7A7DC44A81F"
+				item: { count: 1, id: "minecraft:emerald" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["21F8EB0D6CBAE3EC"]
+			id: "3F38AD4B710757DF"
+			tasks: [{
+				id: "641125333F573CD6"
+				item: { count: 1, id: "minecraft:lava_bucket" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6E2786729EF71982"]
+			id: "1ADA61BC796EF41D"
+			tasks: [{
+				id: "254734AB40D241D3"
+				item: { count: 1, id: "create:brass_ingot" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["5D6267D7A35CCBCA"]
+			id: "10F06B42AAF18D8B"
+			tasks: [
+				{
+					id: "1478CD4329A42593"
+					item: { count: 1, id: "create:brass_casing" }
+					type: "item"
+				}
+				{
+					id: "698C12F8C058C706"
+					item: { count: 1, id: "create:andesite_casing" }
+					type: "item"
+				}
+				{
+					id: "60090E082EE0AAC6"
+					item: { count: 1, id: "create:copper_casing" }
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7D836CA082FD5294"]
+			id: "0433D7284BBF1195"
+			tasks: [{
+				id: "68C2FDF254949074"
+				item: { count: 1, id: "minecraft:lapis_lazuli" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["69821F1BFE0FCB38"]
+			id: "7E90F913A48E51E2"
+			tasks: [{
+				id: "0B1430FF5439EA45"
+				item: { count: 1, id: "create:andesite_alloy" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["10F06B42AAF18D8B"]
+			id: "30F5D0CD8889C75A"
+			tasks: [{
+				id: "48A5A8A6F3572D10"
+				item: { count: 1, id: "create:mechanical_crafter" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7D836CA082FD5294"]
+			id: "0CBE4CC1E08326AD"
+			tasks: [{
+				id: "36E108F7F70A2988"
+				item: { count: 1, id: "modern_industrialization:sodium_dust" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0CBE4CC1E08326AD"]
+			id: "2AAE3E78AB45F91E"
+			tasks: [{
+				id: "706FE74800E155C9"
+				item: { count: 1, id: "modern_industrialization:sodium_battery" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2FDE0BC4918A7F91"]
+			id: "275CA6A20B94738B"
+			tasks: [{
+				id: "0C2A40B29560796E"
+				item: { count: 1, id: "extended_industrialization:large_electric_macerator" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"4003CEB9CFE6B1B0"
+				"5B7B0CAEEF3B2568"
+			]
+			dependency_requirement: "one_started"
+			id: "5D6267D7A35CCBCA"
+			progression_mode: "flexible"
+			tasks: [{
+				id: "6A7CF0B3C08D0E39"
+				item: { count: 1, id: "minecraft:oak_sapling" }
+				match_components: "fuzzy"
+				type: "item_advanced"
+			}]
+			x: 9.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2637DA73FD8E4EF7"]
+			id: "629C1F28C6996964"
+			tasks: [{
+				id: "3D6831861F5FA6E5"
+				item: { count: 1, id: "hostilenetworks:deep_learner" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"1ADA61BC796EF41D"
+				"7E90F913A48E51E2"
+			]
+			hide_dependent_lines: true
+			id: "3312B5E07FA1A3EC"
+			tasks: [{
+				id: "311D275171D15555"
+				item: { count: 1, id: "create:brass_hand" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"10F06B42AAF18D8B"
+				"3312B5E07FA1A3EC"
+			]
+			id: "19216B1BCF93E6DF"
+			tasks: [{
+				id: "2F799165B4978802"
+				item: { count: 1, id: "create:deployer" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["19216B1BCF93E6DF"]
+			id: "17F7F0DBAD9CB1FD"
+			tasks: [{
+				id: "22878ECB458C6900"
+				item: { count: 1, id: "create:sturdy_sheet" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["17F7F0DBAD9CB1FD"]
+			id: "174D78B30AC2119A"
+			tasks: [
+				{
+					id: "420042203E695F6D"
+					item: { count: 1, id: "create_quarry:quarry" }
+					type: "item"
+				}
+				{
+					count: 2L
+					disable_toast: true
+					id: "7A3BF00929C67032"
+					item: { count: 1, id: "create_quarry:quarry_stake" }
+					type: "item"
+				}
+			]
+			x: 13.5d
+			y: 2.0d
+		}
+		{
+			always_invisible: true
+			id: "5B7B0CAEEF3B2568"
+			tasks: [
+				{
+					disable_toast: true
+					id: "6F2061B0A7CE5577"
+					item: { count: 1, id: "minecraft:oak_sapling" }
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "472DD310341CC8C6"
+					item: { count: 1, id: "minecraft:spruce_sapling" }
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "436A0D87376B3DEE"
+					item: { count: 1, id: "minecraft:birch_sapling" }
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "541E5B593D8EC433"
+					item: { count: 1, id: "minecraft:jungle_sapling" }
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "625733AD556BD194"
+					item: { count: 1, id: "minecraft:acacia_sapling" }
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "67594C56DB84FFAA"
+					item: { count: 1, id: "minecraft:dark_oak_sapling" }
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "562E09379418280A"
+					item: { count: 1, id: "minecraft:cherry_sapling" }
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"2FDE0BC4918A7F91"
+				"39F9CE05CD0CF2EA"
+			]
+			id: "2FDA8C0AB3CD3F21"
+			tasks: [
+				{
+					id: "23CDB1C007C35CAF"
+					item: { count: 1, id: "extended_industrialization:machine_chainer" }
+					type: "item"
+				}
+				{
+					id: "44DAC83E50F27900"
+					item: { count: 1, id: "extended_industrialization:machine_chainer_relay" }
+					type: "item"
+				}
+			]
+			x: 11.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["2637DA73FD8E4EF7"]
+			id: "6E8B06101D3E0A7B"
+			tasks: [{
+				id: "5932E09E1FC48EA0"
+				item: { count: 1, id: "industrialization_overdrive:terminal" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -8.5d
+		}
+	]
+}

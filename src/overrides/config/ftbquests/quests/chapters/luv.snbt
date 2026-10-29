@@ -1,0 +1,175 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "luv"
+	group: ""
+	icon: {
+		id: "modern_industrialization:iridium_plate"
+	}
+	id: "5B3FB60999CE8BE0"
+	images: [ ]
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			id: "2A644142367BBD5C"
+			tasks: [{
+				id: "6EA126D333CB0B43"
+				item: { count: 1, id: "modern_industrialization:iridium_ingot" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2A644142367BBD5C"]
+			id: "53594DDF00F4CB72"
+			tasks: [{
+				id: "2EE5FD2A54C89C1F"
+				item: { count: 1, id: "modern_industrialization:iridium_plate" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["53594DDF00F4CB72"]
+			id: "3228B80E2556210B"
+			tasks: [{
+				id: "2E6241145C99C062"
+				item: { count: 1, id: "modern_industrialization:quantum_circuit_board" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"2C28F770362CFA5D"
+				"3228B80E2556210B"
+			]
+			id: "531FDAD283D906E0"
+			tasks: [{
+				id: "26913A8DD342821B"
+				item: { count: 1, id: "modern_industrialization:quantum_circuit" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: -2.5d
+		}
+		{
+			id: "2C28F770362CFA5D"
+			tasks: [{
+				id: "331B61D196FF6C5B"
+				item: { count: 1, id: "modern_industrialization:qubit" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["53A56537A9600E54"]
+			id: "7CAC340EF033405A"
+			tasks: [{
+				id: "52A52DD4EBBAD774"
+				item: { count: 1, id: "mekanism_extras:alloy_radiance" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7CAC340EF033405A"]
+			id: "0D58120895E3765F"
+			tasks: [{
+				id: "5A14862ABC230206"
+				item: { count: 1, id: "mekanism_extras:alloy_thermonuclear" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"531FDAD283D906E0"
+				"5FC1DE7E15F9638A"
+			]
+			id: "3B9AC24D0F912CFE"
+			tasks: [{
+				id: "61E156552032DD4F"
+				item: { count: 1, id: "modern_industrialization:quantum_machine_hull" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["531FDAD283D906E0"]
+			id: "0A9539F21CB01803"
+			tasks: [{
+				id: "405CAC5E5DBED5BB"
+				item: { count: 1, id: "northstar:interplanetary_navigator" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2A644142367BBD5C"]
+			id: "572576B162998DF3"
+			tasks: [{
+				id: "407AA7A9FEF1A201"
+				item: { count: 1, id: "modern_industrialization:superconductor_dust" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5FC1DE7E15F9638A"]
+			id: "19C468CE3881C32E"
+			tasks: [{
+				id: "35B45283CF9C39A5"
+				item: { count: 1, id: "modern_industrialization:fusion_chamber" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"19C468CE3881C32E"
+				"3B9AC24D0F912CFE"
+			]
+			id: "53A56537A9600E54"
+			tasks: [{
+				id: "081BAF4B72D9C23E"
+				item: { count: 1, id: "modern_industrialization:fusion_reactor" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["572576B162998DF3"]
+			id: "5FC1DE7E15F9638A"
+			tasks: [{
+				id: "25BC8D7F9588B50C"
+				item: { count: 1, id: "modern_industrialization:superconductor_coil" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.5d
+		}
+		{
+			id: "3686197E7F53715D"
+			tasks: [{
+				id: "50FF2A82F77D4575"
+				item: { count: 1, id: "kubejs:mega_machine_hull" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -1.0d
+		}
+	]
+}

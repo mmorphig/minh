@@ -1,0 +1,87 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "utv"
+	group: ""
+	icon: {
+		id: "modern_industrialization:quantum_circuit"
+	}
+	id: "1DA2DB8349589509"
+	images: [ ]
+	order_index: 8
+	quest_links: [ ]
+	quests: [
+		{
+			id: "2D354FBA0228B870"
+			tasks: [{
+				id: "0EFD13501387E9ED"
+				item: { count: 1, id: "dimdoors:item_ag_dim_dimdoors_gold_door" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			id: "6B03F3E0392F41D8"
+			tasks: [{
+				id: "00BC3BB105E46C52"
+				item: { count: 1, id: "dimdoors:item_ag_dim_dimdoors_quartz_door" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "1C1D386491D47519"
+			tasks: [{
+				id: "69D7E3A6E75C48D2"
+				item: { count: 1, id: "dimdoors:item_ag_dim_minecraft_iron_door" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5CAC0BCE2463C48B"]
+			id: "2580B8D3B7B34544"
+			tasks: [{
+				id: "1DE4D6FBE47429A0"
+				item: { count: 1, id: "advanced_ae:quantum_alloy" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2580B8D3B7B34544"]
+			id: "423A7416A3A1847B"
+			tasks: [{
+				id: "4BF75B26881A06A4"
+				item: { count: 1, id: "advanced_ae:quantum_alloy_plate" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			id: "6C7BCC63848D2297"
+			tasks: [{
+				id: "7E56319697F83FF4"
+				item: { count: 1, id: "modern_industrialization:particle_accelerator" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			id: "6681743348211A0B"
+			tasks: [{
+				id: "2FFACAB64A4617AE"
+				item: { count: 1, id: "kubejs:ultimate_machine_hull" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+	]
+}

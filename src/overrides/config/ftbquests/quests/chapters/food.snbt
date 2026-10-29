@@ -1,0 +1,150 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "food"
+	group: ""
+	icon: {
+		id: "cookingforblockheads:white_oven"
+	}
+	id: "57EAD7688D7A09DD"
+	images: [ ]
+	order_index: 19
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"5E74F5255ABECFF2"
+				"439E2DB92FF38060"
+			]
+			id: "29C7886524F3139F"
+			tasks: [
+				{
+					id: "4596831B70787093"
+					item: { count: 1, id: "cookingforblockheads:white_fridge" }
+					type: "item"
+				}
+				{
+					id: "0BC6E7B208634F51"
+					item: { count: 1, id: "cookingforblockheads:white_oven" }
+					type: "item"
+				}
+				{
+					id: "3D328BC08FDE5D2A"
+					item: { count: 1, id: "cookingforblockheads:sink" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "1D2A6012669F1A4C"
+			tasks: [{
+				id: "33BF2DF547DA80C2"
+				item: { count: 1, id: "minecraft:wheat" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			id: "3C17030A9CB725C4"
+			tasks: [{
+				id: "1C65E11289FD91E7"
+				item: { count: 1, id: "minecraft:bread" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1D2A6012669F1A4C"]
+			id: "11FAF4474BB5E33D"
+			tasks: [{
+				id: "2D8FEDE104A9AC97"
+				item: { count: 1, id: "create:dough" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["11FAF4474BB5E33D"]
+			id: "0AAEFB0DF3715C11"
+			tasks: [{
+				id: "295DB31E6EBB4CC4"
+				item: { count: 1, id: "northstar:vanilla_ice_cream" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"762AD5CAAA6DFDF5"
+				"2D1B5CDBADDDD1EF"
+				"0FD394296C08B637"
+				"6777D9E0C173A08B"
+			]
+			id: "07D3FD3D5EF092EE"
+			tasks: [{
+				id: "26F7A78AAA9A325E"
+				item: { count: 1, id: "appliedcooking:kitchen_station" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			id: "2D1B5CDBADDDD1EF"
+			tasks: [{
+				id: "3F7A600CF49E8340"
+				item: { count: 1, id: "cookingforblockheads:toaster" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			id: "762AD5CAAA6DFDF5"
+			tasks: [{
+				id: "40FA25E6995AB407"
+				item: { count: 1, id: "cookingforblockheads:milk_jar" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			id: "428AFAA87201FEF6"
+			tasks: [{
+				id: "57050C1A089C5281"
+				item: { count: 1, id: "avaritia:ultimate_stew" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -1.5d
+		}
+		{
+			id: "219EED1CA2B94A08"
+			tasks: [{
+				id: "33686ADC19F4BEE6"
+				item: { count: 1, id: "avaritia:cosmic_meatballs" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["01A4A385B95163D8"]
+			id: "2EF4BEE93AD7B777"
+			tasks: [{
+				id: "13063BDD5C7E5146"
+				item: { count: 1, id: "applieddelight:me_cooking_pot" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+	]
+}

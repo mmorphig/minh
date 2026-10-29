@@ -33,6 +33,8 @@ Adding breeding U-238 fuel rods to autogen.<br>
 Probably some recipe autogen is missing, fill those in wherever needed.<br>
 Move kubejs MI materials to be MI-generated (ex: alumina).<br>
 Maybe add more custom parts for materials?<br>
+Remove all non-GT:M veins.<br>
+Remove expression and pneumaticcraft oil generation.<br>
 
 # Assets
 

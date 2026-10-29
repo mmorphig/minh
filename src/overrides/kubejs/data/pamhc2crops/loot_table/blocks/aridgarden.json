@@ -1,0 +1,74 @@
+{
+  "type": "minecraft:block",
+  "functions": [
+    {
+      "function": "minecraft:explosion_decay"
+    },
+    {
+      "enchantment": "minecraft:fortune",
+      "formula": "minecraft:uniform_bonus_count",
+      "function": "minecraft:apply_bonus",
+      "parameters": {
+        "bonusMultiplier": 2
+      }
+    }
+  ],
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:agaveitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:cactusfruititem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:cassavaitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:chickpeaitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:lentilitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:sisalitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:wolfberryitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:barrelcactusitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:chiaitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:nopalesitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:yuccaitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:papyrusitem"
+        }
+      ],
+      "name": "aridgarden0",
+      "rolls": 3.0
+    }
+  ],
+  "random_sequence": "pamhc2crops:blocks/aridgarden"
+}

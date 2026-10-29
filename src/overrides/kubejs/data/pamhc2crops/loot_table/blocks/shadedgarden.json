@@ -1,0 +1,94 @@
+{
+  "type": "minecraft:block",
+  "functions": [
+    {
+      "function": "minecraft:explosion_decay"
+    },
+    {
+      "enchantment": "minecraft:fortune",
+      "formula": "minecraft:uniform_bonus_count",
+      "function": "minecraft:apply_bonus",
+      "parameters": {
+        "bonusMultiplier": 2
+      }
+    }
+  ],
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:beanitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:blackberryitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:garlicitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:juteitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:leekitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:radishitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:rhubarbitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:scallionitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:spiceleafitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:sweetpotatoitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:tealeafitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:tomatoitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:turnipitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:whitemushroomitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:zucchiniitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:truffleitem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pamhc2crops:nettlesitem"
+        }
+      ],
+      "name": "shadedgarden0",
+      "rolls": 3.0
+    }
+  ],
+  "random_sequence": "pamhc2crops:blocks/shadedgarden"
+}

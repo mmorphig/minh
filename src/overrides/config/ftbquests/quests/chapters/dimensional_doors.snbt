@@ -1,0 +1,93 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "dimensional_doors"
+	group: ""
+	icon: {
+		components: {
+			"ftbquests:icon": "dimdoors:textures/painting/eyes.png"
+		}
+		id: "ftbquests:custom_icon"
+	}
+	id: "12BE7E5A945FC18B"
+	images: [ ]
+	order_index: 17
+	quest_links: [ ]
+	quests: [
+		{
+			id: "4E518C6A9E95E4BF"
+			tasks: [{
+				id: "701605F57968FF00"
+				item: { count: 1, id: "dimdoors:world_thread" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4E518C6A9E95E4BF"]
+			id: "3F661B85FBB666FA"
+			tasks: [{
+				id: "30968B740DBAD123"
+				item: { count: 1, id: "dimdoors:black_fabric" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["64294361844AA3D5"]
+			id: "54A91E49CB517AEC"
+			tasks: [{
+				id: "2E25A830158CB835"
+				item: { count: 1, id: "dimdoors:stable_fabric" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3F661B85FBB666FA"]
+			id: "64294361844AA3D5"
+			tasks: [{
+				id: "7DC5DC387F4EFC9A"
+				item: { count: 1, id: "dimdoors:tesselating_loom" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["64294361844AA3D5"]
+			id: "7280C18EF3330588"
+			tasks: [{
+				id: "6F1C82FCE9100632"
+				item: { count: 1, id: "dimdoors:enduring_fibers" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7280C18EF3330588"]
+			id: "7F7C283C1B631858"
+			tasks: [{
+				id: "3587B01649240BC6"
+				item: { count: 1, id: "dimdoors:fabric_of_finality" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.5d
+		}
+		{
+			id: "202A2C60DD35B637"
+			size: 1.5d
+			tasks: [{
+				id: "5AF5AC478F417F34"
+				type: "checkmark"
+			}]
+			x: -5.25d
+			y: 0.0d
+		}
+	]
+}

@@ -1,0 +1,155 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "umv"
+	group: ""
+	icon: {
+		id: "modern_industrialization:quantum_upgrade"
+	}
+	id: "6C055294CE14506A"
+	images: [ ]
+	order_index: 12
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["3D4D5D0AB8D3C2CA"]
+			id: "4B2BC44B8E451F7F"
+			tasks: [{
+				id: "64D6703CE2D72343"
+				item: { count: 1, id: "avaritia:infinity_ingot" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4B2BC44B8E451F7F"]
+			id: "785296D423A760DE"
+			tasks: [{
+				id: "15CAB11BA9C9761F"
+				item: { count: 1, id: "avaritia:enhancement_core" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4B2BC44B8E451F7F"]
+			id: "6CD8A7D1FB7BD346"
+			tasks: [{
+				id: "17CF615D5ED51403"
+				item: { count: 1, id: "avaritia:upgrade_smithing_template" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"01784D997ADA380E"
+				"6266921DCEA03D72"
+				"7B790FD5499608D5"
+				"219EED1CA2B94A08"
+				"428AFAA87201FEF6"
+			]
+			id: "3D4D5D0AB8D3C2CA"
+			tasks: [{
+				id: "3402CF742170BDA1"
+				item: { count: 1, id: "avaritia:infinity_catalyst" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			id: "01784D997ADA380E"
+			tasks: [{
+				id: "6D9F8D49365B5F2A"
+				item: { count: 1, id: "avaritia:eternal_singularity" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4B2BC44B8E451F7F"]
+			id: "12AC3EBFA423E43F"
+			tasks: [{
+				id: "4AFF920031CAEB5D"
+				item: { count: 1, id: "avaritia:infinity" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3403240439933740"]
+			id: "6266921DCEA03D72"
+			tasks: [{
+				id: "464E4638A969D805"
+				item: { count: 1, id: "avaritia:record_fragment" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["73E086C62CC8E2FE"]
+			id: "7B790FD5499608D5"
+			tasks: [{
+				id: "1569CB0FC274BA92"
+				item: { count: 1, id: "avaritia:endest_pearl" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4B2BC44B8E451F7F"]
+			id: "019F3AF56E828C31"
+			tasks: [{
+				id: "76A2C129855C74A7"
+				item: { count: 1, id: "avaritia:extreme_smithing_table" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6CD8A7D1FB7BD346"
+				"019F3AF56E828C31"
+				"785296D423A760DE"
+			]
+			id: "71CE516A07AF7331"
+			tasks: [{
+				id: "7B389A0CCA802EBA"
+				item: { components: { "minecraft:custom_data": { mode: { } } }, count: 1, id: "avaritia:infinity_clock" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4B2BC44B8E451F7F"]
+			id: "040A6D16C8074719"
+			tasks: [{
+				id: "66A1AF6FF723F0A6"
+				item: { count: 1, id: "more_curios_slots:extra_ring_slot" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			id: "28E7D40C60C214F8"
+			tasks: [{
+				id: "1F3EA9547B0FB6E2"
+				item: { count: 1, id: "kubejs:mega_ultimate_machine_hull" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.5d
+		}
+	]
+}

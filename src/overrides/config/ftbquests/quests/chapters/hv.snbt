@@ -1,0 +1,386 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "hv"
+	group: ""
+	icon: {
+		id: "modern_industrialization:processing_unit"
+	}
+	id: "528D89BF7E46C065"
+	images: [ ]
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"01C2D2018BA36704"
+				"25421239F0752314"
+			]
+			id: "45695BF662132BA3"
+			tasks: [{
+				id: "75262F04817D82C7"
+				item: { count: 1, id: "minecraft:netherite_ingot" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2A5B064E9DF2DBA4"
+				"5BC5E0C91C9F8EC1"
+			]
+			id: "57A2581E7591D288"
+			tasks: [{
+				id: "1B51C1A993277F6C"
+				item: { count: 1, id: "minecraft:netherite_scrap" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["14192AC530084284"]
+			id: "2A5B064E9DF2DBA4"
+			tasks: [{
+				id: "3E2A681026C74EC5"
+				item: { count: 1, id: "mekanism:dirty_netherite_scrap" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"54C6B74617ABD19F"
+				"303191FCCCC0B55D"
+			]
+			id: "14192AC530084284"
+			tasks: [{
+				id: "33EA92DF20164941"
+				item: { count: 1, id: "minecraft:ancient_debris" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"54C6B74617ABD19F"
+				"303191FCCCC0B55D"
+			]
+			id: "714E2395834DA715"
+			tasks: [{
+				id: "1B259247A2296F26"
+				item: { count: 1, id: "mekanism:ingot_osmium" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7542E0282C5A49EA"]
+			id: "116DA91322774A15"
+			tasks: [{
+				id: "19E51EA06383ABFB"
+				item: { count: 1, id: "mekanism:alloy_infused" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["116DA91322774A15"]
+			id: "7929745B9791BEA8"
+			tasks: [{
+				id: "0D6213B2B57FF49A"
+				item: { count: 1, id: "mekanism:alloy_reinforced" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"676BC0036D58C1E1"
+				"45695BF662132BA3"
+			]
+			id: "7930B79F1AC17644"
+			tasks: [{
+				id: "6B7ABED173C918C8"
+				item: { count: 1, id: "create:netherite_diving_helmet" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["45695BF662132BA3"]
+			id: "79CB001B4E01DEB9"
+			tasks: [{
+				id: "1BC8513B49654FEE"
+				item: { count: 1, id: "extended_industrialization:netherite_rotary_blade" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["79CB001B4E01DEB9"]
+			id: "3F95C01707A94B32"
+			tasks: [{
+				id: "6AA7FF3518639CCD"
+				item: { count: 1, id: "industrialization_overdrive:vajra" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["714E2395834DA715"]
+			id: "7542E0282C5A49EA"
+			tasks: [{
+				id: "500726A261831B45"
+				item: { count: 1, id: "mekanism:metallurgic_infuser" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["43FAD17CCD20EB5D"]
+			id: "06660B174724CF31"
+			tasks: [{
+				id: "77DF484A61E05F09"
+				item: { count: 1, id: "mekmm:recycler" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"7542E0282C5A49EA"
+				"116DA91322774A15"
+			]
+			id: "43FAD17CCD20EB5D"
+			tasks: [{
+				id: "77A13FBAF4D6BEEF"
+				item: { count: 1, id: "mekanism:crusher" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"4A6708775DFEB517"
+				"06660B174724CF31"
+			]
+			id: "4BA357AF0BC47B83"
+			tasks: [{
+				id: "42D34C0DEC2F9570"
+				item: { count: 1, id: "mekmm:scrap_box" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["116DA91322774A15"]
+			id: "4A6708775DFEB517"
+			tasks: [{
+				id: "39569D4F4554C439"
+				item: { count: 1, id: "mekanism:osmium_compressor" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"714E2395834DA715"
+				"7542E0282C5A49EA"
+			]
+			id: "5BC5E0C91C9F8EC1"
+			tasks: [{
+				id: "7EE6CCE675F5B69D"
+				item: { count: 1, id: "mekanism:enrichment_chamber" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["57A2581E7591D288"]
+			id: "01C2D2018BA36704"
+			tasks: [{
+				id: "11C93B17DE39A778"
+				item: { count: 1, id: "createmetalwork:crushed_netherite_scrap" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5BC5E0C91C9F8EC1"
+				"116DA91322774A15"
+			]
+			id: "25421239F0752314"
+			tasks: [{
+				id: "7262E60867E75570"
+				item: { count: 1, id: "mekanism:pressurized_reaction_chamber" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["45695BF662132BA3"]
+			id: "34A618640765982F"
+			tasks: [
+				{
+					id: "119B24F5C154D000"
+					item: { count: 1, id: "hostilenetworks:sim_chamber" }
+					type: "item"
+				}
+				{
+					id: "582943442367826E"
+					item: { count: 1, id: "hostilenetworks:loot_fabricator" }
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["34A618640765982F"]
+			id: "7A979F7DD864DA9A"
+			tasks: [
+				{
+					id: "29822B2A9DF6A75A"
+					item: { count: 1, id: "hostile_neural_industrialization:electric_simulation_chamber" }
+					type: "item"
+				}
+				{
+					id: "3BB113444D21BFA0"
+					item: { count: 1, id: "hostile_neural_industrialization:mono_loot_fabricator" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["45695BF662132BA3"]
+			id: "29730AE991212BD1"
+			tasks: [{
+				id: "2F0E1D1AAAC9D8AA"
+				item: { count: 1, id: "aeinfinitybooster:infinity_card" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["25421239F0752314"]
+			id: "114D10BDBD4650AA"
+			tasks: [{
+				id: "6781A465025E9286"
+				item: { count: 1, id: "mek_x_star:pressurized_durasteel" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["114D10BDBD4650AA"]
+			id: "25108B223A431F89"
+			tasks: [{
+				id: "24097B99D1DF8C77"
+				item: { count: 1, id: "northstar:rocket_waypoint" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			id: "54C6B74617ABD19F"
+			size: 1.5d
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "00CD985C3FCFEEE3"
+				type: "dimension"
+			}]
+			x: -9.75d
+			y: -3.0d
+		}
+		{
+			dependencies: ["54C6B74617ABD19F"]
+			id: "55CE26ACD410D0A5"
+			tasks: [{
+				id: "0D7DAF1B677AC339"
+				item: { count: 1, id: "minecraft:wither_skeleton_skull" }
+				type: "item"
+			}]
+			x: -9.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["55CE26ACD410D0A5"]
+			id: "15B07CD8F643AF35"
+			tasks: [{
+				id: "21B12B4E6751F2E2"
+				item: { count: 1, id: "minecraft:nether_star" }
+				type: "item"
+			}]
+			x: -9.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["45695BF662132BA3"]
+			id: "335CEFB59DBEAEE4"
+			tasks: [{
+				id: "1512F48889C6920B"
+				item: { count: 1, id: "expression_industry:netherite_reinforced_glass" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["15B07CD8F643AF35"]
+			id: "16A3F40F0046C3D7"
+			tasks: [{
+				id: "5559CFBD0086663E"
+				item: { count: 1, id: "constructionstick:template_unbreakable" }
+				type: "item"
+			}]
+			x: -9.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7929745B9791BEA8"]
+			id: "2B4436FA08698F7B"
+			tasks: [{
+				id: "4188F649094412DF"
+				item: { count: 1, id: "mekanism:chemical_dissolution_chamber" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["79CB001B4E01DEB9"]
+			id: "7225D37892AEF5D5"
+			tasks: [{
+				id: "133870EA28EEA692"
+				item: { count: 1, id: "modern_industrialization:ore_processor" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.0d
+		}
+	]
+}

@@ -1,0 +1,151 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "uev"
+	group: ""
+	icon: {
+		id: "mekanism:pellet_antimatter"
+	}
+	id: "38679662CC227901"
+	images: [ ]
+	order_index: 10
+	quest_links: [ ]
+	quests: [
+		{
+			id: "0A2A16582FF9F633"
+			tasks: [
+				{
+					id: "11547F9709ECCAFB"
+					item: { count: 1, id: "mekanism:sps_casing" }
+					type: "item"
+				}
+				{
+					id: "10E8351A5F52F0F5"
+					item: { count: 1, id: "mekanism:sps_port" }
+					type: "item"
+				}
+				{
+					id: "2C934CDB06975D44"
+					item: { count: 1, id: "mekanism:supercharged_coil" }
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0A2A16582FF9F633"]
+			id: "5325A93D7C5A9076"
+			tasks: [{
+				id: "26FD572F03CB1CF8"
+				item: { count: 1, id: "mekanism:pellet_antimatter" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5325A93D7C5A9076"]
+			id: "236FE3B73C4D014E"
+			tasks: [{
+				id: "48E8362FD6CBCB13"
+				item: { count: 1, id: "mekanism:antiprotonic_nucleosynthesizer" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["236FE3B73C4D014E"]
+			id: "2431E0E74BB1F141"
+			tasks: [
+				{
+					id: "0942AD67C0DEE927"
+					item: { count: 1, id: "mekanism_extras:naquadah_reactor_controller" }
+					type: "item"
+				}
+				{
+					id: "1E1EBC44E3A170FB"
+					item: { count: 1, id: "mekanism_extras:naquadah_reactor_casing" }
+					type: "item"
+				}
+				{
+					id: "31089400516FA77B"
+					item: { count: 1, id: "mekanism_extras:naquadah_reactor_port" }
+					type: "item"
+				}
+				{
+					id: "52000059EBBD89EE"
+					item: { count: 1, id: "mekanism_extras:lead_coated_laser_focus_matrix" }
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["236FE3B73C4D014E"]
+			id: "367EBFB8E4305968"
+			tasks: [{
+				id: "2F777A978C6EB071"
+				item: { count: 1, id: "mekanism_extras:alloy_shining" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["367EBFB8E4305968"]
+			id: "658CECA73F8AD7E5"
+			tasks: [{
+				id: "4CA973E04FFAF000"
+				item: { count: 1, id: "mekanism_extras:alloy_spectrum" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.0d
+		}
+		{
+			id: "6C82EFEBC6D4A29C"
+			tasks: [{
+				id: "655B63648479E483"
+				item: { count: 1, id: "modern_industrialization:supercollider" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["658CECA73F8AD7E5"]
+			id: "1A4E20884CDEABE5"
+			tasks: [{
+				id: "45FC35F9BDBAB870"
+				item: { count: 1, id: "dysoncubeproject:dyson_hub" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1A4E20884CDEABE5"]
+			id: "3FBB79CFCCEF840B"
+			tasks: [{
+				id: "63D7DB783A6B0857"
+				item: { count: 1, id: "dysoncubeproject:cosmic_mining_hub" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -0.5d
+		}
+		{
+			id: "5CF6F93F5335FDEF"
+			tasks: [{
+				id: "70528A9556DC5898"
+				item: { count: 1, id: "kubejs:extremely_ultimate_machine_hull" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -0.5d
+		}
+	]
+}

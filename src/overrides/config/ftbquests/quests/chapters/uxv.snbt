@@ -1,0 +1,372 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "uxv"
+	group: ""
+	icon: {
+		id: "mekanism_extras:upgrade_creative"
+	}
+	id: "2743378B451AB55D"
+	images: [ ]
+	order_index: 13
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["7F3EC7C1AD43D534"]
+			id: "041CE69CCD3BE67B"
+			tasks: [{
+				id: "0DD2C496606C6A4C"
+				item: { count: 1, id: "mekanism_extras:upgrade_creative" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["7F3EC7C1AD43D534"]
+			id: "1A789E850B07F569"
+			tasks: [
+				{
+					id: "38158AE2DF603C16"
+					item: { count: 1, id: "mekmm:replicator" }
+					type: "item"
+				}
+				{
+					id: "10BA034E9EB7B409"
+					item: { count: 1, id: "mekmm:fluid_replicator" }
+					type: "item"
+				}
+				{
+					id: "6AE8C819DDD36C5D"
+					item: { count: 1, id: "mekmm:chemical_replicator" }
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1FE24FD220C5A2BF"]
+			id: "7F3EC7C1AD43D534"
+			tasks: [{
+				id: "4DF48B82067706E3"
+				item: { count: 1, id: "mekmm:uu_matter" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			id: "1FE24FD220C5A2BF"
+			tasks: [{
+				id: "67BF6438DBC28302"
+				item: { count: 1, id: "mekmm:ambient_gas_collector" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["7F3EC7C1AD43D534"]
+			id: "73ED4D43CDE78B60"
+			tasks: [{
+				id: "70DDE6FC2F84D13C"
+				item: { count: 1, id: "modern_industrialization:quantum_upgrade" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			id: "6A06A92E2694B5DA"
+			tasks: [{
+				id: "5981DF1C0334A38D"
+				item: { count: 1, id: "kubejs:extended_ultimate_machine_hull" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["1B484349B459BF79"]
+			id: "35D9DEF9F581D742"
+			tasks: [{
+				id: "3006B5C161CFFC5B"
+				item: { count: 1, id: "sgjourney:classic_stargate_base_block" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["336A0BFD4DEA010F"]
+			id: "1B484349B459BF79"
+			tasks: [{
+				id: "7228645AE4DEE9AD"
+				item: { count: 1, id: "sgjourney:classic_stargate_ring_block" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1B484349B459BF79"]
+			id: "5E69D6BFF19B9372"
+			tasks: [{
+				id: "405AFC9782B44FE2"
+				item: { count: 1, id: "sgjourney:classic_stargate_chevron_block" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"673FE4FBA5779FF2"
+				"6F3D347115FD6AC0"
+				"0DD184C075930A61"
+				"410C1F85B31DC34A"
+				"1B4D1BBEE124B789"
+				"3AA0992C55D4F5F7"
+				"592CF97FE82577F2"
+			]
+			id: "336A0BFD4DEA010F"
+			tasks: [{
+				id: "73B74BF02C76C6E1"
+				item: { components: { "minecraft:block_entity_data": { generation_step: 2b, id: "sgjourney:classic_dhd" } }, count: 1, id: "sgjourney:classic_dhd" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["41F60AC5526455EA"]
+			id: "3D39170518412024"
+			tasks: [{
+				id: "05316DC291AABFD5"
+				item: { count: 1, id: "sgjourney:control_crystal" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"3D39170518412024"
+				"43B7CADF991C3789"
+			]
+			id: "410C1F85B31DC34A"
+			tasks: [{
+				id: "7088795BE6DD2582"
+				item: { count: 1, id: "sgjourney:advanced_control_crystal" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["41F60AC5526455EA"]
+			id: "43B7CADF991C3789"
+			tasks: [{
+				id: "77E4872E3E946195"
+				item: { count: 1, id: "sgjourney:advanced_crystal_base" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"06A2BC7BF05660EB"
+				"43B7CADF991C3789"
+			]
+			id: "3AA0992C55D4F5F7"
+			tasks: [{
+				id: "2FB782222B683740"
+				item: { count: 1, id: "sgjourney:advanced_memory_crystal" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"7DD64C00175C8B4E"
+				"43B7CADF991C3789"
+			]
+			id: "673FE4FBA5779FF2"
+			tasks: [{
+				id: "15F7EEAF83CF4002"
+				item: { count: 1, id: "sgjourney:advanced_materialization_crystal" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"591684156E33092B"
+				"43B7CADF991C3789"
+			]
+			id: "6F3D347115FD6AC0"
+			tasks: [{
+				id: "2F05A09E5BB148C9"
+				item: { count: 1, id: "sgjourney:advanced_energy_crystal" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"246352BE0F4E061F"
+				"43B7CADF991C3789"
+			]
+			id: "1B4D1BBEE124B789"
+			tasks: [{
+				id: "338B369FB786593F"
+				item: { count: 1, id: "sgjourney:advanced_transfer_crystal" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"53680832448FEBFE"
+				"43B7CADF991C3789"
+			]
+			id: "0DD184C075930A61"
+			tasks: [{
+				id: "6D20058FBEA9C575"
+				item: { count: 1, id: "sgjourney:advanced_communication_crystal" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["41F60AC5526455EA"]
+			id: "06A2BC7BF05660EB"
+			tasks: [{
+				id: "2E78E1FDAF21C84F"
+				item: { count: 1, id: "sgjourney:memory_crystal" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["41F60AC5526455EA"]
+			id: "7DD64C00175C8B4E"
+			tasks: [{
+				id: "5FB31E0B0B93405F"
+				item: { count: 1, id: "sgjourney:materialization_crystal" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["41F60AC5526455EA"]
+			id: "591684156E33092B"
+			tasks: [{
+				id: "384EC0C982BD05A5"
+				item: { count: 1, id: "sgjourney:energy_crystal" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["41F60AC5526455EA"]
+			id: "53680832448FEBFE"
+			tasks: [{
+				id: "21F64C35552090EB"
+				item: { count: 1, id: "sgjourney:communication_crystal" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["41F60AC5526455EA"]
+			id: "246352BE0F4E061F"
+			tasks: [{
+				id: "4A57E28FE3288F2E"
+				item: { count: 1, id: "sgjourney:transfer_crystal" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"410C1F85B31DC34A"
+				"0DD184C075930A61"
+			]
+			id: "2C3B426F067CBACB"
+			tasks: [{
+				id: "5AD532EDAE9A3E4E"
+				item: { count: 1, id: "sgjourney:pda" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: -1.0d
+		}
+		{
+			id: "41F60AC5526455EA"
+			tasks: [{
+				id: "77AB90E507DDF89D"
+				item: { count: 1, id: "sgjourney:crystal_base" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["41F60AC5526455EA"]
+			id: "201B97D9FCE7D35D"
+			tasks: [{
+				id: "11571173D80B92EB"
+				item: { count: 1, id: "sgjourney:crystal_adapter" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["201B97D9FCE7D35D"]
+			id: "50179B11A889EFB7"
+			tasks: [{
+				id: "3E430BA60AEEBBA2"
+				item: { count: 1, id: "sgjourney:pocket_crystal_computer" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["0DD184C075930A61"]
+			id: "67B124D4D796319A"
+			tasks: [{
+				id: "07BE710FEED0CA82"
+				item: { count: 1, id: "sgjourney:gdo" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["410C1F85B31DC34A"]
+			id: "592CF97FE82577F2"
+			tasks: [{
+				id: "076766D9D9E4601F"
+				item: { count: 1, id: "sgjourney:large_control_crystal" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -1.0d
+		}
+	]
+}

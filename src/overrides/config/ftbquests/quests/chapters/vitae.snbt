@@ -1,0 +1,322 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "vitae"
+	group: ""
+	icon: {
+		id: "neovitae:weak_blood_shard"
+	}
+	id: "15010C7A4904FE27"
+	images: [ ]
+	order_index: 21
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["45695BF662132BA3"]
+			id: "344069D340138834"
+			tasks: [{
+				id: "7F7336514A11EA30"
+				item: { count: 1, id: "neovitae:ara_vitae" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["344069D340138834"]
+			id: "411498FAFA6CF57B"
+			tasks: [{
+				id: "11BC976CD64606D6"
+				item: { count: 1, id: "neovitae:athanor" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["344069D340138834"]
+			id: "29FABC13092B97A6"
+			tasks: [{
+				id: "228AA424193F5B30"
+				item: { count: 1, id: "neovitae:tabula_vitae" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["411498FAFA6CF57B"]
+			id: "0B88596B2B2C89D7"
+			tasks: [{
+				id: "2A25A56F62AA5A5A"
+				item: { count: 1, id: "neovitae:weak_blood_shard" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B88596B2B2C89D7"]
+			id: "3965927E7D02DBD3"
+			tasks: [{
+				id: "40056DFCE7D4A891"
+				item: { count: 1, id: "bmaddon:blood_altar_pattern" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["344069D340138834"]
+			id: "5F1F97EA1075852F"
+			tasks: [{
+				id: "37CCCF3A3723D324"
+				item: { count: 1, id: "neovitae:hellfire_forge" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["344069D340138834"]
+			id: "3C89C1E4DF830D4C"
+			tasks: [{
+				id: "59A615C1620BFAF6"
+				item: { count: 1, id: "neovitae:blood_orb_weak" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3C89C1E4DF830D4C"]
+			id: "2513F3320CE1FB27"
+			tasks: [{
+				id: "7D620478CA46A787"
+				item: { count: 1, id: "neovitae:blood_orb_apprentice" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["344069D340138834"]
+			id: "14A0DD8F2C02B25B"
+			tasks: [{
+				id: "7757771E48A4DF4A"
+				item: { count: 1, id: "neovitae:tabula_rasa" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["14A0DD8F2C02B25B"]
+			id: "75D653AB3DAE91D4"
+			tasks: [{
+				id: "5548E2D46ACBF29C"
+				item: { count: 1, id: "neovitae:tabula_robur" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["75D653AB3DAE91D4"]
+			id: "079BBCFC8B579B7C"
+			tasks: [{
+				id: "606F1BD2262C9C1E"
+				item: { count: 1, id: "neovitae:tabula_animata" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["079BBCFC8B579B7C"]
+			id: "372EA7D242E00A03"
+			tasks: [
+				{
+					id: "4855B64A53C5EFF0"
+					item: { count: 1, id: "neovitae:rune_capacity" }
+					type: "item"
+				}
+				{
+					id: "2B79B389BD27744E"
+					item: { count: 1, id: "neovitae:rune_dislocation" }
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["75D653AB3DAE91D4"]
+			id: "06CCCB70432C7ECA"
+			tasks: [
+				{
+					id: "17EF4F6BA1B26E31"
+					item: { count: 1, id: "neovitae:rune_sacrifice_self" }
+					type: "item"
+				}
+				{
+					id: "0287196056B22E29"
+					item: { count: 1, id: "neovitae:rune_sacrifice" }
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["14A0DD8F2C02B25B"]
+			id: "198788AE7D10A261"
+			tasks: [{
+				id: "627FFE433A98C22D"
+				item: { count: 1, id: "neovitae:rune_speed" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["2513F3320CE1FB27"]
+			id: "1B5900CE57E21555"
+			tasks: [{
+				id: "7894DABF6BFAA165"
+				item: { count: 1, id: "neovitae:blood_orb_magician" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"1B5900CE57E21555"
+				"0B88596B2B2C89D7"
+			]
+			id: "1B9A5F512FC736B7"
+			tasks: [{
+				id: "5C03E7DB66F2C392"
+				item: { count: 1, id: "neovitae:blood_orb_master" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1B9A5F512FC736B7"]
+			id: "2E64E18D65C4A181"
+			tasks: [{
+				id: "692241DC5DFBA750"
+				item: { count: 1, id: "neovitae:blood_orb_archmage" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"2E64E18D65C4A181"
+				"26D84FE568D671D8"
+				"40C2B9BF1955E139"
+			]
+			id: "1FD4782B419215CF"
+			tasks: [{
+				id: "63A7440E01450441"
+				item: { count: 1, id: "neovitae:blood_orb_transcendent" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["301CFC0B9705D0C6"]
+			id: "26D84FE568D671D8"
+			tasks: [{
+				id: "4E781CEED62285A1"
+				item: { count: 1, id: "neovitae:tabula_aetherea" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["079BBCFC8B579B7C"]
+			id: "301CFC0B9705D0C6"
+			tasks: [{
+				id: "0F5478A465829A65"
+				item: { count: 1, id: "neovitae:tabula_spiritus" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["301CFC0B9705D0C6"]
+			id: "3A36FF9A37157E08"
+			tasks: [{
+				id: "376193D200B1ADA5"
+				item: { count: 1, id: "neovitae:rune_charging" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["26D84FE568D671D8"]
+			id: "2E89C48DF6CD8F55"
+			tasks: [{
+				id: "6726A024FAF89670"
+				item: { count: 1, id: "neovitae:rune_efficiency" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["344069D340138834"]
+			id: "5CF753020A4EDA0F"
+			tasks: [{
+				id: "60092B4FD9D8B22E"
+				item: { count: 1, id: "neovitae:ritual_diviner" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3C89C1E4DF830D4C"]
+			id: "7F921D1E094914CC"
+			tasks: [{
+				id: "730054BAEBF7BF0D"
+				item: { count: 1, id: "neovitae:activation_crystal_weak" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["411498FAFA6CF57B"]
+			id: "550A2909841F7860"
+			tasks: [{
+				id: "621FED65E817C3D7"
+				item: { count: 1, id: "neovitae:vas_maleficum" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["550A2909841F7860"]
+			id: "40C2B9BF1955E139"
+			tasks: [{
+				id: "24E5AA0DAB5C40AE"
+				item: { count: 1, id: "neovitae:raw_crystal_shard" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.5d
+		}
+	]
+}
