@@ -1,636 +1,1244 @@
-
 {
   "banded_iron_formation": {
     "weight": 80,
     "density": 0.8,
     "layer": "stone",
     "biomes": "#minecraft:is_overworld",
-    "ore_blocks": [
-      {"block": "modern_industrialization:hematite_ore", "weight": 5},
-      {"block": "modern_industrialization:magnetite_ore", "weight": 4},
-      {"block": "modern_industrialization:pyrite_ore", "weight": 1}
-    ],
-    "rare_blocks": [
-      {"block": "modern_industrialization:ilmenite_ore", "weight": 2},
-      {"block": "modern_industrialization:garnet_ore", "weight": 1}
-    ],
-    "rare_block_chance": 0.12
+    "primary": {
+      "layers": 3,
+      "blocks": [
+        "modern_industrialization:hematite_ore",
+        "modern_industrialization:magnetite_ore"
+      ]
+    },
+    "secondary": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:pyrite_ore"
+      ]
+    },
+    "between": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:ilmenite_ore"
+      ]
+    },
+    "sporadic": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:garnet_ore"
+      ]
+    }
   },
   "magnetite_deposit": {
     "weight": 55,
     "density": 0.65,
     "layer": "stone",
     "biomes": "#minecraft:is_mountain",
-    "ore_blocks": [
-      {"block": "modern_industrialization:magnetite_ore", "weight": 5},
-      {"block": "modern_industrialization:ilmenite_ore", "weight": 2},
-      {"block": "modern_industrialization:pyrite_ore", "weight": 1}
-    ],
-    "rare_blocks": [
-      {"block": "modern_industrialization:chromite_ore", "weight": 2},
-      {"block": "modern_industrialization:rutile_ore", "weight": 1}
-    ],
-    "rare_block_chance": 0.15
+    "primary": {
+      "layers": 3,
+      "blocks": [
+        "modern_industrialization:magnetite_ore",
+        "modern_industrialization:ilmenite_ore"
+      ]
+    },
+    "secondary": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:pyrite_ore"
+      ]
+    },
+    "between": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:chromite_ore"
+      ]
+    },
+    "sporadic": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:rutile_ore"
+      ]
+    }
   },
   "porphyry_copper": {
     "weight": 65,
     "density": 0.6,
     "layer": "stone",
     "biomes": "#minecraft:is_mountain",
-    "ore_blocks": [
-      {"block": "modern_industrialization:chalcopyrite_ore", "weight": 5},
-      {"block": "modern_industrialization:bornite_ore", "weight": 3},
-      {"block": "modern_industrialization:pyrite_ore", "weight": 2}
-    ],
-    "rare_blocks": [
-      {"block": "modern_industrialization:molybdenite_ore", "weight": 2},
-      {"block": "modern_industrialization:malachite_ore", "weight": 1}
-    ],
-    "rare_block_chance": 0.2
+    "primary": {
+      "layers": 3,
+      "blocks": [
+        "modern_industrialization:chalcopyrite_ore",
+        "modern_industrialization:bornite_ore"
+      ]
+    },
+    "secondary": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:pyrite_ore"
+      ]
+    },
+    "between": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:molybdenite_ore"
+      ]
+    },
+    "sporadic": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:malachite_ore"
+      ]
+    }
   },
   "lead_zinc_deposit": {
     "weight": 55,
     "density": 0.6,
     "layer": "stone",
     "biomes": "#minecraft:is_overworld",
-    "ore_blocks": [
-      {"block": "modern_industrialization:galena_ore", "weight": 5},
-      {"block": "modern_industrialization:sphalerite_ore", "weight": 4},
-      {"block": "modern_industrialization:pyrite_ore", "weight": 1}
-    ],
-    "rare_blocks": [
-      {"block": "modern_industrialization:tetrahedrite_ore", "weight": 2},
-      {"block": "modern_industrialization:cerussite_ore", "weight": 1}
-    ],
-    "rare_block_chance": 0.18
+    "primary": {
+      "layers": 3,
+      "blocks": [
+        "modern_industrialization:galena_ore",
+        "modern_industrialization:sphalerite_ore"
+      ]
+    },
+    "secondary": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:pyrite_ore"
+      ]
+    },
+    "between": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:tetrahedrite_ore"
+      ]
+    },
+    "sporadic": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:cerussite_ore"
+      ]
+    }
   },
   "cassiterite_deposit": {
     "weight": 45,
     "density": 0.5,
     "layer": "stone",
     "biomes": "#minecraft:is_hills",
-    "ore_blocks": [
-      {"block": "modern_industrialization:cassiterite_ore", "weight": 6},
-      {"block": "modern_industrialization:quartz_ore", "weight": 2}
-    ],
-    "rare_blocks": [
-      {"block": "modern_industrialization:wolframite_ore", "weight": 2},
-      {"block": "modern_industrialization:stannite_ore", "weight": 1},
-      {"block": "modern_industrialization:tantaliteite_ore", "weight": 1}
-    ],
-    "rare_block_chance": 0.18
+    "primary": {
+      "layers": 3,
+      "blocks": [
+        "modern_industrialization:cassiterite_ore",
+        "modern_industrialization:quartz_ore"
+      ]
+    },
+    "secondary": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:wolframite_ore"
+      ]
+    },
+    "between": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:stannite_ore"
+      ]
+    },
+    "sporadic": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:tantalite_ore"
+      ]
+    }
   },
   "coal_basin": {
     "weight": 90,
     "density": 0.85,
     "layer": "stone",
     "biomes": "#minecraft:is_overworld",
-    "ore_blocks": [
-      {"block": "minecraft:coal_ore", "weight": 7},
-      {"block": "modern_industrialization:pyrite_ore", "weight": 1}
-    ],
-    "rare_blocks": [
-      {"block": "modern_industrialization:gypsum_ore", "weight": 1},
-      {"block": "modern_industrialization:uraninite_ore", "weight": 1}
-    ],
-    "rare_block_chance": 0.08
+    "primary": {
+      "layers": 3,
+      "blocks": [
+        "minecraft:coal_ore"
+      ]
+    },
+    "secondary": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:pyrite_ore"
+      ]
+    },
+    "between": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:gypsum_ore"
+      ]
+    },
+    "sporadic": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:uraninite_ore"
+      ]
+    }
   },
   "bauxite_laterite": {
     "weight": 60,
     "density": 0.7,
     "layer": "stone",
     "biomes": "#minecraft:is_jungle",
-    "ore_blocks": [
-      {"block": "modern_industrialization:bauxite_ore", "weight": 6},
-      {"block": "modern_industrialization:hematite_ore", "weight": 2}
-    ],
-    "rare_blocks": [
-      {"block": "modern_industrialization:ilmenite_ore", "weight": 2},
-      {"block": "modern_industrialization:rutile_ore", "weight": 2}
-    ],
-    "rare_block_chance": 0.15
+    "primary": {
+      "layers": 3,
+      "blocks": [
+        "modern_industrialization:bauxite_ore",
+        "modern_industrialization:hematite_ore"
+      ]
+    },
+    "secondary": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:ilmenite_ore"
+      ]
+    },
+    "between": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:rutile_ore"
+      ]
+    },
+    "sporadic": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:rutile_ore"
+      ]
+    }
   },
   "massive_pyrite": {
     "weight": 45,
     "density": 0.7,
     "layer": "stone",
     "biomes": "#minecraft:is_overworld",
-    "ore_blocks": [
-      {"block": "modern_industrialization:pyrite_ore", "weight": 6},
-      {"block": "modern_industrialization:pyrrhotite_ore", "weight": 3}
-    ],
-    "rare_blocks": [
-      {"block": "modern_industrialization:arsenopyrite_ore", "weight": 2},
-      {"block": "modern_industrialization:chalcopyrite_ore", "weight": 1},
-      {"block": "modern_industrialization:cobaltite_ore", "weight": 1}
-    ],
-    "rare_block_chance": 0.18
+    "primary": {
+      "layers": 3,
+      "blocks": [
+        "modern_industrialization:pyrite_ore",
+        "modern_industrialization:pyrrhotite_ore"
+      ]
+    },
+    "secondary": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:arsenopyrite_ore"
+      ]
+    },
+    "between": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:chalcopyrite_ore"
+      ]
+    },
+    "sporadic": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:cobaltite_ore"
+      ]
+    }
   },
   "volcanogenic_massive_sulfide": {
     "weight": 50,
     "density": 0.65,
     "layer": "stone",
     "biomes": "#minecraft:is_overworld",
-    "ore_blocks": [
-      {"block": "modern_industrialization:chalcopyrite_ore", "weight": 4},
-      {"block": "modern_industrialization:pyrite_ore", "weight": 3},
-      {"block": "modern_industrialization:sphalerite_ore", "weight": 2}
-    ],
-    "rare_blocks": [
-      {"block": "modern_industrialization:galena_ore", "weight": 2},
-      {"block": "modern_industrialization:tetrahedrite_ore", "weight": 1},
-      {"block": "modern_industrialization:cobaltite_ore", "weight": 1}
-    ],
-    "rare_block_chance": 0.18
+    "primary": {
+      "layers": 3,
+      "blocks": [
+        "modern_industrialization:chalcopyrite_ore",
+        "modern_industrialization:pyrite_ore"
+      ]
+    },
+    "secondary": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:sphalerite_ore"
+      ]
+    },
+    "between": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:galena_ore"
+      ]
+    },
+    "sporadic": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:tetrahedrite_ore",
+        "modern_industrialization:cobaltite_ore"
+      ]
+    }
   },
   "nickel_copper_sulfide": {
     "weight": 45,
     "density": 0.6,
     "layer": "deepslate",
     "biomes": "#minecraft:is_overworld",
-    "ore_blocks": [
-      {"block": "modern_industrialization:pentlandite_ore", "weight": 5},
-      {"block": "modern_industrialization:pyrrhotite_ore", "weight": 3},
-      {"block": "modern_industrialization:chalcopyrite_ore", "weight": 2}
-    ],
-    "rare_blocks": [
-      {"block": "modern_industrialization:cobaltite_ore", "weight": 2},
-      {"block": "modern_industrialization:chromite_ore", "weight": 1}
-    ],
-    "rare_block_chance": 0.18
+    "primary": {
+      "layers": 3,
+      "blocks": [
+        "modern_industrialization:pentlandite_ore",
+        "modern_industrialization:pyrrhotite_ore"
+      ]
+    },
+    "secondary": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:chalcopyrite_ore"
+      ]
+    },
+    "between": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:cobaltite_ore"
+      ]
+    },
+    "sporadic": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:chromite_ore"
+      ]
+    }
   },
   "antimony_arsenic_vein": {
     "weight": 35,
     "density": 0.45,
     "layer": "stone",
     "biomes": "#minecraft:is_mountain",
-    "ore_blocks": [
-      {"block": "modern_industrialization:stibnite_ore", "weight": 5},
-      {"block": "modern_industrialization:arsenopyrite_ore", "weight": 4}
-    ],
-    "rare_blocks": [
-      {"block": "modern_industrialization:tennantite_ore", "weight": 2},
-      {"block": "modern_industrialization:tetrahedrite_ore", "weight": 1},
-      {"block": "modern_industrialization:pyrite_ore", "weight": 1}
-    ],
-    "rare_block_chance": 0.2
+    "primary": {
+      "layers": 3,
+      "blocks": [
+        "modern_industrialization:stibnite_ore",
+        "modern_industrialization:arsenopyrite_ore"
+      ]
+    },
+    "secondary": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:tennantite_ore"
+      ]
+    },
+    "between": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:tetrahedrite_ore"
+      ]
+    },
+    "sporadic": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:pyrite_ore"
+      ]
+    }
   },
   "polymetallic_sulfosalt": {
     "weight": 40,
     "density": 0.5,
     "layer": "stone",
     "biomes": "#minecraft:is_overworld",
-    "ore_blocks": [
-      {"block": "modern_industrialization:tetrahedrite_ore", "weight": 4},
-      {"block": "modern_industrialization:tennantite_ore", "weight": 3},
-      {"block": "modern_industrialization:galena_ore", "weight": 2}
-    ],
-    "rare_blocks": [
-      {"block": "modern_industrialization:bournonite_ore", "weight": 2},
-      {"block": "modern_industrialization:pyrite_ore", "weight": 1}
-    ],
-    "rare_block_chance": 0.2
+    "primary": {
+      "layers": 3,
+      "blocks": [
+        "modern_industrialization:tetrahedrite_ore",
+        "modern_industrialization:tennantite_ore"
+      ]
+    },
+    "secondary": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:galena_ore"
+      ]
+    },
+    "between": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:bournonite_ore"
+      ]
+    },
+    "sporadic": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:pyrite_ore"
+      ]
+    }
   },
   "cobalt_sulfide": {
     "weight": 35,
     "density": 0.5,
     "layer": "deepslate",
     "biomes": "#minecraft:is_overworld",
-    "ore_blocks": [
-      {"block": "modern_industrialization:cobaltite_ore", "weight": 5},
-      {"block": "modern_industrialization:pentlandite_ore", "weight": 3},
-      {"block": "modern_industrialization:arsenopyrite_ore", "weight": 1}
-    ],
-    "rare_blocks": [
-      {"block": "modern_industrialization:pyrite_ore", "weight": 2},
-      {"block": "modern_industrialization:chalcopyrite_ore", "weight": 1}
-    ],
-    "rare_block_chance": 0.18
+    "primary": {
+      "layers": 3,
+      "blocks": [
+        "modern_industrialization:cobaltite_ore",
+        "modern_industrialization:pentlandite_ore"
+      ]
+    },
+    "secondary": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:arsenopyrite_ore"
+      ]
+    },
+    "between": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:pyrite_ore"
+      ]
+    },
+    "sporadic": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:chalcopyrite_ore"
+      ]
+    }
   },
   "tin_copper_sulfide": {
     "weight": 35,
     "density": 0.5,
     "layer": "stone",
     "biomes": "#minecraft:is_hills",
-    "ore_blocks": [
-      {"block": "modern_industrialization:stannite_ore", "weight": 4},
-      {"block": "modern_industrialization:chalcopyrite_ore", "weight": 4},
-      {"block": "modern_industrialization:cassiterite_ore", "weight": 2}
-    ],
-    "rare_blocks": [
-      {"block": "modern_industrialization:pyrite_ore", "weight": 2},
-      {"block": "modern_industrialization:galena_ore", "weight": 1}
-    ],
-    "rare_block_chance": 0.18
+    "primary": {
+      "layers": 3,
+      "blocks": [
+        "modern_industrialization:stannite_ore",
+        "modern_industrialization:chalcopyrite_ore"
+      ]
+    },
+    "secondary": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:cassiterite_ore"
+      ]
+    },
+    "between": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:pyrite_ore"
+      ]
+    },
+    "sporadic": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:galena_ore"
+      ]
+    }
   },
   "bismuth_tungsten_vein": {
     "weight": 30,
     "density": 0.4,
     "layer": "stone",
     "biomes": "#minecraft:is_mountain",
-    "ore_blocks": [
-      {"block": "modern_industrialization:wolframite_ore", "weight": 4},
-      {"block": "modern_industrialization:arsenopyrite_ore", "weight": 2},
-      {"block": "modern_industrialization:pyrite_ore", "weight": 1}
-    ],
-    "rare_blocks": [
-      {"block": "modern_industrialization:molybdenite_ore", "weight": 2},
-      {"block": "modern_industrialization:bismuthinite_ore", "weight": 1}
-    ],
-    "rare_block_chance": 0.2
+    "primary": {
+      "layers": 3,
+      "blocks": [
+        "modern_industrialization:wolframite_ore",
+        "modern_industrialization:arsenopyrite_ore"
+      ]
+    },
+    "secondary": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:pyrite_ore"
+      ]
+    },
+    "between": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:molybdenite_ore"
+      ]
+    },
+    "sporadic": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:bismuthinite_ore"
+      ]
+    }
   },
   "lithium_pegmatite": {
     "weight": 30,
     "density": 0.4,
     "layer": "stone",
     "biomes": "#minecraft:is_hills",
-    "ore_blocks": [
-      {"block": "modern_industrialization:spodumene_ore", "weight": 5},
-      {"block": "modern_industrialization:beryl_ore", "weight": 2},
-      {"block": "modern_industrialization:quartz_ore", "weight": 2}
-    ],
-    "rare_blocks": [
-      {"block": "modern_industrialization:tantaliteite_ore", "weight": 2},
-      {"block": "modern_industrialization:garnet_ore", "weight": 1}
-    ],
-    "rare_block_chance": 0.2
+    "primary": {
+      "layers": 3,
+      "blocks": [
+        "modern_industrialization:spodumene_ore",
+        "modern_industrialization:beryl_ore"
+      ]
+    },
+    "secondary": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:quartz_ore"
+      ]
+    },
+    "between": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:tantalite_ore"
+      ]
+    },
+    "sporadic": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:garnet_ore"
+      ]
+    }
   },
   "tantalum_pegmatite": {
     "weight": 25,
     "density": 0.4,
     "layer": "stone",
     "biomes": "#minecraft:is_hills",
-    "ore_blocks": [
-      {"block": "modern_industrialization:tantaliteite_ore", "weight": 5},
-      {"block": "modern_industrialization:spodumene_ore", "weight": 2},
-      {"block": "modern_industrialization:beryl_ore", "weight": 2}
-    ],
-    "rare_blocks": [
-      {"block": "modern_industrialization:cassiterite_ore", "weight": 2},
-      {"block": "modern_industrialization:wolframite_ore", "weight": 1}
-    ],
-    "rare_block_chance": 0.2
+    "primary": {
+      "layers": 3,
+      "blocks": [
+        "modern_industrialization:tantalite_ore",
+        "modern_industrialization:spodumene_ore"
+      ]
+    },
+    "secondary": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:beryl_ore"
+      ]
+    },
+    "between": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:cassiterite_ore"
+      ]
+    },
+    "sporadic": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:wolframite_ore"
+      ]
+    }
   },
   "tin_tungsten_greisen": {
     "weight": 35,
     "density": 0.5,
     "layer": "stone",
     "biomes": "#minecraft:is_mountain",
-    "ore_blocks": [
-      {"block": "modern_industrialization:cassiterite_ore", "weight": 4},
-      {"block": "modern_industrialization:wolframite_ore", "weight": 4},
-      {"block": "modern_industrialization:quartz_ore", "weight": 2}
-    ],
-    "rare_blocks": [
-      {"block": "modern_industrialization:scheelite_ore", "weight": 2},
-      {"block": "modern_industrialization:molybdenite_ore", "weight": 1},
-      {"block": "modern_industrialization:pyrite_ore", "weight": 1}
-    ],
-    "rare_block_chance": 0.18
+    "primary": {
+      "layers": 3,
+      "blocks": [
+        "modern_industrialization:cassiterite_ore",
+        "modern_industrialization:wolframite_ore"
+      ]
+    },
+    "secondary": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:quartz_ore"
+      ]
+    },
+    "between": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:scheelite_ore"
+      ]
+    },
+    "sporadic": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:molybdenite_ore",
+        "modern_industrialization:pyrite_ore"
+      ]
+    }
   },
   "molybdenum_porphyry": {
     "weight": 35,
     "density": 0.5,
     "layer": "stone",
     "biomes": "#minecraft:is_mountain",
-    "ore_blocks": [
-      {"block": "modern_industrialization:molybdenite_ore", "weight": 5},
-      {"block": "modern_industrialization:pyrite_ore", "weight": 2},
-      {"block": "modern_industrialization:chalcopyrite_ore", "weight": 2}
-    ],
-    "rare_blocks": [
-      {"block": "modern_industrialization:scheelite_ore", "weight": 1}
-    ],
-    "rare_block_chance": 0.18
+    "primary": {
+      "layers": 3,
+      "blocks": [
+        "modern_industrialization:molybdenite_ore",
+        "modern_industrialization:pyrite_ore"
+      ]
+    },
+    "secondary": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:chalcopyrite_ore"
+      ]
+    },
+    "between": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:scheelite_ore"
+      ]
+    },
+    "sporadic": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:scheelite_ore"
+      ]
+    }
   },
   "rare_earth_carbonatite": {
     "weight": 25,
     "density": 0.45,
     "layer": "stone",
     "biomes": "#minecraft:is_overworld",
-    "ore_blocks": [
-      {"block": "modern_industrialization:apatite_ore", "weight": 4},
-      {"block": "modern_industrialization:allanite_ore", "weight": 3},
-      {"block": "modern_industrialization:calcite_ore", "weight": 2}
-    ],
-    "rare_blocks": [
-      {"block": "modern_industrialization:xenotime_ore", "weight": 2},
-      {"block": "modern_industrialization:monazite_ore", "weight": 1}
-    ],
-    "rare_block_chance": 0.2
+    "primary": {
+      "layers": 3,
+      "blocks": [
+        "modern_industrialization:apatite_ore",
+        "modern_industrialization:allanite_ore"
+      ]
+    },
+    "secondary": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:calcite_ore"
+      ]
+    },
+    "between": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:xenotime_ore"
+      ]
+    },
+    "sporadic": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:monazite_ore"
+      ]
+    }
   },
   "heavy_mineral_placer": {
     "weight": 40,
     "density": 0.55,
-    "layer": "gravel",
+    "layer": "stone",
     "biomes": "#minecraft:is_beach",
-    "ore_blocks": [
-      {"block": "modern_industrialization:ilmeite_ore", "weight": 4},
-      {"block": "modern_industrialization:rutile_ore", "weight": 3},
-      {"block": "modern_industrialization:garnet_ore", "weight": 2}
-    ],
-    "rare_blocks": [
-      {"block": "modern_industrialization:xenotime_ore", "weight": 2},
-      {"block": "modern_industrialization:monazite_ore", "weight": 1}
-    ],
-    "rare_block_chance": 0.18
+    "primary": {
+      "layers": 3,
+      "blocks": [
+        "modern_industrialization:ilmenite_ore",
+        "modern_industrialization:rutile_ore"
+      ]
+    },
+    "secondary": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:garnet_ore"
+      ]
+    },
+    "between": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:xenotime_ore"
+      ]
+    },
+    "sporadic": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:monazite_ore"
+      ]
+    }
   },
   "orogenic_gold": {
     "weight": 45,
     "density": 0.5,
     "layer": "stone",
     "biomes": "#minecraft:is_mountain",
-    "ore_blocks": [
-      {"block": "modern_industrialization:arsenopyrite_ore", "weight": 4},
-      {"block": "modern_industrialization:pyrite_ore", "weight": 3},
-      {"block": "modern_industrialization:quartz_ore", "weight": 2}
-    ],
-    "rare_blocks": [
-      {"block": "minecraft:gold_ore", "weight": 2},
-      {"block": "modern_industrialization:chalcopyrite_ore", "weight": 1}
-    ],
-    "rare_block_chance": 0.2
+    "primary": {
+      "layers": 3,
+      "blocks": [
+        "modern_industrialization:arsenopyrite_ore",
+        "modern_industrialization:pyrite_ore"
+      ]
+    },
+    "secondary": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:quartz_ore"
+      ]
+    },
+    "between": {
+      "layers": 2,
+      "blocks": [
+        "minecraft:gold_ore"
+      ]
+    },
+    "sporadic": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:chalcopyrite_ore"
+      ]
+    }
   },
   "platinum_group_element_deposit": {
     "weight": 20,
     "density": 0.4,
     "layer": "deepslate",
     "biomes": "#minecraft:is_overworld",
-    "ore_blocks": [
-      {"block": "modern_industrialization:chromite_ore", "weight": 4},
-      {"block": "modern_industrialization:pentlandite_ore", "weight": 3},
-      {"block": "modern_industrialization:sperrylite_ore", "weight": 1}
-    ],
-    "rare_blocks": [
-      {"block": "modern_industrialization:pyrrhotite_ore", "weight": 2},
-      {"block": "modern_industrialization:peridot_ore", "weight": 1}
-    ],
-    "rare_block_chance": 0.2
+    "primary": {
+      "layers": 3,
+      "blocks": [
+        "modern_industrialization:chromite_ore",
+        "modern_industrialization:pentlandite_ore"
+      ]
+    },
+    "secondary": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:sperrylite_ore"
+      ]
+    },
+    "between": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:pyrrhotite_ore"
+      ]
+    },
+    "sporadic": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:peridot_ore"
+      ]
+    }
   },
   "kimberlite_pipe": {
     "weight": 12,
     "density": 0.35,
     "layer": "stone",
     "biomes": "#minecraft:is_savanna",
-    "ore_blocks": [
-      {"block": "modern_industrialization:kimberlite_ore", "weight": 6},
-      {"block": "modern_industrialization:peridot_ore", "weight": 2},
-      {"block": "modern_industrialization:garnet_ore", "weight": 2}
-    ],
-    "rare_blocks": [
-      {"block": "minecraft:diamond_ore", "weight": 1},
-      {"block": "modern_industrialization:chromite_ore", "weight": 1}
-    ],
-    "rare_block_chance": 0.25
+    "primary": {
+      "layers": 3,
+      "blocks": [
+        "modern_industrialization:kimberlite_ore",
+        "modern_industrialization:peridot_ore"
+      ]
+    },
+    "secondary": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:garnet_ore"
+      ]
+    },
+    "between": {
+      "layers": 1,
+      "blocks": [
+        "minecraft:diamond_ore"
+      ]
+    },
+    "sporadic": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:chromite_ore"
+      ]
+    }
   },
   "emerald_deposit": {
     "weight": 18,
     "density": 0.35,
     "layer": "stone",
     "biomes": "#minecraft:is_mountain",
-    "ore_blocks": [
-      {"block": "modern_industrialization:beryl_ore", "weight": 4},
-      {"block": "modern_industrialization:quartz_ore", "weight": 2},
-      {"block": "modern_industrialization:garnet_ore", "weight": 1}
-    ],
-    "rare_blocks": [
-      {"block": "minecraft:emerald_ore", "weight": 1},
-      {"block": "modern_industrialization:corundum_ore", "weight": 1}
-    ],
-    "rare_block_chance": 0.2
+    "primary": {
+      "layers": 3,
+      "blocks": [
+        "modern_industrialization:beryl_ore",
+        "modern_industrialization:quartz_ore"
+      ]
+    },
+    "secondary": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:garnet_ore"
+      ]
+    },
+    "between": {
+      "layers": 1,
+      "blocks": [
+        "minecraft:emerald_ore"
+      ]
+    },
+    "sporadic": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:corundum_ore"
+      ]
+    }
   },
   "corundum_deposit": {
     "weight": 20,
     "density": 0.4,
     "layer": "stone",
     "biomes": "#minecraft:is_mountain",
-    "ore_blocks": [
-      {"block": "modern_industrialization:corundum_ore", "weight": 5},
-      {"block": "modern_industrialization:garnet_ore", "weight": 2}
-    ],
-    "rare_blocks": [
-      {"block": "modern_industrialization:ruby_ore", "weight": 1},
-      {"block": "modern_industrialization:sapphire_ore", "weight": 1},
-      {"block": "modern_industrialization:rutile_ore", "weight": 1}
-    ],
-    "rare_block_chance": 0.2
+    "primary": {
+      "layers": 3,
+      "blocks": [
+        "modern_industrialization:corundum_ore",
+        "modern_industrialization:garnet_ore"
+      ]
+    },
+    "secondary": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:ruby_ore"
+      ]
+    },
+    "between": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:sapphire_ore"
+      ]
+    },
+    "sporadic": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:rutile_ore"
+      ]
+    }
   },
   "olivine_deposit": {
     "weight": 25,
     "density": 0.45,
     "layer": "stone",
     "biomes": "#minecraft:is_overworld",
-    "ore_blocks": [
-      {"block": "modern_industrialization:peridot_ore", "weight": 5},
-      {"block": "modern_industrialization:chromite_ore", "weight": 2},
-      {"block": "modern_industrialization:magnetite_ore", "weight": 1}
-    ],
-    "rare_blocks": [
-      {"block": "modern_industrialization:ilmeite_ore", "weight": 1},
-      {"block": "modern_industrialization:garnet_ore", "weight": 1}
-    ],
-    "rare_block_chance": 0.15
+    "primary": {
+      "layers": 3,
+      "blocks": [
+        "modern_industrialization:peridot_ore",
+        "modern_industrialization:chromite_ore"
+      ]
+    },
+    "secondary": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:magnetite_ore"
+      ]
+    },
+    "between": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:ilmenite_ore"
+      ]
+    },
+    "sporadic": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:garnet_ore"
+      ]
+    }
   },
   "limestone_deposit": {
     "weight": 65,
     "density": 0.75,
     "layer": "stone",
     "biomes": "#minecraft:is_overworld",
-    "ore_blocks": [
-      {"block": "modern_industrialization:calcite_ore", "weight": 6},
-      {"block": "modern_industrialization:dolomite_ore", "weight": 3}
-    ],
-    "rare_blocks": [
-      {"block": "modern_industrialization:gypsum_ore", "weight": 1},
-      {"block": "modern_industrialization:garnet_ore", "weight": 1}
-    ],
-    "rare_block_chance": 0.1
+    "primary": {
+      "layers": 3,
+      "blocks": [
+        "modern_industrialization:calcite_ore",
+        "modern_industrialization:dolomite_ore"
+      ]
+    },
+    "secondary": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:gypsum_ore"
+      ]
+    },
+    "between": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:garnet_ore"
+      ]
+    },
+    "sporadic": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:garnet_ore"
+      ]
+    }
   },
   "evaporite_deposit": {
     "weight": 50,
     "density": 0.7,
     "layer": "stone",
     "biomes": "#minecraft:is_desert",
-    "ore_blocks": [
-      {"block": "modern_industrialization:gypsum_ore", "weight": 5},
-      {"block": "modern_industrialization:calcite_ore", "weight": 2},
-      {"block": "modern_industrialization:dolomite_ore", "weight": 2}
-    ],
-    "rare_blocks": [
-      {"block": "modern_industrialization:fluorite_ore", "weight": 1}
-    ],
-    "rare_block_chance": 0.12
+    "primary": {
+      "layers": 3,
+      "blocks": [
+        "modern_industrialization:gypsum_ore",
+        "modern_industrialization:calcite_ore"
+      ]
+    },
+    "secondary": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:dolomite_ore"
+      ]
+    },
+    "between": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:fluorite_ore"
+      ]
+    },
+    "sporadic": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:fluorite_ore"
+      ]
+    }
   },
   "fluorite_hydrothermal": {
     "weight": 35,
     "density": 0.45,
     "layer": "stone",
     "biomes": "#minecraft:is_mountain",
-    "ore_blocks": [
-      {"block": "modern_industrialization:fluorite_ore", "weight": 5},
-      {"block": "modern_industrialization:calcite_ore", "weight": 2},
-      {"block": "modern_industrialization:dolomite_ore", "weight": 1}
-    ],
-    "rare_blocks": [
-      {"block": "modern_industrialization:galena_ore", "weight": 1}
-    ],
-    "rare_block_chance": 0.18
+    "primary": {
+      "layers": 3,
+      "blocks": [
+        "modern_industrialization:fluorite_ore",
+        "modern_industrialization:calcite_ore"
+      ]
+    },
+    "secondary": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:dolomite_ore"
+      ]
+    },
+    "between": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:galena_ore"
+      ]
+    },
+    "sporadic": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:galena_ore"
+      ]
+    }
   },
   "phosphate_deposit": {
     "weight": 35,
     "density": 0.55,
     "layer": "stone",
     "biomes": "#minecraft:is_overworld",
-    "ore_blocks": [
-      {"block": "modern_industrialization:apatite_ore", "weight": 5},
-      {"block": "modern_industrialization:calcite_ore", "weight": 3}
-    ],
-    "rare_blocks": [
-      {"block": "modern_industrialization:dolomite_ore", "weight": 1},
-      {"block": "modern_industrialization:monazite_ore", "weight": 1}
-    ],
-    "rare_block_chance": 0.15
+    "primary": {
+      "layers": 3,
+      "blocks": [
+        "modern_industrialization:apatite_ore",
+        "modern_industrialization:calcite_ore"
+      ]
+    },
+    "secondary": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:dolomite_ore"
+      ]
+    },
+    "between": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:monazite_ore"
+      ]
+    },
+    "sporadic": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:monazite_ore"
+      ]
+    }
   },
   "lapis_deposit": {
     "weight": 35,
     "density": 0.5,
     "layer": "stone",
     "biomes": "#minecraft:is_overworld",
-    "ore_blocks": [
-      {"block": "modern_industrialization:lazurite_ore", "weight": 6},
-      {"block": "mminecraft:lapis_ore", "weight": 4},
-      {"block": "modern_industrialization:calcite_ore", "weight": 2}
-    ],
-    "rare_blocks": [
-      {"block": "modern_industrialization:pyrite_ore", "weight": 1}
-    ],
-    "rare_block_chance": 0.15
+    "primary": {
+      "layers": 3,
+      "blocks": [
+        "modern_industrialization:lazurite_ore",
+        "minecraft:lapis_ore"
+      ]
+    },
+    "secondary": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:calcite_ore"
+      ]
+    },
+    "between": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:pyrite_ore"
+      ]
+    },
+    "sporadic": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:pyrite_ore"
+      ]
+    }
   },
   "native_sulfur_deposit": {
     "weight": 35,
     "density": 0.5,
     "layer": "stone",
     "biomes": "#minecraft:is_badlands",
-    "ore_blocks": [
-      {"block": "modern_industrialization:pyrite_ore", "weight": 4},
-      {"block": "modern_industrialization:gypsum_ore", "weight": 3}
-    ],
-    "rare_blocks": [
-      {"block": "modern_industrialization:native_sulfur_ore", "weight": 2}
-    ],
-    "rare_block_chance": 0.18
+    "primary": {
+      "layers": 3,
+      "blocks": [
+        "modern_industrialization:pyrite_ore",
+        "modern_industrialization:gypsum_ore"
+      ]
+    },
+    "secondary": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:sulfur_ore"
+      ]
+    },
+    "between": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:sulfur_ore"
+      ]
+    },
+    "sporadic": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:sulfur_ore"
+      ]
+    }
   },
   "nether_quartz_vein": {
     "weight": 60,
     "density": 0.6,
     "layer": "netherrack",
-    "biomes": "minecraft:is_nether",
-    "ore_blocks": [
-      {"block": "minecraft:nether_quartz_ore", "weight": 5},
-      {"block": "modern_industrialization:quartz_ore", "weight": 3},
-      {"block": "modern_industrialization:pyrite_ore", "weight": 1}
-    ],
-    "rare_blocks": [
-      {"block": "minecraft:gold_ore", "weight": 1},
-      {"block": "modern_industrialization:fluorite_ore", "weight": 1}
-    ],
-    "rare_block_chance": 0.15
+    "biomes": "#minecraft:is_nether",
+    "primary": {
+      "layers": 3,
+      "blocks": [
+        "minecraft:nether_quartz_ore",
+        "modern_industrialization:quartz_ore"
+      ]
+    },
+    "secondary": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:pyrite_ore"
+      ]
+    },
+    "between": {
+      "layers": 1,
+      "blocks": [
+        "minecraft:gold_ore"
+      ]
+    },
+    "sporadic": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:fluorite_ore"
+      ]
+    }
   },
   "quartz_vein": {
     "weight": 60,
     "density": 0.6,
     "layer": "stone",
     "biomes": "#minecraft:is_mountain",
-    "ore_blocks": [
-      {"block": "modern_industrialization:quartz_ore", "weight": 6},
-      {"block": "modern_industrialization:pyrite_ore", "weight": 2},
-      {"block": "modern_industrialization:fluorite_ore", "weight": 1}
-    ],
-    "rare_blocks": [
-      {"block": "minecraft:gold_ore", "weight": 2},
-      {"block": "modern_industrialization:galena_ore", "weight": 1},
-      {"block": "modern_industrialization:arsenopyrite_ore", "weight": 1}
-    ],
-    "rare_block_chance": 0.15
+    "primary": {
+      "layers": 3,
+      "blocks": [
+        "modern_industrialization:quartz_ore",
+        "modern_industrialization:pyrite_ore"
+      ]
+    },
+    "secondary": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:fluorite_ore"
+      ]
+    },
+    "between": {
+      "layers": 1,
+      "blocks": [
+        "minecraft:gold_ore"
+      ]
+    },
+    "sporadic": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:galena_ore",
+        "modern_industrialization:arsenopyrite_ore"
+      ]
+    }
   },
   "uranium_thorium_deposit": {
     "weight": 20,
     "density": 0.4,
     "layer": "deepslate",
     "biomes": "#minecraft:is_mountain",
-    "ore_blocks": [
-      {"block": "modern_industrialization:uraninite_ore", "weight": 4},
-      {"block": "modern_industrialization:thorite_ore", "weight": 3},
-      {"block": "modern_industrialization:fluorite_ore", "weight": 1}
-    ],
-    "rare_blocks": [
-      {"block": "modern_industrialization:pyrite_ore", "weight": 1},
-      {"block": "modern_industrialization:allanite_ore", "weight": 1}
-    ],
-    "rare_block_chance": 0.2
+    "primary": {
+      "layers": 3,
+      "blocks": [
+        "modern_industrialization:uraninite_ore",
+        "modern_industrialization:thorite_ore"
+      ]
+    },
+    "secondary": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:fluorite_ore"
+      ]
+    },
+    "between": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:pyrite_ore"
+      ]
+    },
+    "sporadic": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:allanite_ore"
+      ]
+    }
   },
   "oxidized_copper_deposit": {
     "weight": 50,
     "density": 0.55,
     "layer": "stone",
     "biomes": "#minecraft:is_badlands",
-    "ore_blocks": [
-      {"block": "modern_industrialization:malachite_ore", "weight": 4},
-      {"block": "modern_industrialization:azurite_ore", "weight": 3},
-      {"block": "modern_industrialization:chalcopyrite_ore", "weight": 1}
-    ],
-    "rare_blocks": [
-      {"block": "modern_industrialization:calcite_ore", "weight": 1},
-      {"block": "modern_industrialization:bornite_ore", "weight": 1}
-    ],
-    "rare_block_chance": 0.15
+    "primary": {
+      "layers": 3,
+      "blocks": [
+        "modern_industrialization:malachite_ore",
+        "modern_industrialization:azurite_ore"
+      ]
+    },
+    "secondary": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:chalcopyrite_ore"
+      ]
+    },
+    "between": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:calcite_ore"
+      ]
+    },
+    "sporadic": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:bornite_ore"
+      ]
+    }
   },
   "garnet_skarn": {
     "weight": 30,
     "density": 0.45,
     "layer": "stone",
     "biomes": "#minecraft:is_mountain",
-    "ore_blocks": [
-      {"block": "modern_industrialization:garnet_ore", "weight": 4},
-      {"block": "modern_industrialization:epidote_ore", "weight": 3},
-      {"block": "modern_industrialization:scheelite_ore", "weight": 2}
-    ],
-    "rare_blocks": [
-      {"block": "modern_industrialization:magnetite_ore", "weight": 1},
-      {"block": "modern_industrialization:calcite_ore", "weight": 1}
-    ],
-    "rare_block_chance": 0.18
+    "primary": {
+      "layers": 3,
+      "blocks": [
+        "modern_industrialization:garnet_ore",
+        "modern_industrialization:epidote_ore"
+      ]
+    },
+    "secondary": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:scheelite_ore"
+      ]
+    },
+    "between": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:magnetite_ore"
+      ]
+    },
+    "sporadic": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:calcite_ore"
+      ]
+    }
   },
   "manganese_deposit": {
     "weight": 30,
     "density": 0.45,
     "layer": "stone",
     "biomes": "#minecraft:is_overworld",
-    "ore_blocks": [
-      {"block": "modern_industrialization:rhodochrosite_ore", "weight": 4},
-      {"block": "modern_industrialization:spessartine_ore", "weight": 3},
-      {"block": "modern_industrialization:manganesite_ore", "weight": 2}
-    ],
-    "rare_blocks": [
-      {"block": "modern_industrialization:pyrite_ore", "weight": 1},
-      {"block": "modern_industrialization:calcite_ore", "weight": 1}
-    ],
-    "rare_block_chance": 0.18
+    "primary": {
+      "layers": 3,
+      "blocks": [
+        "modern_industrialization:rhodochrosite_ore",
+        "modern_industrialization:spessartine_ore"
+      ]
+    },
+    "secondary": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:manganesite_ore"
+      ]
+    },
+    "between": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:pyrite_ore"
+      ]
+    },
+    "sporadic": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:calcite_ore"
+      ]
+    }
   },
   "silver_bearing_lead": {
     "weight": 30,
     "density": 0.45,
     "layer": "stone",
     "biomes": "#minecraft:is_mountain",
-    "ore_blocks": [
-      {"block": "modern_industrialization:galena_ore", "weight": 4},
-      {"block": "modern_industrialization:tetrahedrite_ore", "weight": 3},
-      {"block": "modern_industrialization:bournonite_ore", "weight": 2}
-    ],
-    "rare_blocks": [
-      {"block": "modern_industrialization:cerussite_ore", "weight": 1},
-      {"block": "modern_industrialization:pyrite_ore", "weight": 1}
-    ],
-    "rare_block_chance": 0.2
+    "primary": {
+      "layers": 3,
+      "blocks": [
+        "modern_industrialization:galena_ore",
+        "modern_industrialization:tetrahedrite_ore"
+      ]
+    },
+    "secondary": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:bournonite_ore"
+      ]
+    },
+    "between": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:cerussite_ore"
+      ]
+    },
+    "sporadic": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:pyrite_ore"
+      ]
+    }
   }
 }

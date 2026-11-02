@@ -11,7 +11,7 @@ mkdir minh-resources
 echo "{
   \"pack\": {
     \"description\": \"minh resources\",
-    \"pack_format\": 34,
+    \"pack_format\": 34
   }
 }
 " > minh-resources/pack.mcmeta
@@ -27,12 +27,12 @@ mkdir minh-data
 echo "{
   \"pack\": {
     \"description\": \"minh data\",
-    \"pack_format\": 48,
+    \"pack_format\": 48
   }
 }
 " > minh-data/pack.mcmeta
 
 python3 ./generate-material-recipes.py
-python3 ./generate-material-recipes.py
+python3 ./generate-ore-veins.py
 
 7z -r a ../build/minh-data.zip ./minh-data/*

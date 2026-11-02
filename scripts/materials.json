@@ -739,6 +739,22 @@
         "raw_ore": false,
         "crushed_dust": false
     },
+    "sphalerite": {
+        "material_set": "copper",
+        "color": "#70513A",
+        "dust": true,
+        "ore_block": true,
+        "raw_ore": true,
+        "crushed_dust": true
+    },
+    "magnetite": {
+        "material_set": "iron",
+        "color": "#34383B",
+        "dust": true,
+        "ore_block": true,
+        "raw_ore": true,
+        "crushed_dust": true
+    },
     "galena": {
         "material_set": "iron",
         "color": "#6B7078",
@@ -770,6 +786,8 @@
         "gem": true,
         "ore_block": true,
         "raw_ore": true,
+        "max_xp": 1,
+        "min_xp": 1,
         "crushed_dust": true
     },
     "pentlandite": {
@@ -819,6 +837,8 @@
         "gem": true,
         "ore_block": true,
         "raw_ore": true,
+        "max_xp": 1,
+        "min_xp": 1,
         "crushed_dust": true
     },
     "thorite": {
@@ -852,6 +872,8 @@
         "gem": true,
         "ore_block": true,
         "raw_ore": true,
+        "max_xp": 1,
+        "min_xp": 1,
         "crushed_dust": true
     },
     "kimberlite": {
@@ -861,6 +883,8 @@
         "gem": true,
         "ore_block": true,
         "raw_ore": true,
+        "max_xp": 1,
+        "min_xp": 1,
         "crushed_dust": true
     },
     "pyrite": {
@@ -934,6 +958,8 @@
         "gem": true,
         "ore_block": true,
         "raw_ore": true,
+        "max_xp": 1,
+        "min_xp": 1,
         "crushed_dust": true
     },
     "calcite": {
@@ -943,6 +969,8 @@
         "gem": true,
         "ore_block": true,
         "raw_ore": true,
+        "max_xp": 1,
+        "min_xp": 1,
         "crushed_dust": true
     },
     "dolomite": {
@@ -952,6 +980,8 @@
         "gem": true,
         "ore_block": true,
         "raw_ore": true,
+        "max_xp": 1,
+        "min_xp": 1,
         "crushed_dust": true
     },
     "fluorite": {
@@ -961,6 +991,8 @@
         "gem": true,
         "ore_block": true,
         "raw_ore": true,
+        "max_xp": 1,
+        "min_xp": 1,
         "crushed_dust": true
     },
     "beryl": {
@@ -970,6 +1002,8 @@
         "gem": true,
         "ore_block": true,
         "raw_ore": true,
+        "max_xp": 1,
+        "min_xp": 1,
         "crushed_dust": true
     },
     "garnet": {
@@ -979,6 +1013,8 @@
         "gem": true,
         "ore_block": true,
         "raw_ore": true,
+        "max_xp": 1,
+        "min_xp": 1,
         "crushed_dust": true
     },
     "corundum": {
@@ -988,6 +1024,8 @@
         "gem": true,
         "ore_block": true,
         "raw_ore": true,
+        "max_xp": 1,
+        "min_xp": 1,
         "crushed_dust": true
     },
     "ilmenite": {
@@ -1005,6 +1043,8 @@
         "gem": true,
         "ore_block": true,
         "raw_ore": true,
+        "max_xp": 1,
+        "min_xp": 1,
         "crushed_dust": true
     },
     "rutile": {
@@ -1022,6 +1062,8 @@
         "gem": true,
         "ore_block": true,
         "raw_ore": true,
+        "max_xp": 1,
+        "min_xp": 1,
         "crushed_dust": true
     },
     "scheelite": {
@@ -1047,6 +1089,8 @@
         "gem": true,
         "ore_block": true,
         "raw_ore": true,
+        "max_xp": 1,
+        "min_xp": 1,
         "crushed_dust": true
     },
     "cerussite": {
@@ -1056,6 +1100,8 @@
         "gem": true,
         "ore_block": true,
         "raw_ore": true,
+        "max_xp": 1,
+        "min_xp": 1,
         "crushed_dust": true
     },
     "pyrrhotite": {
@@ -1073,6 +1119,8 @@
         "gem": true,
         "ore_block": true,
         "raw_ore": true,
+        "max_xp": 1,
+        "min_xp": 1,
         "crushed_dust": true
     },
     "rhodochrosite": {
@@ -1082,6 +1130,8 @@
         "gem": true,
         "ore_block": true,
         "raw_ore": true,
+        "max_xp": 1,
+        "min_xp": 1,
         "crushed_dust": true
     },
     "manganesite": {
@@ -1123,6 +1173,8 @@
         "gem": true,
         "ore_block": true,
         "raw_ore": true,
+        "max_xp": 1,
+        "min_xp": 1,
         "crushed_dust": true
     },
     "apatite": {
@@ -1132,6 +1184,8 @@
         "gem": true,
         "ore_block": true,
         "raw_ore": true,
+        "max_xp": 1,
+        "min_xp": 1,
         "crushed_dust": true
     },
     "peridot": {
@@ -1141,6 +1195,8 @@
         "gem": true,
         "ore_block": true,
         "raw_ore": true,
+        "max_xp": 1,
+        "min_xp": 1,
         "crushed_dust": true
     }
 }

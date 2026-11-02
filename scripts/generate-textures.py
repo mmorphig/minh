@@ -513,6 +513,9 @@ def generate_material(material, config):
         if form == "ingot" and material_set == "lapis":
             source_name = "lapis"
             form = "lapis"
+        if form == "ingot" and material_set == "coal":
+            source_name = "coal"
+            form = "coal"
 
         if make_item_texture(material, color, form, source_name, shiny=(value == "shiny")):
             generated += 1

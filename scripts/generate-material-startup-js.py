@@ -162,6 +162,8 @@ def generate_material(name, config):
         veins_per_chunk = config.get("veins_per_chunk", 4)
         min_y = config.get("min_y")
         max_y = config.get("max_y", 32)
+        max_xp = config.get("max_xp")
+        min_xp = config.get("min_xp")
 
         lines.extend([
             "      .ore({",
@@ -171,6 +173,10 @@ def generate_material(name, config):
             f"        vein_size: {vein_size},",
             f"        veins_per_chunk: {veins_per_chunk},",
         ])
+
+        if max_xp and min_xp is not None:
+            lines.append(f"        min_xp: {min_xp},")
+            lines.append(f"        max_xp: {max_xp},")
 
         if min_y is not None:
             lines.append(f"        min_y: {min_y},")
@@ -185,6 +191,10 @@ def generate_material(name, config):
         if not material in ("emerald", "lapis", "coal", "crystal"):
             lines.append(
                 f"      .rawMetal({js_string(material)})"
+            )
+        else:
+            lines.append(
+                f"      .setMainPart(\"gem\")"
             )
 
     cable = config.get("cable", False)

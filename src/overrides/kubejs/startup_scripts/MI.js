@@ -136,6 +136,38 @@ MIMaterialEvents.addMaterials(event => {
 })
 */
 
+MIMaterialEvents.modifyMaterial("ruby", event => {
+  event.builder
+  .addParts("gem")
+  .ore({
+    ore_set: "emerald",
+    generate: false,
+    biome_tag: "minecraft:is_overworld",
+    vein_size: 8,
+    veins_per_chunk: 4,
+    min_xp: 1,
+    max_xp: 1,
+    max_y: 32
+  })
+  .setMainPart("gem")
+})
+
+MIMaterialEvents.modifyMaterial("sulfur", event => {
+  event.builder
+  .addParts("gem")
+  .ore({
+    ore_set: "emerald",
+    generate: false,
+    biome_tag: "minecraft:is_overworld",
+    vein_size: 8,
+    veins_per_chunk: 4,
+    min_xp: 1,
+    max_xp: 1,
+    max_y: 32
+  })
+  .setMainPart("gem")
+})
+
 // Voltage capacity of the coils is only 2^x while tiers are 4^x
 // Which means that every tier allows more and more total machines and overclocks
 // Some tiers have 2 coils though, to even it out

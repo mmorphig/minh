@@ -3,32 +3,26 @@ import re
 from pathlib import Path
 
 INPUT_FILE = Path("./veins.json")
-OUTPUT_DIR = Path("./minh-data/data/minh/gtceu/ore_vein")
+OUTPUT_DIR = Path("./minh-data/data/minh/gtmogs/ore_vein")
+
+MIN_Y = -48
+MAX_Y = 64
 
 DEFAULTS = {
-    "cluster_size": {
-        "type": "minecraft:uniform",
-        "min_inclusive": 40,
-        "max_inclusive": 50
-    },
+    "cluster_size": 32,
+    "density": 0.2,
+    "weight": 30,
+    "layer": "stone",
     "dimension_filter": ["minecraft:overworld"],
-    "height_range": {
-        "type": "minecraft:uniform",
-        "min_inclusive": {"absolute": -48},
-        "max_inclusive": {"absolute": 64}
-    },
     "discard_chance_on_air_exposure": 0.0,
-    "generator": {
-        "type": "gtceu:veined",
-        "edge_roundoff_begin": 3,
-        "filler_block": {"Name": "minecraft:air"},
-        "max_edge_roundoff": 0.1,
-        "max_richness": 1.0,
-        "max_richness_threshold": 0.3,
-        "min_richness": 0.4,
-        "veininess_threshold": 0.1
-    },
-    "indicators": []
+    "y_radius": 4,
+
+    "layers": {
+        "primary": 3,
+        "secondary": 3,
+        "between": 2,
+        "sporadic": 1
+    }
 }
 
 
@@ -36,61 +30,126 @@ def safe_filename(name):
     return re.sub(r"[^a-zA-Z0-9_-]", "_", name)
 
 
-def validate_entries(entries, field, vein_name):
-    if not isinstance(entries, list):
-        raise ValueError(f"{vein_name}: '{field}' must be a list")
+def validate_entries(group, field, vein_name):
+    if not isinstance(group, dict):
+        raise ValueError(f"{vein_name}: '{field}' must be an object")
 
-    for entry in entries:
-        if not isinstance(entry, dict):
-            raise ValueError(f"{vein_name}: invalid entry in '{field}'")
+    if "layers" not in group:
+        raise ValueError(f"{vein_name}: '{field}' is missing 'layers'")
 
-        if not isinstance(entry.get("block"), str):
-            raise ValueError(f"{vein_name}: every '{field}' entry needs a block")
+    if not isinstance(group["layers"], int) or group["layers"] < 1:
+        raise ValueError(f"{vein_name}: '{field}.layers' must be a positive integer")
 
-        if not isinstance(entry.get("weight"), (int, float)):
-            raise ValueError(f"{vein_name}: every '{field}' entry needs a weight")
+    if "blocks" not in group or not isinstance(group["blocks"], list):
+        raise ValueError(f"{vein_name}: '{field}.blocks' must be a list")
 
-        if entry["weight"] <= 0:
-            raise ValueError(f"{vein_name}: block weights must be positive")
+    if not group["blocks"]:
+        raise ValueError(f"{vein_name}: '{field}.blocks' cannot be empty")
+
+    for block in group["blocks"]:
+        if not isinstance(block, str):
+            raise ValueError(
+                f"{vein_name}: entries in '{field}.blocks' must be block ID strings"
+            )
+
+
+def get_block(entry):
+    if isinstance(entry, str):
+        return entry, None
+
+    return entry["block"], entry.get("deepslate_block")
+
+
+def make_targets(blocks):
+    targets = []
+
+    for block in blocks:
+        targets.extend([
+            {
+                "target": {
+                    "predicate_type": "minecraft:tag_match",
+                    "tag": "minecraft:stone_ore_replaceables"
+                },
+                "state": {"Name": block}
+            },
+            {
+                "target": {
+                    "predicate_type": "minecraft:tag_match",
+                    "tag": "minecraft:deepslate_ore_replaceables"
+                },
+                "state": {"Name": block}
+            }
+        ])
+
+    return targets
+
+
+def make_group(group):
+    return {
+        "targets": make_targets(group["blocks"]),
+        "layers": group["layers"]
+    }
 
 
 def build_vein(name, config):
-    required = [
-        "weight",
-        "density",
-        "layer",
-        "biomes",
-        "ore_blocks",
-        "rare_blocks",
-        "rare_block_chance"
-    ]
+    groups = {}
 
+    for group in (
+        "primary",
+        "secondary",
+        "between",
+        "sporadic"
+    ):
+        groups[group] = config.get(group)
+
+        if groups[group] is None:
+            raise ValueError(f"{name}: missing '{group}' group")
+
+        validate_entries(groups[group], group, name)
+
+    required = ["weight", "density", "layer", "biomes"]
     missing = [key for key in required if key not in config]
+
     if missing:
-        raise ValueError(f"{name}: missing fields: {', '.join(missing)}")
+        raise ValueError(
+            f"{name}: missing fields: {', '.join(missing)}"
+        )
 
-    validate_entries(config["ore_blocks"], "ore_blocks", name)
-    validate_entries(config["rare_blocks"], "rare_blocks", name)
-
-    generator = DEFAULTS["generator"].copy()
-    generator["max_y"] = 64
-    generator["min_y"] = -48
-    generator["ore_blocks"] = config["ore_blocks"]
-    generator["rare_blocks"] = config["rare_blocks"]
-    generator["rare_block_chance"] = config["rare_block_chance"]
+    generator = {
+        "type": "gtmogs:classic",
+        "primary": make_group(groups["primary"]),
+        "secondary": make_group(groups["secondary"]),
+        "between": make_group(groups["between"]),
+        "sporadic": make_group(groups["sporadic"]),
+        "y_radius": config.get("y_radius", DEFAULTS["y_radius"])
+    }
 
     return {
-        "weight": config["weight"],
-        "cluster_size": DEFAULTS["cluster_size"],
+        "cluster_size": config.get("cluster_size", DEFAULTS["cluster_size"]),
         "density": config["density"],
-        "discard_chance_on_air_exposure":
-            DEFAULTS["discard_chance_on_air_exposure"],
+        "weight": config["weight"],
         "layer": config["layer"],
-        "dimension_filter": DEFAULTS["dimension_filter"],
+        "dimension_filter": config.get(
+            "dimension_filter",
+            DEFAULTS["dimension_filter"]
+        ),
+        "height_range": {
+            "height": {
+                "type": "minecraft:uniform",
+                "min_inclusive": {
+                    "absolute": config.get("min_y", MIN_Y)
+                },
+                "max_inclusive": {
+                    "absolute": config.get("max_y", MAX_Y)
+                }
+            }
+        },
+        "discard_chance_on_air_exposure": config.get(
+            "discard_chance_on_air_exposure",
+            DEFAULTS["discard_chance_on_air_exposure"]
+        ),
         "biomes": config["biomes"],
-        "height_range": DEFAULTS["height_range"],
-        "generator": generator,
-        "indicators": DEFAULTS["indicators"]
+        "generator": generator
     }
 
 
