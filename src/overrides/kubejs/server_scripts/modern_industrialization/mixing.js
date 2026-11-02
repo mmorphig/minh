@@ -87,7 +87,7 @@ ServerEvents.recipes(event => {
       },
       {
         "amount": 1,
-        "item": "electrodynamics:dustvanadium"
+        "item": "modern_industrialization:vanadium_dust"
       }
     ],
     "item_outputs": [

@@ -99,7 +99,6 @@ ServerEvents.recipes(event => {
   replaceFull("pneumaticcraft:copper_nugget", 'modern_industrialization:copper_nugget')
   replaceFull("create:copper_nugget", 'modern_industrialization:copper_nugget')
   replaceFull("immersiveengineering:nugget_copper", 'modern_industrialization:copper_nugget')
-  replaceFull("electrodynamics:nuggetcopper", 'modern_industrialization:copper_nugget')
 
   //capacitor
   replaceIn('pneumaticcraft:capacitor', 'modern_industrialization:capacitor')

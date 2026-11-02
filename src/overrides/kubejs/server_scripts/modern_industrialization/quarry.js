@@ -436,7 +436,7 @@ ServerEvents.recipes(event => {
         "probability": 0.45
       },
       {
-        "item": "electrodynamics:orevanadium",
+        "item": "modern_industrialization:vanadium_ore",
         "amount": 1,
         "probability": 0.25
       },

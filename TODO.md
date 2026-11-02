@@ -58,7 +58,6 @@ Add checks to make sure sh files don't go into directories they shouldn't go int
 
 # Mods
 
-Probably remove electrodynamics (and deps).<br>
 Could remove Ars Nouveau, or have it be optional to automate.<br>
 Remove Ars Meteorites, Neo Vitae's meteors might work better.<br>
 Add some worldgen mods: Biomes O' Plenty, Tectonic, Terralith.<br>

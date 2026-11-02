@@ -23,7 +23,6 @@ ServerEvents.tags('item', event => {
   event.add('c:raw_materials', "blood_and_deepslate:raw_molybdenum")
   event.add('c:raw_materials/molybdenum', "blood_and_deepslate:raw_molybdenum")
 
-  event.add('c:dusts', 'electrodynamics:dustvanadium')
 
   event.add('c:wires/copper', "modern_industrialization:copper_wire")
 

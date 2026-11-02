@@ -231,11 +231,11 @@ ServerEvents.recipes(event => {
     },
     "item_outputs": [
       {
-        "item": "electrodynamics:dustvanadium",
+        "item": "modern_industrialization:vanadium_dust",
         "amount": 2
       },
       {
-        "item": "electrodynamics:dustvanadium",
+        "item": "modern_industrialization:vanadium_dust",
         "amount": 1,
         "probability": 0.5
       }

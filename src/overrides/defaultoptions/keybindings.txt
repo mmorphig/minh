@@ -92,12 +92,6 @@ key_pneumaticcraft.helmet.debugging.drone:key.keyboard.y:
 key_pneumaticcraft.boots.kick:key.keyboard.x:CONTROL
 key_pneumaticcraft.chestplate.launcher:key.keyboard.c:CONTROL
 key_pneumaticcraft.boots.jet_boots:key.keyboard.space:
-key_key.electrodynamics.jetpackascend:key.keyboard.space:
-key_key.electrodynamics.jetpackmode:key.keyboard.unknown:
-key_key.electrodynamics.togglenvgs:key.keyboard.n:
-key_key.electrodynamics.servoleggingsmode:key.keyboard.l:
-key_key.electrodynamics.toggleservoleggings:key.keyboard.k:
-key_key.electrodynamics.swapbattery:key.keyboard.r:
 key_key.mekanismcurios.protableqio:key.keyboard.y:
 key_key.mekanismcurios.portableteleporter:key.keyboard.u:
 key_key.mekanismcurios.quickteleport:key.keyboard.i:

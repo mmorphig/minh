@@ -1,7 +1,4 @@
 ServerEvents.recipes(event => {
-  event.remove({ mod: "electrodynamics", type: "minecraft:blasting" })
-  event.remove({ mod: "electrodynamics", type: "minecraft:smelting" })
-
   event.remove({ mod: "immersiveengineering", type: "minecraft:smelting" })
   event.remove({ mod: "immersiveengineering", type: "minecraft:blasting" })
   event.remove({ mod: "moremekanismprocessing", type: "minecraft:smelting" })

@@ -3216,21 +3216,6 @@
       "fileSize": 1785221
     },
     {
-      "path": "mods/electrodynamics-1.21.1-1.0.14.jar",
-      "hashes": {
-        "sha1": "02716bfc1f161804e0e9482564b27ad6668e0bd0",
-        "sha512": "d7438e244e83b21a83fed88de9ed89806fb8fbaff6e28d26b81953b30c8ddc37adb24159ca9430c422579f66ff1b619ec9babbffea772e8376135231a11c41a8"
-      },
-      "env": {
-        "client": "required",
-        "server": "required"
-      },
-      "downloads": [
-        "https://cdn.modrinth.com/data/xmhmr70o/versions/81LJg5IE/electrodynamics-1.21.1-1.0.14.jar"
-      ],
-      "fileSize": 16338979
-    },
-    {
       "path": "mods/cccredstonelink-0.1.1.jar",
       "hashes": {
         "sha1": "4071a08dab2f349a287fe097549152a00aa4ce69",
@@ -4549,21 +4534,6 @@
         "https://cdn.modrinth.com/data/BVzZfTc1/versions/XEJeKpgJ/entity_texture_features-7.2.1-1.21-neoforge.jar"
       ],
       "fileSize": 783217
-    },
-    {
-      "path": "mods/dynamicelectricity-1.21.1-1.2.1-0.jar",
-      "hashes": {
-        "sha512": "dcd1e8cc6f878eff68e5476b02e5a8558175cad1ba806471fa87e1ce1b56bf59133f1a219d5be0a8483c46da9f246fab21a06aaa0075ee45a5be213c5ccef636",
-        "sha1": "91a27404d577284d81267acaf594b57a7a46f43d"
-      },
-      "env": {
-        "server": "unsupported",
-        "client": "required"
-      },
-      "downloads": [
-        "https://cdn.modrinth.com/data/gYqTAyBw/versions/RERuOOaQ/dynamicelectricity-1.21.1-1.2.1-0.jar"
-      ],
-      "fileSize": 360332
     },
     {
       "path": "mods/AdvancedPeripherals-1.21.1-0.8.1a.jar",
