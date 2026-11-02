@@ -171,7 +171,7 @@ def save_texture(image, folder, filename):
     return True
 
 
-def make_item_texture(material, color, form, source_name=None, shiny=False):
+def make_item_texture(material, color, form, source_name=None, shiny=False, form_name=True):
     source_name = source_name or form
     source_path = SOURCE_DIR / "common" / f"{source_name}.png"
     image = load_texture(source_path)
@@ -195,8 +195,10 @@ def make_item_texture(material, color, form, source_name=None, shiny=False):
                 )
 
             image.alpha_composite(overlay)
-
-    return save_texture(image, "item", f"{material}_{form}")
+    if form_name:
+        return save_texture(image, "item", f"{material}_{form}")
+    else:
+        return save_texture(image, "item", f"{material}")
 
 
 def make_layered_texture(material, color, base_name, output_name, overlay_name=None, folder="item", overlay_on_top=True):
@@ -374,10 +376,10 @@ def make_material_block(material, color, form, source_name, custom_name=False):
     )
 
 def make_material_set_block(material, color, material_set, form):
-    if material_set == "gem":
-        material_set = "emerald"
     if material_set == "crystal":
         material_set = "crystal_block"
+    elif material_set == "gold":
+        material_set = "diamond"
 
     source_path = SOURCE_DIR / "blocks" / f"{material_set}.png"
     image = load_texture(source_path)
@@ -398,6 +400,17 @@ def make_raw_textures(material, material_set, color):
 
     if material_set == "iridium":
         material_set = "iron"
+
+    #if it doesn't have a raw material, create the equivalent gem instead
+    if material_set == "lapis":
+        if make_item_texture(material, color, "lapis", form_name=False):
+            return 1
+    elif material_set == "emerald":
+        if make_item_texture(material, color, "emerald", form_name=False):
+            return 1
+    elif material_set == "crystal":
+        if make_item_texture(material, color, "crystal", form_name=False):
+            return 1
 
     raw_item_path = SOURCE_DIR / "raw" / f"{material_set}.png"
     raw_item = load_texture(raw_item_path)
@@ -429,7 +442,7 @@ def make_ore_blocks(material, material_set, color):
 
     if material_set == "iridium":
         material_set = "iron"
-    elif material_set == "gem":
+    if material_set == "crystal":
         material_set = "emerald"
     
     ore_path = SOURCE_DIR / "ores" / f"{material_set}.png"
@@ -491,12 +504,15 @@ def generate_material(material, config):
         if value is False or value is None:
             continue
 
-        if form == "ingot" and material_set == "gem":
-            source_name = "gem"
-            form = "gem"
+        if form == "ingot" and material_set == "emerald":
+            source_name = "emerald"
+            form = "emerald"
         elif form == "ingot" and material_set == "crystal":
             source_name = "crystal"
             form = "crystal"
+        if form == "ingot" and material_set == "lapis":
+            source_name = "lapis"
+            form = "lapis"
 
         if make_item_texture(material, color, form, source_name, shiny=(value == "shiny")):
             generated += 1

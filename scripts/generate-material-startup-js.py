@@ -30,6 +30,7 @@ PARTS = [
     "wire",
     "fine_wire",
     "crushed_dust",
+    "gem",
 ]
 
 SPECIAL_PROPERTIES = {
@@ -135,11 +136,12 @@ def generate_material(name, config):
 
         if part == "battery":
             continue
-
-        if part in BOOLEAN_PARTS and value is not False:
-            parts.append(js_string(part))
-        elif part not in BOOLEAN_PARTS and value is not False:
-            parts.append(js_string(part))
+        
+        if js_string(part) not in parts:
+            if part in BOOLEAN_PARTS and value is not False:
+                parts.append(js_string(part))
+            elif part not in BOOLEAN_PARTS and value is not False:
+                parts.append(js_string(part))
 
     if parts:
         lines.append("      .addParts(")
@@ -150,8 +152,8 @@ def generate_material(name, config):
 
     if config.get("ore_block", False) or config.get("raw_ore", False):
         ore_set = config.get("ore_set", material_set)
-        if ore_set == "iridium":
-                ore_set = "iron"
+        if ore_set in ("iridium", "emerald", "lapis", "coal", "crystal"):
+            ore_set = "iron"
         generate = config.get("ore_generate", False)
         biome_tag = config.get(
             "biome_tag", "minecraft:is_overworld"
@@ -180,7 +182,7 @@ def generate_material(name, config):
 
     if config.get("raw_ore", False):
         material = config.get('raw_metal', material_set)
-        if not (material == "crystal" or material == "gem"):
+        if not material in ("emerald", "lapis", "coal", "crystal"):
             lines.append(
                 f"      .rawMetal({js_string(material)})"
             )

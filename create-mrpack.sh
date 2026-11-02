@@ -36,8 +36,8 @@ cd ..
 
 mv build/materials-generated.js build/minh/overrides/kubejs/startup_scripts
 
-mv scripts/minh-data.zip build/minh/overrides/kubejs/data
-mv scripts/minh-resources.zip build/minh/overrides/kubejs/assets
+mv build/minh-data.zip build/minh/overrides/kubejs/data
+mv build/minh-resources.zip build/minh/overrides/kubejs/assets
 
 #add modrinth index
 

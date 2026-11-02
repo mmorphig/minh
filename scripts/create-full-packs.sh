@@ -18,9 +18,9 @@ echo "{
 
 python3 ./generate-textures.py
 python3 ./generate-models.py
-python3 ./create-material-tags.py
+python3 ./generate-material-tags.py
 
-7z -r a minh-resources.zip ./minh-resources/*
+7z -r a ../build/minh-resources.zip ./minh-resources/*
 
 # data pack
 mkdir minh-data
@@ -32,6 +32,7 @@ echo "{
 }
 " > minh-data/pack.mcmeta
 
-python3 ./create-material-recipes.py
+python3 ./generate-material-recipes.py
+python3 ./generate-material-recipes.py
 
-7z -r a minh-data.zip ./minh-data/*
+7z -r a ../build/minh-data.zip ./minh-data/*

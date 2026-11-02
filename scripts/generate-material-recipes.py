@@ -11,7 +11,10 @@ def item(material, part):
     special_names = {
         "raw_metal": f"raw_{material}",
     }
-    return f"{MI}:{special_names.get(part, f'{material}_{part}')}"
+    if part == "":
+        return f"{MI}:{special_names.get(part, f'{material}')}"
+    else:
+        return f"{MI}:{special_names.get(part, f'{material}_{part}')}"
 
 def item_input(item_id, amount=1):
     return {"item": item_id, "amount": amount}
@@ -150,32 +153,71 @@ def macerator_recipes(material, flags):
         recycle(part, amount)
 
     if flags.get("ore_block"):
-        add(recipes, "ore_to_raw.json", recipe(
-            "macerator", 2, 100,
-            [item_input(item(material, "ore"))],
-            [item_output(item(material, "raw_metal"), 3)],
-        ))
+        if flags.get("material_set") == "emerald":
+            add(recipes, "ore_to_raw.json", recipe(
+                "macerator", 2, 100,
+                [item_input(item(material, "ore"))],
+                [item_output(item(material, ""), 1)],
+            ))
 
-        add(recipes, "raw_to_crushed_dust.json", recipe(
-            "macerator", 2, 100,
-            [item_input(item(material, "raw_metal"))],
-            [item_output(item(material, "crushed_dust"), 3)],
-        ))
+            add(recipes, "raw_to_crushed_dust.json", recipe(
+                "macerator", 2, 100,
+                [item_input(item(material, ""))],
+                [item_output(item(material, "crushed_dust"), 3)],
+            ))
+        if flags.get("material_set") == "lapis":
+            add(recipes, "ore_to_raw.json", recipe(
+                "macerator", 2, 100,
+                [item_input(item(material, "ore"))],
+                [item_output(item(material, ""), 5)],
+            ))
+
+            add(recipes, "raw_to_crushed_dust.json", recipe(
+                "macerator", 2, 100,
+                [item_input(item(material, ""))],
+                [item_output(item(material, "crushed_dust"), 3)],
+            ))
+        if flags.get("material_set") == "crystal":
+            add(recipes, "ore_to_raw.json", recipe(
+                "macerator", 2, 100,
+                [item_input(item(material, "ore"))],
+                [item_output(item(material, ""), 2)],
+            ))
+
+            add(recipes, "raw_to_crushed_dust.json", recipe(
+                "macerator", 2, 100,
+                [item_input(item(material, ""))],
+                [item_output(item(material, "crushed_dust"), 3)],
+            ))
+        if flags.get("material_set") == "coal":
+            add(recipes, "ore_to_raw.json", recipe(
+                "macerator", 2, 100,
+                [item_input(item(material, "ore"))],
+                [item_output(item(material, ""), 1)],
+            ))
+
+            add(recipes, "raw_to_crushed_dust.json", recipe(
+                "macerator", 2, 100,
+                [item_input(item(material, ""))],
+                [item_output(item(material, "crushed_dust"), 3)],
+            ))
+        else:
+            add(recipes, "ore_to_raw.json", recipe(
+                "macerator", 2, 100,
+                [item_input(item(material, "ore"))],
+                [item_output(item(material, "raw_metal"), 3)],
+            ))
+
+            add(recipes, "raw_to_crushed_dust.json", recipe(
+                "macerator", 2, 100,
+                [item_input(item(material, "raw_metal"))],
+                [item_output(item(material, "crushed_dust"), 3)],
+            ))
 
     if flags.get("raw_ore") and flags.get("dust"):
         add(recipes, "crushed_to_dust.json", recipe(
             "macerator", 2, 100,
             [item_input(item(material, "crushed_dust"))],
-            [
-                item_output(item(material, "dust")),
-                item_output(item(material, "dust"), chance=0.5),
-            ],
-        ))
-
-    if flags.get("dust") and flags.get("ore_block"):
-        add(recipes, "dust_to_dust.json", recipe(
-            "macerator", 2, 100,
-            [item_input(item(material, "dust"))],
             [
                 item_output(item(material, "dust")),
                 item_output(item(material, "dust"), chance=0.5),

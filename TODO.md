@@ -1,6 +1,5 @@
 # Pack stuff:
 
-Testing (I haven't even tried to open this in-game, just testing that modrinth could open the .mrpack).<br>
 Put the MIT License notice in relevant files.<br>
 Create a proper name for the project.<br>
 Change seablock island generation to only give needed items, remove once there are no needed items.<br>
@@ -10,11 +9,12 @@ Remove all .disabled entries in modrinth index.<br>
 
 # KubeJS:
 
-Properly switch from kubejs-generated coils and items to MI-generated ones that are already added.<br>
-Adding more raw materials & raw material processing.<br>
+Add missing coil tiers using the new coils.<br>
 Clear out unneeded files in the kubejs data directory.<br>
 Fix battery creation.<br>
-Add GT:M ore generation veins.<br>
+Add missing ore processor recipes.<br>
+Add all the raw material to useful item recipes.<br>
+Remove recipes for and hide duplicates of materials.<br>
 
 # Progression
 
@@ -23,6 +23,7 @@ Properly figuring out progression through the tiers.<br>
 Creating EV+ betteries.<br>
 Adding more tiered cables & removing mekanism cables, IE/SA wires.<br>
 Add way to exit the Minestuck Medium.<br>
+Set up proper steam and pre-steam non-seablock progression.<br>
 
 # Materials:
 
@@ -35,6 +36,7 @@ Move kubejs MI materials to be MI-generated (ex: alumina).<br>
 Maybe add more custom parts for materials?<br>
 Remove all non-GT:M veins.<br>
 Remove expression and pneumaticcraft oil generation.<br>
+Have new raw ores drop the proper items, manual datapack? crystal drop 1-2, emerald drop 1, lapis drop 3-4, coal drop 1<br>
 
 # Assets
 
