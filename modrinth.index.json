@@ -336,21 +336,6 @@
       "fileSize": 13863897
     },
     {
-      "path": "mods/xaeroworldmap-neoforge-1.21.1-1.47.0.jar",
-      "hashes": {
-        "sha512": "4d2d78bc85afa002f682ef344b7284cf1baa4903cc5a11cd1d7bd260ac63952580ae717bab47079540ead633cdd5d8e4fdf230dc99a68bcb7a269500e7dada13",
-        "sha1": "2936c9cb9dfbdab145fe6f1e8ae2c68915246a5f"
-      },
-      "env": {
-        "client": "required",
-        "server": "required"
-      },
-      "downloads": [
-        "https://cdn.modrinth.com/data/NcUtCpym/versions/SnQ4SoDe/xaeroworldmap-neoforge-1.21.1-1.47.0.jar"
-      ],
-      "fileSize": 1427078
-    },
-    {
       "path": "mods/ExplorersCompass-1.21.1-3.4.0-neoforge.jar",
       "hashes": {
         "sha1": "9f62af344988a6e2d855b113e61cf0e1611c7e0f",
@@ -1189,21 +1174,6 @@
         "https://cdn.modrinth.com/data/YL57xq9U/versions/KduFYu4t/iris-neoforge-1.8.14-beta.1%2Bmc1.21.1.jar"
       ],
       "fileSize": 2540723
-    },
-    {
-      "path": "mods/xaerotrainmap-1.0.0.jar",
-      "hashes": {
-        "sha512": "6bdd0cc65492523cce939d2514632a60cbb38701ece15d4ab5caccc4a837fb28b0e1308698a0afe1921adb4f0ad0e6a69bf4aee68ab3277c47ea9b815d00068d",
-        "sha1": "4b9d3a53247b2f3977e32b246be5aeb131504eae"
-      },
-      "env": {
-        "server": "unsupported",
-        "client": "required"
-      },
-      "downloads": [
-        "https://cdn.modrinth.com/data/Ov2r3aVY/versions/mgDpAA4x/xaerotrainmap-1.0.0.jar"
-      ],
-      "fileSize": 7646
     },
     {
       "path": "mods/BadOptimizations-2.4.1-1.21.1.jar",
@@ -4281,21 +4251,6 @@
       "fileSize": 1064396
     },
     {
-      "path": "mods/xaerominimap-neoforge-1.21.1-26.6.0.jar",
-      "hashes": {
-        "sha512": "d56b93ddb921285624b491d6a85aba23748bec9974867399c881c257eb25a746df92a735473adf3a6875e0928a56ff78245d5238eb9207b0e45c3fec20c896dc",
-        "sha1": "551e8e2aa3498b506cc949a74606cdc0380e5e00"
-      },
-      "env": {
-        "client": "required",
-        "server": "required"
-      },
-      "downloads": [
-        "https://cdn.modrinth.com/data/1bokaNcj/versions/irjR7dHk/xaerominimap-neoforge-1.21.1-26.6.0.jar"
-      ],
-      "fileSize": 2186351
-    },
-    {
       "path": "mods/Super Factory Manager (SFM)-MC1.21.1-4.34.0.jar",
       "hashes": {
         "sha1": "1c170062c486bd25a1161571b6c3cf9e6371611b",
@@ -4684,6 +4639,21 @@
         "https://cdn.modrinth.com/data/s3dmwKy5/versions/S2TfWrZR/GlitchCore-neoforge-1.21.1-2.1.0.2.jar"
       ],
       "fileSize": 90717
+    },
+    {
+      "path": "mods/journeymap-neoforge-1.21.1-6.0.9.jar",
+      "hashes": {
+        "sha512": "8900ee4cdb7d1ffb6559decdeec84ad479d04b2e7b01a60be9f6e328809af2bfd7a80077b7da0e49bc96261fe8fe274ba33c62f6c9f65302c783ed823c4ff746",
+        "sha1": "3a5c86e620a7d5aa53b6e42ca4a1577bbba1d332"
+      },
+      "env": {
+        "server": "required",
+        "client": "required"
+      },
+      "downloads": [
+        "https://cdn.modrinth.com/data/lfHFW1mp/versions/CtFE7hwT/journeymap-neoforge-1.21.1-6.0.9.jar"
+      ],
+      "fileSize": 4320499
     }
   ],
   "dependencies": {
