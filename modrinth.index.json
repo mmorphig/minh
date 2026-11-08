@@ -1341,19 +1341,19 @@
       "fileSize": 15020578
     },
     {
-      "path": "mods/extended-industrialization-1.16.4-1.21.1.jar",
+      "path": "mods/extended-industrialization-1.16.5-1.21.1.jar",
       "hashes": {
-        "sha1": "213bfc18d144955f0aa9ea5cde08e81d6aa8fe69",
-        "sha512": "1fd57b1ebb67e81fa40e212b04a7b340ad6cc76750130c2583fbc1cb8b000d0f71284fc10273d9db5b491aa48c99809bcd30b3a3c3fb6bbb8ba5c529600bbdab"
+        "sha512": "5d4adf2a592434be51e563ec67de8be8a328b777ddab595f37ef45c10012e4b6a944233c776171794608cf56e03b43930bfcda7b07ab6180573e844ec8ebb908",
+        "sha1": "5c270f4674b769b713fd78da08640bb1f605065a"
       },
       "env": {
         "client": "required",
         "server": "required"
       },
       "downloads": [
-        "https://cdn.modrinth.com/data/CCM0U9YU/versions/rtmKKvYg/extended-industrialization-1.16.4-1.21.1.jar"
+        "https://cdn.modrinth.com/data/CCM0U9YU/versions/5yzbZ1iI/extended-industrialization-1.16.5-1.21.1.jar"
       ],
-      "fileSize": 2246194
+      "fileSize": 2254555
     },
     {
       "path": "mods/bloodanddeepslate-v1.3.3-1.21.1.jar",
@@ -1401,19 +1401,19 @@
       "fileSize": 105784
     },
     {
-      "path": "mods/Modern-Industrialization-2.5.10.jar",
+      "path": "mods/Modern-Industrialization-2.5.12.jar",
       "hashes": {
-        "sha1": "7f62032ad45a996cd4964a03c5359a5f86a55a54",
-        "sha512": "18bd9c11da22e7f7fd3c54aa77d925c6a3a7bfac80b4aae86ed5fbb939d3bac0b88dca4f8f0100983d101c5522803ee3733a72e80858d503e525d3155d4ea4f6"
+        "sha512": "c4816b70ab2530cd087f9aef2b97723ff6e2cdf63163c5c27c1b6ee8153d0826ae8cf413d00a4ac96f8ece2da781409cddb6d8f1f93fc88f255b10be3a6437bc",
+        "sha1": "20be5747c0c7f175f691f77de6df055be86d1a7a"
       },
       "env": {
         "client": "required",
         "server": "required"
       },
       "downloads": [
-        "https://cdn.modrinth.com/data/Gov5Dboq/versions/HOR1tVas/Modern-Industrialization-2.5.10.jar"
+        "https://cdn.modrinth.com/data/Gov5Dboq/versions/xGrDqc07/Modern-Industrialization-2.5.12.jar"
       ],
-      "fileSize": 7292458
+      "fileSize": 7311721
     },
     {
       "path": "mods/tracks_plus-1.0.6b6.jar",
@@ -3096,19 +3096,19 @@
       "fileSize": 207514
     },
     {
-      "path": "mods/guideme-21.1.19.jar",
+      "path": "mods/guideme-21.1.22.jar",
       "hashes": {
-        "sha1": "e85cd4c266f974dd360c46e8dad7ecf4c7ee96c6",
-        "sha512": "4dfa132e5cfd69a86c958867067f1c5ab39bb69ae35b2a62c24bb9924e9c688f1a4930ab75d335b22378d9f98cd7fceae8d030812b8f90c9aa282de8ea129f5a"
+        "sha512": "2a7b29143c1bef18375f221c337c6e744d04b79bc3cc10cadac46b7d6bb217ad78c51a3c33cd802b221cc7b38ff04a3f7064bd63d292e53bf9f3e09047eeda24",
+        "sha1": "eb2f531c91566a0f119b4b3a3acd927b48b6b27e"
       },
       "env": {
         "server": "required",
         "client": "required"
       },
       "downloads": [
-        "https://cdn.modrinth.com/data/Ck4E7v7R/versions/hFpGwC6q/guideme-21.1.19.jar"
+        "https://cdn.modrinth.com/data/Ck4E7v7R/versions/QeYKsstN/guideme-21.1.22.jar"
       ],
-      "fileSize": 9311992
+      "fileSize": 9332340
     },
     {
       "path": "mods/Mekanism-1.21.1-10.7.19.85.jar",
@@ -3396,19 +3396,19 @@
       "fileSize": 10422
     },
     {
-      "path": "mods/tesseract-api-neoforge-1.12.18-1.21.1.jar",
+      "path": "mods/tesseract-api-neoforge-1.12.20-1.21.1.jar",
       "hashes": {
-        "sha512": "440b1d03d5379d4b098d20e6614359f458ac7b435201f1e64d1b62a3b665aab40bf970c3aadfb00a2bda58a1cc4659983dc6c1cd2a48262d0021152e1a7362e8",
-        "sha1": "f7b2f73ac337fda2197174c77aafa79671366e31"
+        "sha512": "720345b77f554db86af25f395b68ca93410d840329ed597a7377207d68e870e41288812b61a270e629e2c21d17481fa565943eba9cac74698630b2fe7cb59820",
+        "sha1": "25ed2de62a32c7fba35701663f2c169ed368f942"
       },
       "env": {
         "client": "required",
         "server": "required"
       },
       "downloads": [
-        "https://cdn.modrinth.com/data/pHNT1iyc/versions/luummThA/tesseract-api-neoforge-1.12.18-1.21.1.jar"
+        "https://cdn.modrinth.com/data/pHNT1iyc/versions/6vPblZTq/tesseract-api-neoforge-1.12.20-1.21.1.jar"
       ],
-      "fileSize": 764062
+      "fileSize": 768957
     },
     {
       "path": "mods/AdvancedAE-1.6.12-1.21.1.jar",
