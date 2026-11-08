@@ -7,6 +7,8 @@ RecipeViewerEvents.removeEntriesCompletely('item', event => {
     "createchemistry:sulfur_dust",
     "northstar:titanium_ingot",
     "northstar:titanium_sheet",
-    "avaritia:singularity"
+    "avaritia:singularity",
+    "immersiveengineering:plate_iron",
+    "create:iron_sheet"
   ])
 })

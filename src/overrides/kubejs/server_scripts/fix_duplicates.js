@@ -33,10 +33,8 @@ ServerEvents.recipes(event => {
   event.replaceOutput({ output: "modern_industrialization:silicon_ingot" }, 
     "modern_industrialization:silicon_ingot", "ae2:silicon"
   )
-
-  /*event.replaceOutput({ output: "oritech:silicon_block" }, 
-    "oritech:silicon_block", "extendedae:silicon_block"
-  )*/
+  
+  replaceFull("#c:plates/iron", "modern_industrialization:iron_plate")
 
   // quartz
   replaceFull("#c:dusts/quartz", "modern_industrialization:quartz_dust")
