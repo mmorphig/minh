@@ -6,7 +6,7 @@ worldgen:
 
     # The maximum random offset (in blocks) from the grid for generating an ore vein.
     # Default: 12
-    oreVeinRandomOffset: 4
+    oreVeinRandomOffset: 0
 
     # Prevents regular vanilla ores from being generated outside GregTech ore veins
     # Default: true
@@ -45,13 +45,13 @@ compat:
     # The radius, in blocks, that clicking an ore block will search for veins in.
     # -1 to disable
     # Default: 24
-    oreBlockProspectRange: 24
+    oreBlockProspectRange: 32
 
     # The map scale at which displayed ores will stop scaling.
     oreScaleStop: 0.25
 
     # The size, in pixels, of ore icons on the map
-    oreIconSize: 64
+    oreIconSize: 32
 
     # The string prepending ore names in the ore vein tooltip
     oreNamePrefix: >

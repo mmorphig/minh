@@ -1,7 +1,7 @@
 {
   "banded_iron_formation": {
     "weight": 80,
-    "density": 0.8,
+    "density": 0.9,
     "layer": "stone",
     "biomes": "#minecraft:is_overworld",
     "primary": {
@@ -32,9 +32,9 @@
   },
   "magnetite_deposit": {
     "weight": 55,
-    "density": 0.65,
+    "density": 0.75,
     "layer": "stone",
-    "biomes": "#minecraft:is_mountain",
+    "biomes": "#minecraft:is_overworld",
     "primary": {
       "layers": 3,
       "blocks": [
@@ -65,7 +65,7 @@
     "weight": 65,
     "density": 0.6,
     "layer": "stone",
-    "biomes": "#minecraft:is_mountain",
+    "biomes": "#minecraft:is_overworld",
     "primary": {
       "layers": 3,
       "blocks": [
@@ -119,15 +119,16 @@
     "sporadic": {
       "layers": 1,
       "blocks": [
-        "modern_industrialization:cerussite_ore"
+        "modern_industrialization:cerussite_ore",
+        "modern_industrialization:vanadinite_ore"
       ]
     }
   },
   "cassiterite_deposit": {
-    "weight": 45,
-    "density": 0.5,
+    "weight": 55,
+    "density": 0.7,
     "layer": "stone",
-    "biomes": "#minecraft:is_hills",
+    "biomes": "#minecraft:is_overworld",
     "primary": {
       "layers": 3,
       "blocks": [
@@ -155,7 +156,7 @@
     }
   },
   "coal_basin": {
-    "weight": 90,
+    "weight": 95,
     "density": 0.85,
     "layer": "stone",
     "biomes": "#minecraft:is_overworld",
@@ -168,7 +169,8 @@
     "secondary": {
       "layers": 2,
       "blocks": [
-        "modern_industrialization:pyrite_ore"
+        "modern_industrialization:pyrite_ore",
+        "modern_industrialization:lignite_coal_ore"
       ]
     },
     "between": {
@@ -188,7 +190,7 @@
     "weight": 60,
     "density": 0.7,
     "layer": "stone",
-    "biomes": "#minecraft:is_jungle",
+    "biomes": "#minecraft:is_overworld",
     "primary": {
       "layers": 3,
       "blocks": [
@@ -217,7 +219,7 @@
   },
   "massive_pyrite": {
     "weight": 45,
-    "density": 0.7,
+    "density": 0.8,
     "layer": "stone",
     "biomes": "#minecraft:is_overworld",
     "primary": {
@@ -313,7 +315,7 @@
     "weight": 35,
     "density": 0.45,
     "layer": "stone",
-    "biomes": "#minecraft:is_mountain",
+    "biomes": "#minecraft:is_overworld",
     "primary": {
       "layers": 3,
       "blocks": [
@@ -372,7 +374,7 @@
     }
   },
   "cobalt_sulfide": {
-    "weight": 35,
+    "weight": 25,
     "density": 0.5,
     "layer": "deepslate",
     "biomes": "#minecraft:is_overworld",
@@ -406,7 +408,7 @@
     "weight": 35,
     "density": 0.5,
     "layer": "stone",
-    "biomes": "#minecraft:is_hills",
+    "biomes": "#minecraft:is_overworld",
     "primary": {
       "layers": 3,
       "blocks": [
@@ -437,7 +439,7 @@
     "weight": 30,
     "density": 0.4,
     "layer": "stone",
-    "biomes": "#minecraft:is_mountain",
+    "biomes": "#minecraft:is_overworld",
     "primary": {
       "layers": 3,
       "blocks": [
@@ -468,7 +470,7 @@
     "weight": 30,
     "density": 0.4,
     "layer": "stone",
-    "biomes": "#minecraft:is_hills",
+    "biomes": "#minecraft:is_overworld",
     "primary": {
       "layers": 3,
       "blocks": [
@@ -499,7 +501,7 @@
     "weight": 25,
     "density": 0.4,
     "layer": "stone",
-    "biomes": "#minecraft:is_hills",
+    "biomes": "#minecraft:is_overworld",
     "primary": {
       "layers": 3,
       "blocks": [
@@ -530,7 +532,7 @@
     "weight": 35,
     "density": 0.5,
     "layer": "stone",
-    "biomes": "#minecraft:is_mountain",
+    "biomes": "#minecraft:is_overworld",
     "primary": {
       "layers": 3,
       "blocks": [
@@ -562,7 +564,7 @@
     "weight": 35,
     "density": 0.5,
     "layer": "stone",
-    "biomes": "#minecraft:is_mountain",
+    "biomes": "#minecraft:is_overworld",
     "primary": {
       "layers": 3,
       "blocks": [
@@ -624,7 +626,7 @@
     "weight": 40,
     "density": 0.55,
     "layer": "stone",
-    "biomes": "#minecraft:is_beach",
+    "biomes": "#minecraft:is_overworld",
     "primary": {
       "layers": 3,
       "blocks": [
@@ -652,10 +654,10 @@
     }
   },
   "orogenic_gold": {
-    "weight": 45,
+    "weight": 55,
     "density": 0.5,
     "layer": "stone",
-    "biomes": "#minecraft:is_mountain",
+    "biomes": "#minecraft:is_overworld",
     "primary": {
       "layers": 3,
       "blocks": [
@@ -679,6 +681,38 @@
       "layers": 1,
       "blocks": [
         "modern_industrialization:chalcopyrite_ore"
+      ]
+    }
+  },
+  "epithermal_gold_vein": {
+    "weight": 45,
+    "density": 0.55,
+    "layer": "stone",
+    "biomes": "#minecraft:is_overworld",
+    "primary": {
+      "layers": 3,
+      "blocks": [
+        "minecraft:gold_ore",
+        "modern_industrialization:silver_ore"
+      ]
+    },
+    "secondary": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:pyrite_ore",
+        "modern_industrialization:sphalerite_ore"
+      ]
+    },
+    "between": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:quartz_ore"
+      ]
+    },
+    "sporadic": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:galena_ore"
       ]
     }
   },
@@ -717,7 +751,7 @@
     "weight": 12,
     "density": 0.35,
     "layer": "stone",
-    "biomes": "#minecraft:is_savanna",
+    "biomes": "#minecraft:is_overworld",
     "primary": {
       "layers": 3,
       "blocks": [
@@ -744,11 +778,103 @@
       ]
     }
   },
+  "diamond_deposit": {
+    "weight": 15,
+    "density": 0.35,
+    "layer": "deepslate",
+    "biomes": "#minecraft:is_overworld",
+    "primary": {
+      "layers": 3,
+      "blocks": [
+        "minecraft:diamond_ore"
+      ]
+    },
+    "secondary": {
+      "layers": 2,
+      "blocks": [
+        "minecraft:coal_ore"
+      ]
+    },
+    "between": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:carbon_ore"
+      ]
+    },
+    "sporadic": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:lignite_coal_ore"
+      ]
+    }
+  },
+  "redstone_vein": {
+    "weight": 25,
+    "density": 0.75,
+    "layer": "stone",
+    "biomes": "#minecraft:is_overworld",
+    "primary": {
+      "layers": 4,
+      "blocks": [
+        "minecraft:redstone_ore"
+      ]
+    },
+    "secondary": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:ruby_ore"
+      ]
+    },
+    "between": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:quartz_ore"
+      ]
+    },
+    "sporadic": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:monazite_ore"
+      ]
+    }
+  },
+  "deep_redstone_vein": {
+    "weight": 65,
+    "density": 0.75,
+    "layer": "deepslate",
+    "biomes": "#minecraft:is_overworld",
+    "primary": {
+      "layers": 4,
+      "blocks": [
+        "minecraft:redstone_ore"
+      ]
+    },
+    "secondary": {
+      "layers": 2,
+      "blocks": [
+        "modern_industrialization:ruby_ore",
+        "modern_industrialization:quartz_ore"
+      ]
+    },
+    "between": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:uraninite_ore",
+        "modern_industrialization:monazite_ore"
+      ]
+    },
+    "sporadic": {
+      "layers": 1,
+      "blocks": [
+        "modern_industrialization:thorite_ore"
+      ]
+    }
+  },
   "emerald_deposit": {
     "weight": 18,
     "density": 0.35,
     "layer": "stone",
-    "biomes": "#minecraft:is_mountain",
+    "biomes": "#minecraft:is_overworld",
     "primary": {
       "layers": 3,
       "blocks": [
@@ -779,7 +905,7 @@
     "weight": 20,
     "density": 0.4,
     "layer": "stone",
-    "biomes": "#minecraft:is_mountain",
+    "biomes": "#minecraft:is_overworld",
     "primary": {
       "layers": 3,
       "blocks": [
@@ -872,7 +998,7 @@
     "weight": 50,
     "density": 0.7,
     "layer": "stone",
-    "biomes": "#minecraft:is_desert",
+    "biomes": "#minecraft:is_overworld",
     "primary": {
       "layers": 3,
       "blocks": [
@@ -903,7 +1029,7 @@
     "weight": 35,
     "density": 0.45,
     "layer": "stone",
-    "biomes": "#minecraft:is_mountain",
+    "biomes": "#minecraft:is_overworld",
     "primary": {
       "layers": 3,
       "blocks": [
@@ -962,8 +1088,8 @@
     }
   },
   "lapis_deposit": {
-    "weight": 35,
-    "density": 0.5,
+    "weight": 55,
+    "density": 0.75,
     "layer": "stone",
     "biomes": "#minecraft:is_overworld",
     "primary": {
@@ -996,7 +1122,7 @@
     "weight": 35,
     "density": 0.5,
     "layer": "stone",
-    "biomes": "#minecraft:is_badlands",
+    "biomes": "#minecraft:is_overworld",
     "primary": {
       "layers": 3,
       "blocks": [
@@ -1044,7 +1170,7 @@
     "between": {
       "layers": 1,
       "blocks": [
-        "minecraft:gold_ore"
+        "minecraft:nether_gold_ore"
       ]
     },
     "sporadic": {
@@ -1058,7 +1184,7 @@
     "weight": 60,
     "density": 0.6,
     "layer": "stone",
-    "biomes": "#minecraft:is_mountain",
+    "biomes": "#minecraft:is_overworld",
     "primary": {
       "layers": 3,
       "blocks": [
@@ -1075,7 +1201,7 @@
     "between": {
       "layers": 1,
       "blocks": [
-        "minecraft:gold_ore"
+        "modern_industrialization:quartz_ore"
       ]
     },
     "sporadic": {
@@ -1090,7 +1216,7 @@
     "weight": 20,
     "density": 0.4,
     "layer": "deepslate",
-    "biomes": "#minecraft:is_mountain",
+    "biomes": "#minecraft:is_overworld",
     "primary": {
       "layers": 3,
       "blocks": [
@@ -1121,7 +1247,7 @@
     "weight": 50,
     "density": 0.55,
     "layer": "stone",
-    "biomes": "#minecraft:is_badlands",
+    "biomes": "#minecraft:is_overworld",
     "primary": {
       "layers": 3,
       "blocks": [
@@ -1152,7 +1278,7 @@
     "weight": 30,
     "density": 0.45,
     "layer": "stone",
-    "biomes": "#minecraft:is_mountain",
+    "biomes": "#minecraft:is_overworld",
     "primary": {
       "layers": 3,
       "blocks": [
@@ -1214,7 +1340,7 @@
     "weight": 30,
     "density": 0.45,
     "layer": "stone",
-    "biomes": "#minecraft:is_mountain",
+    "biomes": "#minecraft:is_overworld",
     "primary": {
       "layers": 3,
       "blocks": [
@@ -1237,7 +1363,8 @@
     "sporadic": {
       "layers": 1,
       "blocks": [
-        "modern_industrialization:pyrite_ore"
+        "modern_industrialization:pyrite_ore",
+        "modern_industrialization:vanadinite_ore"
       ]
     }
   }

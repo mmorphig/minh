@@ -160,6 +160,16 @@ StartupEvents.registry('item', event => {
 })
 
 StartupEvents.registry('fluid', event => {
+  event.create('modern_industrialization:fluorine')
+    .tint(0xD9E85A)
+    .noBlock()
+    .type(type => type
+      .renderType(3)
+      .stillTexture('kubejs:block/thin_fluid_still')
+      .flowingTexture('kubejs:block/thin_fluid_flow')
+      .density(-100)
+    )
+
   event.create('mineralized_water')
     .translationKey("fluid_type.kubejs.mineralized_water")
     .tint(0x3B72E0)

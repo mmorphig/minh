@@ -154,7 +154,7 @@ MIMaterialEvents.modifyMaterial("ruby", event => {
 
 MIMaterialEvents.modifyMaterial("sulfur", event => {
   event.builder
-  .addParts("gem")
+  .addParts("gem", "crushed_dust")
   .ore({
     ore_set: "emerald",
     generate: false,
@@ -166,6 +166,33 @@ MIMaterialEvents.modifyMaterial("sulfur", event => {
     max_y: 32
   })
   .setMainPart("gem")
+})
+
+MIMaterialEvents.modifyMaterial("carbon", event => {
+  event.builder
+  .ore({
+    ore_set: "coal",
+    generate: false,
+    biome_tag: "minecraft:is_overworld",
+    vein_size: 8,
+    veins_per_chunk: 4,
+    min_xp: 1,
+    max_xp: 1,
+    max_y: 32
+  })
+  .setMainPart("dust")
+})
+
+MIMaterialEvents.modifyMaterial("silver", event => {
+  event.builder
+  .ore({
+    ore_set: "gold",
+    generate: false,
+    biome_tag: "minecraft:is_overworld",
+    vein_size: 8,
+    veins_per_chunk: 4,
+    max_y: 32
+  })
 })
 
 // Voltage capacity of the coils is only 2^x while tiers are 4^x
