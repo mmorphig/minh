@@ -4654,6 +4654,21 @@
         "https://cdn.modrinth.com/data/lfHFW1mp/versions/CtFE7hwT/journeymap-neoforge-1.21.1-6.0.9.jar"
       ],
       "fileSize": 4320499
+    },
+    {
+      "path": "mods/industrialization_overdrive-1.15.1+1.21.1.jar",
+      "hashes": {
+        "sha512": "1152bebd8b8e80ae159d3d9ec547c26194d8b21d7ab3feed46268899eb57bab5eaa562e341358aab545e1faca6dfb6336c489379111d9e1fe42d0c04e9a196a0",
+        "sha1": "f16686629b0bf96f2a152602c9480ecd0ae9b3ad"
+      },
+      "env": {
+        "server": "required",
+        "client": "required"
+      },
+      "downloads": [
+        "https://cdn.modrinth.com/data/FjBGB4sU/versions/lnT5n7e5/industrialization_overdrive-1.15.1%2B1.21.1.jar"
+      ],
+      "fileSize": 352026
     }
   ],
   "dependencies": {
