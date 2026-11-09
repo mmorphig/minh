@@ -23,6 +23,9 @@ ServerEvents.recipes(event => {
   //event.replaceInput({ input: Ingredient.of("#c:dusts/sulfur") },
   //  Ingredient.of("#c:dusts/sulfur"), 'modern_industrialization:sulfur_dust'
   //)
+
+  // molybdenum
+  replaceFull("blood_and_deepslate:molybdenum_ingot", "modern_industrialization:molybdenum_ingot")
   
   // silicon
   event.remove({ output: "ae2:silicon" })
@@ -34,7 +37,10 @@ ServerEvents.recipes(event => {
     "modern_industrialization:silicon_ingot", "ae2:silicon"
   )
   
+  //plates
   replaceFull("#c:plates/iron", "modern_industrialization:iron_plate")
+  replaceFull("#c:plates/gold", "modern_industrialization:gold_plate")
+  replaceFull("#c:plates/aluminum", "modern_industrialization:aluminum_plate")
 
   // quartz
   replaceFull("#c:dusts/quartz", "modern_industrialization:quartz_dust")

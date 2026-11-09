@@ -15,6 +15,17 @@ ServerEvents.recipes(event => {
     ]
   )
 
+  event.remove({ id: "minecraft:iron_bucket" })
+
+  event.remove({ output: "minecraft:craftting_table"})
+  event.shaped('minecraft:crafting_table', [
+    'AA',
+    'BB'
+  ], {
+    A: 'minecraft:flint',
+    B: '#minecraft:planks'
+  })
+
   // flint and STEEL
   event.remove({ id: 'minecraft:flint_and_steel'})
   event.shapeless('minecraft:flint_and_steel', [
@@ -438,12 +449,6 @@ ServerEvents.recipes(event => {
     C: 'modern_industrialization:cupronickel_cable',
     D: 'modern_industrialization:heatproof_machine_casing'
   })
-
-  event.remove({ output: "modern_industrialization:bronze_macerator" })
-  event.remove({ output: "modern_industrialization:steel_macerator" })
-  event.replaceInput({ input: "modern_industrialization:bronze_macerator" },
-    "modern_industrialization:bronze_macerator", "modern_industrialization:steel_macerator"
-  )
 
   event.remove({ output: "modern_industrialization:bronze_cutting_machine" })
   event.remove({ output: "modern_industrialization:steel_cutting_machine" })
