@@ -40,6 +40,12 @@ ServerEvents.recipes(event => {
   //plates
   replaceFull("#c:plates/iron", "modern_industrialization:iron_plate")
   replaceFull("#c:plates/gold", "modern_industrialization:gold_plate")
+  replaceFull("#c:plates/steel", "modern_industrialization:steel_plate")
+  replaceFull("#c:plates/silver", "modern_industrialization:silver_plate")
+  replaceFull("#c:plates/lead", "modern_industrialization:lead_plate")
+  replaceFull("#c:plates/nickel", "modern_industrialization:nickel_plate")
+  replaceFull("#c:plates/electrum", "modern_industrialization:electrum_plate")
+  replaceFull("#c:plates/copper", "modern_industrialization:copper_plate")
   replaceFull("#c:plates/aluminum", "modern_industrialization:aluminum_plate")
 
   // quartz
