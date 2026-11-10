@@ -52,9 +52,30 @@
 		"If you get stuck in a dungeon because every door out is gone, you'll have to drop into limbo or place your own oak dimensional door. All tiers that could be skipped are probably already done by the time you can make your own doors though."
 	]
 	quest.202A2C60DD35B637.title: "Dimensional Doors"
+	quest.208EBB4F30EE0E52.quest_desc: [
+		"In a regular world, there are a lot more ore veins, the important ores you'll probably want are:"
+		"cassiterite (tin)"
+		"stibnite (antimony)"
+		"galena (lead)"
+		"pentlandite (nickel)"
+		"chalcopyrite (copper)"
+		"bornite (copper)"
+		"pyrite (iron)"
+		"arsenopyrite (iron)"
+		"magnetite (iron)"
+		"molybdenite (molybdenum)"
+		""
+		"Coal, diamonds and emeralds are also useful, but are common enough as loot from structures to probably be enough for you for the time being. Though you'll want to find an actual source of coal for steel soon."
+		""
+		"If you need lapis or redstone, you might be looking for a bit to find them, but they are there."
+		""
+		"You can also find gold and silver as native ores in veins, they'll also be useful pretty soon."
+	]
 	quest.2134C606BE4A8E28.quest_desc: ["You'll need to make aqua regia to purify gold, which is also used in the netherite chain."]
 	quest.2431E0E74BB1F141.title: "Naquadah Reactor"
+	quest.257208C03E969366.quest_desc: ["A smeltery is very useful in the early game, even just this mini one."]
 	quest.281CBB123CAE22B8.quest_desc: ["It doesn't generate neutrons, but is an easy source of plutonium for mox fuel rods and further processing."]
+	quest.29B128A1299920CB.title: "Basic Ingots"
 	quest.29C7886524F3139F.title: "Basic Kitchen"
 	quest.2D5D026723F394D1.quest_desc: ["Since you know how a mixer works, with it you can create more dirt by creating coarse dirt and mixing with water. Or you can just use mulch with cobblestone."]
 	quest.2EE52E2AEEB5BB30.quest_desc: ["Don't even need the twilight forest!"]
@@ -66,12 +87,14 @@
 	quest.35E12F3739F8116D.quest_desc: ["Store as much as a half chest!"]
 	quest.3885F61D83ACA458.quest_desc: ["Making a full moon-capable rocket takes a lot of resources, probably the largest relative production for any tier."]
 	quest.3885F61D83ACA458.title: "Rocket"
+	quest.3AB6BE837F168750.title: "Battery Alloy Ingots"
 	quest.3F86C88010445B7E.quest_desc: [
 		"Hope you like the anthraquinone process! This is the first step to make anthraquinone. Don't worry too much though, all aluminum, platinum, chlorine and eventually anthraquinone is recycled."
 		""
 		"You could just ignore this for now since it's really just to make a better rocket fuel, but you'll need it to make processing units later."
 	]
 	quest.3F86C88010445B7E.title: "Aluminum Catalysts"
+	quest.4375424F317843F1.title: "Seablock"
 	quest.439E2DB92FF38060.quest_desc: [
 		"JEI doesn't show all the possible items, the items and odds are:"
 		"raw iron, 20%"
@@ -133,6 +156,7 @@
 	quest.6FF9B155B96C5889.quest_desc: ["Better than nothing?"]
 	quest.7038D174D96F8FB2.title: "Battery Alloy Plates"
 	quest.76D913732A4BEF27.title: "Diamond Armor"
+	quest.7C22AA169F45C59C.quest_desc: ["You've probably gone into the deepslate layer by now, to avoid the negative effects of being down there, use this for now."]
 	quest.7C6A41ADCA29BCDC.quest_desc: ["Still uses netherite here :)"]
 	quest.7E90F913A48E51E2.quest_desc: ["You won't need much of this for now, but just know that you can make andesite from quartz and cobblestone. Once you get one and lava, you can duplicate it in a mixer."]
 	quest.7ED7429E1DE65550.quest_desc: [
@@ -143,6 +167,7 @@
 	quest.7EF4CB5D6AA02B4E.quest_desc: ["Infinite range across dimensions, but does not charge the wireless terminal."]
 	quest.7F4112050018F565.quest_desc: ["To make some \"\"extra backups for your friends\"\"."]
 	quest.7F4112050018F565.title: "Music Piracy"
+	task.045A09B09C856772.title: "Normal World"
 	task.4F338C059D92CA0E.title: "HV"
 	task.5F03686DA7B45D1F.title: "Beginning"
 }

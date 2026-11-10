@@ -14,8 +14,8 @@
 		{
 			id: "74DF4B499922F408"
 			tasks: [{
-				id: "10885F846F314B13"
-				item: { count: 1, id: "kubejs:promethium" }
+				id: "1E03744035854E07"
+				item: { count: 1, id: "modern_industrialization:promethium_ingot" }
 				type: "item"
 			}]
 			x: 0.0d

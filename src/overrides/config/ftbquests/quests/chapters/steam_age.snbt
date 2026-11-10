@@ -18,8 +18,8 @@
 				id: "5F03686DA7B45D1F"
 				type: "checkmark"
 			}]
-			x: -1.5d
-			y: 1.5d
+			x: -3.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["4375424F317843F1"]
@@ -50,8 +50,8 @@
 					value: 1L
 				}
 			]
-			x: 0.0d
-			y: 1.5d
+			x: -2.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["530D7AB04686CFFB"]
@@ -61,8 +61,8 @@
 				item: { count: 1, id: "kubejs:slag" }
 				type: "item"
 			}]
-			x: 1.5d
-			y: 1.5d
+			x: -0.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["7F7BA68C3FCDE8F6"]
@@ -72,8 +72,8 @@
 				item: { count: 1, id: "kubejs:crushed_stone" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: 1.5d
+			x: 1.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["5878426D8C7640A9"]
@@ -112,30 +112,40 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: 0.0d
+			x: 2.5d
+			y: -3.0d
 		}
 		{
-			dependencies: ["5878426D8C7640A9"]
+			dependencies: [
+				"5878426D8C7640A9"
+				"208EBB4F30EE0E52"
+			]
+			dependency_requirement: "one_completed"
+			hide_dependency_lines: true
 			id: "3903B1D3EDCD87EF"
 			tasks: [{
 				id: "6D5184A92E1EA108"
 				item: { count: 1, id: "minecraft:cobblestone" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: 3.0d
+			x: -0.5d
+			y: -1.0d
 		}
 		{
-			dependencies: ["3903B1D3EDCD87EF"]
+			dependencies: [
+				"3903B1D3EDCD87EF"
+				"208EBB4F30EE0E52"
+			]
+			dependency_requirement: "one_completed"
+			hide_dependency_lines: true
 			id: "2686C80D40D765A8"
 			tasks: [{
 				id: "4C2362FA628EB30F"
 				item: { count: 1, id: "minecraft:sand" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: 4.5d
+			x: 1.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["7F7BA68C3FCDE8F6"]
@@ -145,8 +155,8 @@
 				item: { count: 1, id: "modern_industrialization:wood_pulp" }
 				type: "item"
 			}]
-			x: 1.5d
-			y: 3.0d
+			x: -0.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["5E40F5D434A82526"]
@@ -156,8 +166,8 @@
 				item: { count: 1, id: "minecraft:oak_planks" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: 4.5d
+			x: -0.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["290560709B989354"]
@@ -171,15 +181,21 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["2686C80D40D765A8"]
+			dependencies: [
+				"2686C80D40D765A8"
+				"208EBB4F30EE0E52"
+			]
+			dependency_requirement: "one_completed"
+			hide_dependency_lines: true
+			hide_dependent_lines: true
 			id: "5E74F5255ABECFF2"
 			tasks: [{
 				id: "5DB919C410AB3F3F"
 				item: { count: 1, id: "minecraft:clay_ball" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: 6.0d
+			x: 2.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["5E74F5255ABECFF2"]
@@ -193,18 +209,28 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["439E2DB92FF38060"]
+			dependencies: [
+				"439E2DB92FF38060"
+				"29B128A1299920CB"
+			]
+			dependency_requirement: "one_completed"
+			hide_dependency_lines: true
 			id: "02196F0A5ACEDF27"
 			tasks: [{
-				id: "2D3CB80DAF4BCD6F"
-				item: { count: 1, id: "mekanism:dust_bronze" }
+				id: "2C9510A814BEE49D"
+				item: { count: 1, id: "modern_industrialization:bronze_dust" }
 				type: "item"
 			}]
 			x: 4.5d
 			y: 1.5d
 		}
 		{
-			dependencies: ["439E2DB92FF38060"]
+			dependencies: [
+				"439E2DB92FF38060"
+				"29B128A1299920CB"
+			]
+			dependency_requirement: "one_completed"
+			hide_dependency_lines: true
 			id: "25BEDDB80CC313E9"
 			tasks: [{
 				id: "4831D4C700E7200F"
@@ -494,7 +520,12 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["439E2DB92FF38060"]
+			dependencies: [
+				"439E2DB92FF38060"
+				"3AB6BE837F168750"
+			]
+			dependency_requirement: "one_completed"
+			hide_dependency_lines: true
 			id: "21E6232FE3A8DFDD"
 			tasks: [{
 				id: "0104496DF6C779E8"
@@ -570,8 +601,8 @@
 				item: { count: 1, id: "minecraft:paper" }
 				type: "item"
 			}]
-			x: 1.5d
-			y: 4.5d
+			x: 1.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["5FF09BC54F2337E5"]
@@ -585,15 +616,20 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["439E2DB92FF38060"]
+			dependencies: [
+				"439E2DB92FF38060"
+				"208EBB4F30EE0E52"
+			]
+			dependency_requirement: "one_completed"
+			hide_dependency_lines: true
 			id: "66AB48634AD02C18"
 			tasks: [{
 				id: "1F5C8669650B014B"
 				item: { count: 1, id: "minecraft:coal" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: -1.5d
+			x: 4.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["66AB48634AD02C18"]
@@ -603,11 +639,11 @@
 				item: { count: 1, id: "minecraft:diamond" }
 				type: "item"
 			}]
-			x: 3.0d
+			x: 6.0d
 			y: -3.0d
 		}
 		{
-			dependencies: ["5FF09BC54F2337E5"]
+			dependencies: ["066412C9AC4E7023"]
 			id: "3ED957B2048B3277"
 			tasks: [{
 				id: "1A0A3DAC2F1837F1"
@@ -691,8 +727,8 @@
 				item: { count: 1, id: "minecraft:dirt" }
 				type: "item"
 			}]
-			x: 1.5d
-			y: 0.0d
+			x: 2.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["155EC7F0CB22CF24"]
@@ -715,6 +751,101 @@
 			}]
 			x: 7.5d
 			y: -1.5d
+		}
+		{
+			dependencies: ["208EBB4F30EE0E52"]
+			id: "29B128A1299920CB"
+			tasks: [
+				{
+					id: "70F1ABBB4826A570"
+					item: { count: 1, id: "minecraft:copper_ingot" }
+					type: "item"
+				}
+				{
+					id: "268660A957F8E484"
+					item: { count: 1, id: "modern_industrialization:tin_ingot" }
+					type: "item"
+				}
+				{
+					id: "479E189714983B84"
+					item: { count: 1, id: "minecraft:iron_ingot" }
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["208EBB4F30EE0E52"]
+			id: "3AB6BE837F168750"
+			tasks: [
+				{
+					id: "4DB5CF2DC74ED116"
+					item: { count: 1, id: "modern_industrialization:lead_ingot" }
+					type: "item"
+				}
+				{
+					id: "4A1BE22B4738C7D6"
+					item: { count: 1, id: "modern_industrialization:antimony_ingot" }
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			id: "208EBB4F30EE0E52"
+			size: 1.5d
+			tasks: [{
+				id: "045A09B09C856772"
+				type: "checkmark"
+			}]
+			x: -0.75d
+			y: 2.25d
+		}
+		{
+			dependencies: ["208EBB4F30EE0E52"]
+			id: "3C5CAF04BCDEDD6A"
+			tasks: [{
+				id: "045CE791F6E9D810"
+				item: { count: 1, id: "modern_industrialization:molybdenum_ingot" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3C5CAF04BCDEDD6A"]
+			id: "19895886A5734770"
+			tasks: [{
+				id: "00277D278B4C5B36"
+				item: { count: 1, id: "blood_and_deepslate:filter" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["19895886A5734770"]
+			id: "7C22AA169F45C59C"
+			tasks: [{
+				id: "17CABDB408F56CA4"
+				item: { count: 1, id: "blood_and_deepslate:gas_mask_helmet" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["5E74F5255ABECFF2"]
+			id: "257208C03E969366"
+			tasks: [{
+				id: "46807B9AC5D9AC94"
+				item: { count: 1, id: "modernfoundry:seared_melter" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.5d
 		}
 	]
 }

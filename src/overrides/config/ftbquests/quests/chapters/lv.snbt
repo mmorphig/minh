@@ -515,7 +515,7 @@
 			dependencies: ["2FDE0BC4918A7F91"]
 			id: "78193F5DD665E963"
 			tasks: [{
-				id: "165466886EE3C0CB"
+				id: "5ED63B791A19E838"
 				item: { count: 1, id: "industrialization_overdrive:pyrolyse_oven" }
 				type: "item"
 			}]
@@ -819,7 +819,7 @@
 			dependencies: ["2637DA73FD8E4EF7"]
 			id: "6E8B06101D3E0A7B"
 			tasks: [{
-				id: "5932E09E1FC48EA0"
+				id: "7E50E03EF8568494"
 				item: { count: 1, id: "industrialization_overdrive:terminal" }
 				type: "item"
 			}]
