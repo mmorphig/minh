@@ -360,6 +360,23 @@ StartupEvents.registry('mekanism:chemical', event => {
 })
 
 StartupEvents.registry('block', event => {
+  event.create('gunmetal_block')
+    .displayName('Gunmetal Block')
+    .fullBlock(true)
+    .soundType('metal')
+    .hardness(2)
+    .resistance(10)
+    .requiresTool(true)
+    .tag('minecraft:mineable/pickaxe')
+    .tag('minecraft:needs_stone_tool')
+    .tag('minecraft:incorrect_for_gold_tool')
+    .tag('minecraft:incorrect_for_wooden_tool')
+    .tag('c:storage_blocks')
+    .tag('c:storage_blocks/gunmetal')
+    .tag('northstar:heavy_blocks')
+    .tag('northstar:tier_1_heat_resistance')
+    .tag('sable:super_heavy')
+
   event.create('nichrome_coil')
     .displayName('Nichrome Coil')
     .fullBlock(true)

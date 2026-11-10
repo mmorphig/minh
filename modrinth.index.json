@@ -4669,6 +4669,21 @@
         "https://cdn.modrinth.com/data/FjBGB4sU/versions/lnT5n7e5/industrialization_overdrive-1.15.1%2B1.21.1.jar"
       ],
       "fileSize": 352026
+    },
+    {
+      "path": "mods/morejs-neoforge-1.21.1-0.16.0.jar",
+      "hashes": {
+        "sha1": "7e8aea4f03b18076cab5555f6d30e35ff919b342",
+        "sha512": "3fbbe82b5b827e03518f7e515978af4e9fc0736b5385f80b5b86ef562a51e53fe32e815d416a6a0fe1ba752f835fbf641b42b59b5ffd5bb6469abb8b74ab29a2"
+      },
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [
+        "https://cdn.modrinth.com/data/mo64mR1W/versions/kyNrtsUY/morejs-neoforge-1.21.1-0.16.0.jar"
+      ],
+      "fileSize": 157690
     }
   ],
   "dependencies": {

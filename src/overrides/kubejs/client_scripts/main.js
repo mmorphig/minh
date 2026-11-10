@@ -9,6 +9,7 @@ RecipeViewerEvents.removeEntriesCompletely('item', event => {
     "northstar:titanium_sheet",
     "avaritia:singularity",
     "immersiveengineering:plate_iron",
-    "create:iron_sheet"
+    "create:iron_sheet",
+    "pointblank:printer"
   ])
 })

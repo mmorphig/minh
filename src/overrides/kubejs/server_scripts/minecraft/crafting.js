@@ -503,6 +503,10 @@ ServerEvents.recipes(event => {
     '9x pointblank:gunmetal_nugget']
   )
 
+  event.shapeless('kubejs:gunmetal_block', [
+    '9x pointblank:gunmetal_ingot']
+  )
+
   event.shaped( Item.of("pointblank:gunmetal_mesh"),
     [
       "A",
@@ -528,7 +532,7 @@ ServerEvents.recipes(event => {
     }
   ).id("kubejs:pointblank_processor_canister")
 
-  event.shaped( Item.of("pointblank:processor"),
+  event.shaped( Item.of("modern_industrialization:kami_assembler"),
     [
       "CAC",
       "DBD",
@@ -539,6 +543,19 @@ ServerEvents.recipes(event => {
       B: "modern_industrialization:basic_machine_hull",
       C: "modern_industrialization:robot_arm",
       D: "modern_industrialization:conveyor"
+    }
+  )
+
+  event.shaped( Item.of("pointblank:m9"),
+    [
+      "AAA",
+      "AAB",
+      "CC "
+    ],
+    {
+      A: "pointblank:guninternals",
+      B: "minecraft:iron_ingot",
+      C: "kubejs:gunmetal_block"
     }
   )
 
