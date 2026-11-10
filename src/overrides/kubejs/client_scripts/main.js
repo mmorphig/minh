@@ -10,6 +10,8 @@ RecipeViewerEvents.removeEntriesCompletely('item', event => {
     "avaritia:singularity",
     "immersiveengineering:plate_iron",
     "create:iron_sheet",
-    "pointblank:printer"
+    "pointblank:printer",
+    "createbb:crushed_zinc",
+    "createbb:crushed_copper"
   ])
 })

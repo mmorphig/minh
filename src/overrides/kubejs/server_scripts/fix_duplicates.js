@@ -120,4 +120,8 @@ ServerEvents.recipes(event => {
 
   //steel
   replaceFull('mekanism:ingot_steel', 'modern_industrialization:steel_ingot')
+
+  // create bb stuff
+  replaceFull("createbb:crushed_zinc", "modern_industrialization:zinc_tiny_dust")
+  replaceFull("createbb:crushed_copper", "modern_industrialization:copper_tiny_dust")
 })
