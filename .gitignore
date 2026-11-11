@@ -2,6 +2,7 @@ build/*
 minh-data/
 minh-resources/
 materialsets/
+taxon/
 .vscode/
 *.tmp
 *.cache

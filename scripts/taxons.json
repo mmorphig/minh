@@ -1,0 +1,10 @@
+{
+  "periodapis": {
+    "parent": "apidae",
+    "rank": "genus"
+  },
+  "mixtallicapis": {
+    "parent": "apidae",
+    "rank": "genus"
+  }
+}

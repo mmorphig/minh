@@ -7,7 +7,16 @@ cd Modern-Industrialization
 git sparse-checkout set src/main/resources/assets/modern_industrialization/textures/materialsets
 
 cd ..
+
+git clone --depth 1 --filter=blob:none --sparse --branch '1.21.1' https://github.com/thedarkcolour/ForestryCE.git
+
+cd ForestryCE
+
+git sparse-checkout set src/generated/resources/data/forestry/taxon
+
+cd ..
 mv -f Modern-Industrialization/src/main/resources/assets/modern_industrialization/textures/materialsets .
+mv -f ForestryCE/src/generated/resources/data/forestry/taxon .
 
 cp new-textures/double_ingot.png materialsets/common/
 cp new-textures/emerald.png materialsets/common/
@@ -20,3 +29,4 @@ wget -nc -O materialsets/stone.png https://assets.mcasset.cloud/1.21.1/assets/mi
 wget -nc -O materialsets/deepslate.png https://assets.mcasset.cloud/1.21.1/assets/minecraft/textures/block/deepslate.png
 
 rm -rf ./Modern-Industrialization
+rm -rf ./ForestryCE

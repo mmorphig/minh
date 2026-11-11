@@ -1,0 +1,332 @@
+{
+  "iron": {
+    "name": "Iron",
+    "description": "A bee that produces iron.",
+    "species": {
+      "genus": "periodapis",
+      "species": "ferrum",
+      "dominant": true,
+      "authority": "mmorphig",
+      "temperature": "normal",
+      "humidity": "normal",
+      "body": "#82949A",
+      "stripes": "#343A40",
+      "outline": "#111111",
+      "products": [
+        {
+          "item": "minecraft:iron_ingot",
+          "chance": 0.15
+        }
+      ],
+      "specialties": [
+        {
+          "item": "minecraft:iron_ingot",
+          "chance": 0.05
+        }
+      ],
+      "genome": {
+        "forestry:lifespan": {
+          "value": 40
+        },
+        "forestry:pollination": {
+          "value": 20
+        }
+      }
+    },
+    "mutations": [
+      {
+        "name": "iron_1",
+        "first": "forestry:industrious",
+        "second": "forestry:demonic",
+        "chance": 0.10,
+        "conditions": [
+          {
+            "type": "forestry:biome",
+            "biome": "minecraft:is_overworld"
+          }
+        ]
+      },
+      {
+        "name": "iron_2",
+        "first": "forestry:industrious",
+        "second": "forestry:sinister",
+        "chance": 0.10,
+        "conditions": [
+          {
+            "type": "forestry:biome",
+            "biome": "minecraft:is_overworld"
+          }
+        ]
+      }
+    ]
+  },
+  "gold": {
+    "name": "Gold",
+    "description": "A bee that produces gold.",
+    "species": {
+      "genus": "periodapis",
+      "species": "aurum",
+      "dominant": true,
+      "authority": "mmorphig",
+      "temperature": "normal",
+      "humidity": "arid",
+      "body": "#82949A",
+      "stripes": "#343A40",
+      "outline": "#111111",
+      "products": [
+        {
+          "item": "minecraft:gold_ingot",
+          "chance": 0.15
+        }
+      ],
+      "specialties": [
+        {
+          "item": "minecraft:gold_ingot",
+          "chance": 0.05
+        }
+      ],
+      "genome": {
+        "forestry:lifespan": {
+          "value": 40
+        },
+        "forestry:pollination": {
+          "value": 20
+        }
+      }
+    },
+    "mutations": [
+      {
+        "name": "gold_1",
+        "first": "forestry:iron",
+        "second": "forestry:noble",
+        "chance": 0.10,
+        "conditions": [
+          {
+            "type": "forestry:biome",
+            "biome": "minecraft:is_overworld"
+          }
+        ]
+      },
+      {
+        "name": "gold_2",
+        "first": "minh:iron",
+        "second": "forestry:majestic",
+        "chance": 0.10,
+        "conditions": [
+          {
+            "type": "forestry:biome",
+            "biome": "minecraft:is_overworld"
+          }
+        ]
+      }
+    ]
+  },
+  "copper": {
+    "name": "Copper",
+    "description": "A bee that produces copper.",
+    "species": {
+      "genus": "periodapis",
+      "species": "cuprum",
+      "dominant": true,
+      "authority": "mmorphig",
+      "temperature": "warm",
+      "humidity": "damp",
+      "body": "#82949A",
+      "stripes": "#343A40",
+      "outline": "#111111",
+      "products": [
+        {
+          "item": "minecraft:copper_ingot",
+          "chance": 0.15
+        }
+      ],
+      "specialties": [
+        {
+          "item": "minecraft:copper_ingot",
+          "chance": 0.05
+        }
+      ],
+      "genome": {
+        "forestry:lifespan": {
+          "value": 40
+        },
+        "forestry:pollination": {
+          "value": 20
+        }
+      }
+    },
+    "mutations": [
+      {
+        "name": "copper_1",
+        "first": "minh:iron",
+        "second": "forestry:aquatic",
+        "chance": 0.10,
+        "conditions": [
+          {
+            "type": "forestry:biome",
+            "biome": "minecraft:is_overworld"
+          }
+        ]
+      },
+      {
+        "name": "copper_2",
+        "first": "minh:iron",
+        "second": "forestry:marshy",
+        "chance": 0.10,
+        "conditions": [
+          {
+            "type": "forestry:biome",
+            "biome": "minecraft:is_overworld"
+          }
+        ]
+      }
+    ]
+  },
+  "silver": {
+    "name": "Silver",
+    "description": "A bee that produces silver.",
+    "species": {
+      "genus": "periodapis",
+      "species": "argentum",
+      "dominant": true,
+      "authority": "mmorphig",
+      "temperature": "warm",
+      "humidity": "damp",
+      "body": "#82949A",
+      "stripes": "#343A40",
+      "outline": "#111111",
+      "products": [
+        {
+          "item": "modern_industrialization:silver_ingot",
+          "chance": 0.15
+        }
+      ],
+      "specialties": [
+        {
+          "item": "modern_industrialization:silver_ingot",
+          "chance": 0.05
+        }
+      ],
+      "genome": {
+        "forestry:lifespan": {
+          "value": 40
+        },
+        "forestry:pollination": {
+          "value": 20
+        }
+      }
+    },
+    "mutations": [
+      {
+        "name": "silver_1",
+        "first": "minh:iron",
+        "second": "forestry:pirate",
+        "chance": 0.10,
+        "conditions": [
+          {
+            "type": "forestry:biome",
+            "biome": "minecraft:is_overworld"
+          }
+        ]
+      }
+    ]
+  },
+  "lead": {
+    "name": "Lead",
+    "description": "A bee that produces lead.",
+    "species": {
+      "genus": "periodapis",
+      "species": "plumbum",
+      "dominant": true,
+      "authority": "mmorphig",
+      "temperature": "warm",
+      "humidity": "arid",
+      "body": "#82949A",
+      "stripes": "#343A40",
+      "outline": "#111111",
+      "products": [
+        {
+          "item": "modern_industrialization:lead_ingot",
+          "chance": 0.15
+        }
+      ],
+      "specialties": [
+        {
+          "item": "modern_industrialization:lead_ingot",
+          "chance": 0.05
+        }
+      ],
+      "genome": {
+        "forestry:lifespan": {
+          "value": 40
+        },
+        "forestry:pollination": {
+          "value": 20
+        }
+      }
+    },
+    "mutations": [
+      {
+        "name": "lead_1",
+        "first": "minh:iron",
+        "second": "forestry:industrious",
+        "chance": 0.10,
+        "conditions": [
+          {
+            "type": "forestry:biome",
+            "biome": "minecraft:is_overworld"
+          }
+        ]
+      }
+    ]
+  },
+  "tin": {
+    "name": "Tin",
+    "description": "A bee that produces tin.",
+    "species": {
+      "genus": "periodapis",
+      "species": "stannum",
+      "dominant": true,
+      "authority": "mmorphig",
+      "temperature": "warm",
+      "humidity": "normal",
+      "body": "#82949A",
+      "stripes": "#343A40",
+      "outline": "#111111",
+      "products": [
+        {
+          "item": "modern_industrialization:tin_ingot",
+          "chance": 0.15
+        }
+      ],
+      "specialties": [
+        {
+          "item": "modern_industrialization:tin_ingot",
+          "chance": 0.05
+        }
+      ],
+      "genome": {
+        "forestry:lifespan": {
+          "value": 40
+        },
+        "forestry:pollination": {
+          "value": 20
+        }
+      }
+    },
+    "mutations": [
+      {
+        "name": "tin_1",
+        "first": "minh:iron",
+        "second": "forestry:imperial",
+        "chance": 0.10,
+        "conditions": [
+          {
+            "type": "forestry:biome",
+            "biome": "minecraft:is_overworld"
+          }
+        ]
+      }
+    ]
+  }
+}

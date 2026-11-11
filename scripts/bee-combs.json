@@ -1,0 +1,15 @@
+{
+  "iron_comb": {
+    "products": [
+      {
+        "chance": 0.8,
+        "item": "forestry:beeswax"
+      },
+      {
+        "chance": 0.25,
+        "item": "minecraft:iron_ingot"
+      }
+    ],
+    "time": 20
+  }
+}

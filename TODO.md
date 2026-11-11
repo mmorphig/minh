@@ -50,7 +50,26 @@ Add osmium obtaining from platinum-group stuff (oh so I understand why the platl
 Add naquadah as a trace material in some veins? non-overworld?<br>
 Add trace promethium obtaining from uraninite, native promethium on new planet?<br>
 Add extra-terrestrial ore veins.<br>
-Bees...<br>
+
+# Bees...
+
+Read bees.md for more information.
+
+Have bees create combs which are processed into the materials and not bees creating the materials directly (bee-combs.json).<br>
+Have the generation script check if the genus actually exists in taxon.<br>
+Also copy new taxons into data folder.<br>
+Replace placeholder data in bees.json with actual stuff.<br>
+Actually put bee stuff into the pack, currently it is not run on build, do this once it might actually work.<br>
+
+Bees still to create (in no particular order):
+
+Elements (periodapis): molybdenum, thorium, uranium, plutonium, carbon, vanadium, palladium, osmium, platinum, cobalt, bismuth, lithium, arsenic, nickel, promethium, fluorine, phosphorus, tantalum, magnesium, calcium, tungsten, sulfur, chrome, manganese, silicon, oxygen, nitrogen, hydrogen, antimony, aluminum, yttrium, magnesium, chlorine, beryllium, cadmium, antimony, iridium, neodymium, titanium, argon, helium, iodine and sodium.
+
+Alloys (mixtallicapis): brass, bronze, cupronickel, nichrome, tpv alloy, steel, hss g, tantalum carbide and naquadah alloy.
+
+Other materials: neutronium, chaos, naquadah, trinium, sky stone, firmament, diamond, emerald, ruby, sapphire, lapis, redstone, amethyst, quartz, certus quartz, fluix, entro, null, rose quartz, draconium, infinity catalyst, experience, antimatter, obsidian, cruxite, uu-matter, demonite, blood, glowstone, compressed iron, coal, unity, naquadria, skyslime, enderslime, ichor, ancient debris, knightmetal, soul, air and AI slop.
+
+chemical compounds: methamphetamine, testosterone and estrogen.
 
 # Assets
 
